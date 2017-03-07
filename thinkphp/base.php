@@ -1,34 +1,33 @@
 <?php
-// +----------------------------------------------------------------------
-// | ThinkPHP [ WE CAN DO IT JUST THINK ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2006~2017 http://thinkphp.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: liu21st <liu21st@gmail.com>
-// +----------------------------------------------------------------------
-
-define('THINK_VERSION', '5.0.5');
+define('THINK_VERSION', '5.0.3');
 define('THINK_START_TIME', microtime(true));
 define('THINK_START_MEM', memory_get_usage());
 define('EXT', '.php');
 define('DS', DIRECTORY_SEPARATOR);
-defined('THINK_PATH') or define('THINK_PATH', __DIR__ . DS);
+
+// 定义路径
+define('ROOT_PATH', dirname(__DIR__) . DS);
+define('THINK_PATH', ROOT_PATH . 'thinkphp' . DS);
 define('LIB_PATH', THINK_PATH . 'library' . DS);
 define('CORE_PATH', LIB_PATH . 'think' . DS);
 define('TRAIT_PATH', LIB_PATH . 'traits' . DS);
-defined('APP_PATH') or define('APP_PATH', dirname($_SERVER['SCRIPT_FILENAME']) . DS);
-defined('ROOT_PATH') or define('ROOT_PATH', dirname(realpath(APP_PATH)) . DS);
-defined('EXTEND_PATH') or define('EXTEND_PATH', ROOT_PATH . 'extend' . DS);
-defined('VENDOR_PATH') or define('VENDOR_PATH', ROOT_PATH . 'vendor' . DS);
-defined('RUNTIME_PATH') or define('RUNTIME_PATH', ROOT_PATH . 'runtime' . DS);
-defined('LOG_PATH') or define('LOG_PATH', RUNTIME_PATH . 'log' . DS);
-defined('CACHE_PATH') or define('CACHE_PATH', RUNTIME_PATH . 'cache' . DS);
-defined('TEMP_PATH') or define('TEMP_PATH', RUNTIME_PATH . 'temp' . DS);
-defined('CONF_PATH') or define('CONF_PATH', APP_PATH); // 配置文件目录
-defined('CONF_EXT') or define('CONF_EXT', EXT); // 配置文件后缀
-defined('ENV_PREFIX') or define('ENV_PREFIX', 'PHP_'); // 环境变量的配置前缀
+define('EXTEND_PATH', ROOT_PATH . 'extend' . DS);
+define('VENDOR_PATH', ROOT_PATH . 'vendor' . DS);
+
+// 应用目录
+define('APP_ROOT', ROOT_PATH . 'app' . DS);
+define('APP_PATH', APP_ROOT . APP_NAME . DS);
+
+// 运行时目录
+define('RUNTIME_PATH', ROOT_PATH . 'runtime' . DS . APP_NAME . DS);
+define('LOG_PATH', RUNTIME_PATH . 'log' . DS);
+define('CACHE_PATH', RUNTIME_PATH . 'cache' . DS);
+define('TEMP_PATH', RUNTIME_PATH . 'temp' . DS);
+
+// 配置文件目录
+define('CONF_PATH', APP_ROOT . 'conf' . DS);
+define('CONF_EXT', EXT); // 配置文件后缀
+define('ENV_PREFIX', 'PHP_'); // 环境变量的配置前缀
 
 // 环境常量
 define('IS_CLI', PHP_SAPI == 'cli' ? true : false);

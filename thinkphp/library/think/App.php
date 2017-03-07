@@ -416,9 +416,9 @@ class App
 
             // 注册应用命名空间
             self::$namespace = $config['app_namespace'];
-            Loader::addNamespace($config['app_namespace'], APP_PATH);
+            Loader::addNamespace($config['app_namespace'], APP_ROOT);
             if (!empty($config['root_namespace'])) {
-                Loader::addNamespace($config['root_namespace']);
+                Loader::addNamespace($config['root_namespace'], APP_ROOT);
             }
 
             // 加载额外文件
