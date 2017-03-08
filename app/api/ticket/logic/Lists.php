@@ -1,5 +1,7 @@
 <?php
 namespace app\api\ticket\logic;
+use think\Db;
+
 /**
  * Created by PhpStorm.
  * User: Administrator
@@ -9,6 +11,6 @@ namespace app\api\ticket\logic;
 class Lists
 {
     public function queryList(){
-        return 1;
+        return Db::name('ticket')->find();
     }
 }
