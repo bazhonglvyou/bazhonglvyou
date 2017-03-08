@@ -417,6 +417,10 @@ class App
             // 注册应用命名空间
             self::$namespace = $config['app_namespace'];
             Loader::addNamespace($config['app_namespace'], APP_ROOT);
+
+            // 注册common命名空间
+            Loader::addNamespace('common', APP_ROOT . 'common' . DS);
+
             if (!empty($config['root_namespace'])) {
                 Loader::addNamespace($config['root_namespace'], APP_ROOT);
             }
