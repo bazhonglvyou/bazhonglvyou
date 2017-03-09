@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"E:\phpStudy\WWW\app\console\index\view\index\index.html";i:1489031408;s:68:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\header.html";i:1489038487;s:72:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\navigation.html";i:1489025959;s:74:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\sidebar_left.html";i:1489030235;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"E:\phpStudy\WWW\app\console\index\view\index\index.html";i:1489042812;s:68:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\header.html";i:1489043266;s:72:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\navigation.html";i:1489025959;s:74:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\sidebar_left.html";i:1489030235;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -13,16 +13,16 @@
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="static/css/bootstrap.min.css?v=3.3.7" rel="stylesheet">
-    <link href="static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-    <link href="static/css/animate.css" rel="stylesheet">
-    <link href="static/css/style.css?v=4.1.0" rel="stylesheet">
-    <link href="static/css/plugins/iCheck/custom.css" rel="stylesheet">
-    <link href="static/css/plugins/chosen/chosen.css" rel="stylesheet">
-    <link href="static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
-    <link href="static/css/plugins/summernote/summernote.css" rel="stylesheet">
-    <link href="static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-    <link href="static/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css?v=3.3.8" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css?v=4.1.1" rel="stylesheet">
+    <link href="/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/static/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="/static/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="/static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="/static/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
 </head>
 
 
@@ -148,14 +148,14 @@
     <!--右侧部分结束-->
 </div>
 <!-- 全局js -->
-<script src="static/js/jquery.min.js?v=2.1.4"></script>
-<script src="static/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/static/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
 
-<script src="static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-<script src="static/js/plugins/layer/layer.min.js"></script>
+<script src="/static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="/static/js/plugins/layer/layer.min.js"></script>
 
 <!-- 第三方插件 -->
-<script src="static/js/plugins/pace/pace.min.js"></script>
+<script src="/static/js/plugins/pace/pace.min.js"></script>
 
 <script>
     /**
@@ -249,11 +249,21 @@
         // 默认选中第一个导航
         $('#J_navbar li:first > a').click();
 
+        $('#J_sidebar').on('click', 'a', function(e) {
+            e.preventDefault();
+            var href = $(this).attr("href");
+            if(href != 'javascript:;'){
+                J_iframe.attr("src", href);
+            }
+        });
+
     });
 </script>
-<script src="static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
 <!-- 自定义js -->
-<script src="static/js/hplus.js?v=4.1.0"></script>
+<script src="/static/js/hplus.js?v=4.1.0"></script>
+<script src="/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
 </body>
 
 </html>

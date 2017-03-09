@@ -4297,7 +4297,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .nav > li > a:focus, .nav > li > a:hover {
     text-decoration: none;
-    background-color: #969696
+    background-color: #dcdbdb
 }
 
 .nav > li.disabled > a {
