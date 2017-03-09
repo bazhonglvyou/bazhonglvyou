@@ -28,7 +28,8 @@ class Index extends Base
         $result = $menu->getList($fields, $map, $order);
 
         // 生成树形DOM
-        $menuTree = json_encode($menu->getTree($result));
+        $tree = $menu->getTree($result);
+        $menuTree = json_encode($tree);
 
         // 模板赋值
         $this->assign('result', $result);

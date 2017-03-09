@@ -337,7 +337,7 @@
 <script>
     $("#menu").bind('change', function () {
         //二级菜单显示icon图标上传
-        var childMenu = {$childMenu};
+        var childMenu = {$parentMenu};
         var childMenuId = [];
         $.each(childMenu, function (i, j) {
             childMenuId.push(j.id);

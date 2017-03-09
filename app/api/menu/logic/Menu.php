@@ -90,13 +90,15 @@ class Menu
      */
     public static function getTree(&$data, $pid = 0, $level = 1)
     {
+
         $treeList = $items = [];
         foreach ($data as $k => $v) {
             if ($v['parent_id'] == $pid) {
                 $v['url'] = Url::build($v['module'] . '/' . $v['controller'] . '/' . $v['action'], $v['parameter'], false, true);
                 unset($v['module'], $v['controller'], $v['action'], $v['parameter']);
-                unset($data[$k]);
+                //unset($data[$k]);
                 $items = self::getTree($data, $v['id'], $level + 1);
+
                 // 后台菜单只支持三层，超出的层级不显示
                 $items && $level < 3 && $v['items'] = $items;
                 $treeList['menu_' . $v['id']] = $v;

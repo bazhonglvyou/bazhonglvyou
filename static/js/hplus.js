@@ -5,8 +5,7 @@
 
 $(document).ready(function () {
 
-    // MetsiMenu
-    $('#J_sidebar').metisMenu();
+
 
     // 打开右侧边栏
     $('.right-sidebar-toggle').click(function () {
