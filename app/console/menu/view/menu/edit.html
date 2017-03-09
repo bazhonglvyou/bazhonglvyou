@@ -340,11 +340,13 @@
             if ($.inArray(parseInt($(this).val()), childMenuId) >= 0) {
                 //图标显示
                 $(".btn-ico").closest('.form-group').removeClass('hide');
+                //设置默认图标
+                $("#icon").val('check');
             } else {
                 //图标隐藏
                 $(".btn-ico").closest('.form-group').addClass('hide');
-                //设为默认图标
-                $("#icon").val('check');
+                //设置默认图标
+                $("#icon").val('');
                 $(".btn-ico").children('i').attr('class', 'fa fa-check');
             }
         })
