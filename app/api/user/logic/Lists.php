@@ -36,4 +36,42 @@ class lists
         $userId = Db::name('user')->insertGetId($data);
         return ['id' => $userId];
     }
+
+    /**
+     * 删除会员
+     * @param $id
+     * author: yanghuan
+     * date:2017/3/12 19:37
+     */
+    public function del($id)
+    {
+        $userId = Db::name('user')->where('id', $id)->delete();
+        return ['id' => $userId];
+    }
+
+    /**
+     * 查询单条会员数据
+     * author: yanghuan
+     * date:2017/3/12 19:44
+     */
+    public function find($id)
+    {
+        $user = Db::name('user')->where('id', $id)->find();
+        return ['user' => $user];
+    }
+
+    /**
+     * 编辑会员
+     * @param $data
+     * author: yanghuan
+     * date:2017/3/12 19:56
+     */
+    public function edit($data)
+    {
+        $id = $data['id'];
+        unset($data['id']);
+        $userId = Db::name('user')->where('id', $id)->update($data);
+        return ['id' => $userId];
+    }
+
 }

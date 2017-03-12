@@ -29,6 +29,8 @@ class Lists extends Validate
 
     protected $scene = [
         'save' => ['type', 'user_name', 'password', 'password_confirm'], // 创建
-        'update' => ['type', 'user_name', 'password', 'password_confirm'], // 更新
+        'edit' => ['id', 'type', 'user_name', 'password', 'password_confirm'], // 更新
+        'editNotPassword' => ['id', 'type', 'user_name'], // 更新 没有密码
+        'del' => ['id'], // 删除
     ];
 }

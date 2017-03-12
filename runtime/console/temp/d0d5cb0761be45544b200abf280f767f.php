@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html";i:1489316280;s:76:"E:\wamp\www\bazhonglvyou\app\console\user\view\..\..\common\view\header.html";i:1489069153;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html";i:1489319422;s:76:"E:\wamp\www\bazhonglvyou\app\console\user\view\..\..\common\view\header.html";i:1489069153;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -82,10 +82,10 @@
                                     <th><?php echo $v['head_img']; ?></th>
                                     <th><?php echo $v['tel']; ?></th>
                                     <th>
-                                        <a href="<?php echo Url('user/lists/edit'); ?>" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
+                                        <a href="<?php echo Url('user/lists/edit',['id'=>$v['id']],false,true); ?>" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
                                             <i class="fa fa-pencil"></i>
                                         </a>
-                                        <a href="<?php echo Url('user/lists/delete'); ?>" class="btn btn-warning btn-xs btn-circle delete" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
+                                        <a href="javascript:;" data-id="<?php echo $v['id']; ?>" class="btn btn-warning btn-xs btn-circle delete" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
                                             <i class="fa fa-trash-o"></i>
                                         </a>
                                     </th>
@@ -117,12 +117,12 @@
     // 删除
     $('.delete').on('click', function() {
         var id = $(this).attr("data-id");
-        layer.confirm('确定删除该菜单？', {
+        layer.confirm('确定删除该会员？', {
             skin: 'layui-layer-molv',
             icon: 3,
             shadeClose: false,
         }, function(index, layero) {
-            $.get("<?php echo Url('/menu/menu/delete', '', false, true); ?>?id=" + id, function(data,status){
+            $.get("<?php echo Url('/user/lists/del', '', false, true); ?>?id=" + id, function(data,status){
                 if (data.code) {
                     layer.msg(data.msg, {icon: 5});
                 } else {

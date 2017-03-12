@@ -57,10 +57,10 @@
                                     <th>{$v.head_img}</th>
                                     <th>{$v.tel}</th>
                                     <th>
-                                        <a href="{:Url('user/lists/edit')}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
+                                        <a href="{:Url('user/lists/edit',['id'=>$v.id],false,true)}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
                                             <i class="fa fa-pencil"></i>
                                         </a>
-                                        <a href="{:Url('user/lists/delete')}" class="btn btn-warning btn-xs btn-circle delete" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
+                                        <a href="javascript:;" data-id="{$v.id}" class="btn btn-warning btn-xs btn-circle delete" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
                                             <i class="fa fa-trash-o"></i>
                                         </a>
                                     </th>
@@ -93,12 +93,12 @@
     // 删除
     $('.delete').on('click', function() {
         var id = $(this).attr("data-id");
-        layer.confirm('确定删除该菜单？', {
+        layer.confirm('确定删除该会员？', {
             skin: 'layui-layer-molv',
             icon: 3,
             shadeClose: false,
         }, function(index, layero) {
-            $.get("{:Url('/menu/menu/delete', '', false, true)}?id=" + id, function(data,status){
+            $.get("{:Url('/user/lists/del', '', false, true)}?id=" + id, function(data,status){
                 if (data.code) {
                     layer.msg(data.msg, {icon: 5});
                 } else {

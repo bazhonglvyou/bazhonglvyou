@@ -136,7 +136,7 @@
                 }).html("提交中...");
                 // 提交表单
                 $.ajax({
-                    url: "{:Url('/user/lists/save','',false, true)}",
+                    url: "{:Url('/user/lists/addsave','',false, true)}",
                     type: "post",
                     dataType: "json",
                     data: menuForm.serialize(),

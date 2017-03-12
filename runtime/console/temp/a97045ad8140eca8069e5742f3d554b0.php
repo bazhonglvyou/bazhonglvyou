@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html";i:1489318711;s:76:"E:\wamp\www\bazhonglvyou\app\console\user\view\..\..\common\view\header.html";i:1489069153;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:62:"E:\wamp\www\bazhonglvyou\app\console\user\view\lists\edit.html";i:1489320858;s:76:"E:\wamp\www\bazhonglvyou\app\console\user\view\..\..\common\view\header.html";i:1489069153;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -47,9 +47,10 @@
             <div class="ibox">
                 <div class="ibox-title">
                     <form class="form-horizontal m-t" onsubmit="return false;" method="post" id="userForm">
+                        <input id="" name="id" class="form-control" type="hidden" value="<?php echo $user['id']; ?>">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">会员帐号：</label>
-                            <div class="col-sm-2"><input id="user_name" name="user_name" class="form-control" type="text"></div>
+                            <div class="col-sm-2"><input id="user_name" name="user_name" class="form-control" type="text" value="<?php echo $user['user_name']; ?>"></div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">会员密码：</label>
@@ -68,15 +69,15 @@
                             <label class="col-sm-2 control-label">会员类型：</label>
                             <div class="col-sm-2">
                                 <select class="form-control" name="type">
-                                    <option value="2">普通会员</option>
-                                    <option value="1">商家管理员</option>
+                                    <option value="2" <?php if($user['type'] == '2'): ?>selected<?php endif; ?> >普通会员</option>
+                                    <option value="1" <?php if($user['type'] == '1'): ?>selected<?php endif; ?> >商家管理员</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="form-group has-error">
                             <div class="col-sm-4 col-sm-offset-2">
-                                <span id="server-error" class="help-block m-b-none hide"></span>
+                                <span id="server-error" class="help-block m-b-none"></span>
                             </div>
                         </div>
                         <div class="form-group">
@@ -125,15 +126,7 @@
                     minlength: 2,
                     maxlength: 10
                 },
-                password: {
-                    required: true,
-                    minlength: 5,
-                    maxlength: 20,
-                },
                 password_confirm: {
-                    required: true,
-                    minlength: 5,
-                    maxlength: 20,
                     equalTo: "#password"
                 },
             },
@@ -143,15 +136,7 @@
                     minlength: icon + "用户名必须2个字符以上",
                     maxlength: icon + "用户名必须10个字符以内"
                 },
-                password: {
-                    required: icon + "请输入密码",
-                    minlength: icon + "密码必须5个字符以上",
-                    maxlength: icon + "密码必须20个字符以内"
-                },
                 password_confirm: {
-                    required: icon + "请再次输入密码",
-                    minlength: icon + "密码必须5个字符以上",
-                    maxlength: icon + "密码必须10个字符以内",
                     equalTo: icon + "两次输入密码不一致",
                 },
             },
@@ -162,7 +147,7 @@
                 }).html("提交中...");
                 // 提交表单
                 $.ajax({
-                    url: "<?php echo Url('/user/lists/addsave','',false, true); ?>",
+                    url: "<?php echo Url('/user/lists/edit','',false, true); ?>",
                     type: "post",
                     dataType: "json",
                     data: menuForm.serialize(),
@@ -170,8 +155,7 @@
                         if (data.code === 0) {
                             self.location = document.referrer;
                         } else {
-                            console.log("错误码：" + data.code);
-                            serverError.removeClass('hide').html(icon + data.msg);
+                            serverError.show().html(icon + data.msg);
                         }
                     },
                     complete: function () {
@@ -179,7 +163,7 @@
                         submitBtn.removeAttr("disabled").html("提交");
                     },
                     error: function () {
-                        serverError.removeClass('hide').html(icon + "网络错误，请检查网络后重试");
+                        serverError.show().html(icon + "网络错误，请检查网络后重试");
                     }
                 });
             }
