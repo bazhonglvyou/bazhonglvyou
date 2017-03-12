@@ -1,0 +1,3202 @@
+[ 2017-03-12T17:12:27+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php
+[ log ] 192.168.1.103/console.php [运行时间：0.066003s][吞吐率：15.15req/s] [内存消耗：2,494.05kb] [文件加载：37]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:12:27+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/login/login/.html
+[ log ] 192.168.1.103/console.php/login/login/.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,794.44kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\console\login\controller\Login->index[ E:\wamp\www\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\login\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:12:29+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/login/login/
+[ log ] 192.168.1.103/console.php/login/login/ [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：2,373.27kb] [文件加载：35]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://192.168.1.103',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/login/login/.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\console\login\controller\Login->index[ E:\wamp\www\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:12:29+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php
+[ log ] 192.168.1.103/console.php [运行时间：0.434025s][吞吐率：2.30req/s] [内存消耗：4,102.83kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/login/login/.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->index[ E:\wamp\www\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\index\view\index\index.html [ array (
+  0 => 'result',
+  1 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.170009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.090006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status`,`module`,`controller`,`action`,`parameter` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.093005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:12:29+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/index/index/main
+[ log ] 192.168.1.103/console.php/index/index/main [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：2,693.00kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->main[ E:\wamp\www\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\index\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:12:33+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/member/member/lists
+[ log ] 192.168.1.103/console.php/member/member/lists [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,982.31kb] [文件加载：32]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'member',
+    1 => 'member',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:16:01+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/
+[ log ] 192.168.1.103/console.php/menu/menu/ [运行时间：0.440025s][吞吐率：2.27req/s] [内存消耗：4,235.55kb] [文件加载：48]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->index[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.089005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.090005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:16:11+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/edit?id=6
+[ log ] 192.168.1.103/console.php/menu/menu/edit?id=6 [运行时间：0.577033s][吞吐率：1.73req/s] [内存消耗：4,257.55kb] [文件加载：48]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/menu/menu/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '6',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->edit[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\edit.html [ array (
+  0 => 'categorys',
+  1 => 'info',
+  2 => 'parentMenu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.131007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.089005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.090005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_menu` WHERE  `id` = 6  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.089005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fm_menu` WHERE  `parent_id` = 0 [ RunTime:0.089005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:16:35+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/menu/menu/update?id=6
+[ log ] 192.168.1.103/console.php/menu/menu/update?id=6 [运行时间：0.481027s][吞吐率：2.08req/s] [内存消耗：4,161.82kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '128',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/menu/menu/edit?id=6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '6',
+  'parent_id' => '5',
+  'icon' => '',
+  'name' => '会员列表',
+  'module' => 'user',
+  'controller' => 'list',
+  'action' => 'index',
+  'parameter' => '',
+  'remark' => '',
+  'status' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->update[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.134007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.089005s ]
+[ sql ] [ SQL ] UPDATE `fm_menu`  SET `parent_id`=5,`name`='会员列表',`module`='user',`controller`='list',`action`='index',`parameter`='',`remark`='',`status`=1,`icon`='',`update_time`='2017-03-12 17:16:35'  WHERE  `id` = 6 [ RunTime:0.096006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:16:36+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/
+[ log ] 192.168.1.103/console.php/menu/menu/ [运行时间：0.373021s][吞吐率：2.68req/s] [内存消耗：3,968.48kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/menu/menu/edit?id=6',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->index[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.096005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:16:39+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php
+[ log ] 192.168.1.103/console.php [运行时间：0.347020s][吞吐率：2.88req/s] [内存消耗：3,836.95kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/login/login/.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->index[ E:\wamp\www\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\index\view\index\index.html [ array (
+  0 => 'result',
+  1 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.131007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status`,`module`,`controller`,`action`,`parameter` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.091006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:16:39+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/index/index/main
+[ log ] 192.168.1.103/console.php/index/index/main [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：2,446.91kb] [文件加载：38]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->main[ E:\wamp\www\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\index\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:27:12+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/list/index
+[ log ] 192.168.1.103/console.php/user/list/index [运行时间：0.027001s][吞吐率：37.04req/s] [内存消耗：1,983.38kb] [文件加载：32]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'list',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:27:14+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/
+[ log ] 192.168.1.103/console.php/menu/menu/ [运行时间：0.431025s][吞吐率：2.32req/s] [内存消耗：3,968.14kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->index[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.178010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.085005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.109006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:27:17+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/edit?id=9
+[ log ] 192.168.1.103/console.php/menu/menu/edit?id=9 [运行时间：0.667038s][吞吐率：1.50req/s] [内存消耗：3,960.93kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/menu/menu/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->edit[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\edit.html [ array (
+  0 => 'categorys',
+  1 => 'info',
+  2 => 'parentMenu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.129007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_menu` WHERE  `id` = 9  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fm_menu` WHERE  `parent_id` = 0 [ RunTime:0.190011s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:27:19+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/
+[ log ] 192.168.1.103/console.php/menu/menu/ [运行时间：0.377022s][吞吐率：2.65req/s] [内存消耗：3,968.14kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->index[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.142008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.097006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:27:22+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/edit?id=6
+[ log ] 192.168.1.103/console.php/menu/menu/edit?id=6 [运行时间：0.627035s][吞吐率：1.59req/s] [内存消耗：3,960.92kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/menu/menu/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '6',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->edit[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\edit.html [ array (
+  0 => 'categorys',
+  1 => 'info',
+  2 => 'parentMenu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.145008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_menu` WHERE  `id` = 6  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fm_menu` WHERE  `parent_id` = 0 [ RunTime:0.098006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:27:26+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/menu/menu/update?id=6
+[ log ] 192.168.1.103/console.php/menu/menu/update?id=6 [运行时间：0.402023s][吞吐率：2.49req/s] [内存消耗：4,161.85kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '129',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/menu/menu/edit?id=6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '6',
+  'parent_id' => '5',
+  'icon' => '',
+  'name' => '会员列表',
+  'module' => 'user',
+  'controller' => 'lists',
+  'action' => 'index',
+  'parameter' => '',
+  'remark' => '',
+  'status' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->update[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.144008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.095005s ]
+[ sql ] [ SQL ] UPDATE `fm_menu`  SET `parent_id`=5,`name`='会员列表',`module`='user',`controller`='lists',`action`='index',`parameter`='',`remark`='',`status`=1,`icon`='',`update_time`='2017-03-12 17:27:26'  WHERE  `id` = 6 [ RunTime:0.117007s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:27:27+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/
+[ log ] 192.168.1.103/console.php/menu/menu/ [运行时间：0.385022s][吞吐率：2.60req/s] [内存消耗：3,968.48kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/menu/menu/edit?id=6',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->index[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.101005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:27:29+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php
+[ log ] 192.168.1.103/console.php [运行时间：0.385022s][吞吐率：2.60req/s] [内存消耗：3,836.95kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/login/login/.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->index[ E:\wamp\www\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\index\view\index\index.html [ array (
+  0 => 'result',
+  1 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.131007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.090005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status`,`module`,`controller`,`action`,`parameter` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.101005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:27:29+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/index/index/main
+[ log ] 192.168.1.103/console.php/index/index/main [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：2,446.91kb] [文件加载：38]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->main[ E:\wamp\www\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\index\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:28:44+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：2,086.48kb] [文件加载：36]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:28:46+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：2,086.48kb] [文件加载：36]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:30:16+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：2,503.22kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html[E:\wamp\www\bazhonglvyou\thinkphp\library\think\view\driver\Think.php:80]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:30:30+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：2,687.66kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:31:15+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：2,807.05kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:32:12+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：2,806.93kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:33:29+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：2,806.35kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:33:41+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：2,806.39kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T17:47:09+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.991057s][吞吐率：1.01req/s] [内存消耗：3,724.73kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.700040s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.095005s ]
+[ error ] [1]Call to a member function toArray() on a non-object[E:\wamp\www\bazhonglvyou\app\api\user\logic\Lists.php:24]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:47:30+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.393023s][吞吐率：2.54req/s] [内存消耗：4,007.95kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.170009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.085005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.085005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T17:47:44+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.385022s][吞吐率：2.60req/s] [内存消耗：4,007.98kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.150009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.098005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.098006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:03:16+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.434025s][吞吐率：2.30req/s] [内存消耗：3,764.09kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.179011s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.098005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.108007s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:03:16+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/favicon.ico
+[ log ] 192.168.1.103/console.php/user/lists/favicon.ico [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：2,512.86kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => '*/*',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:03:20+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.357020s][吞吐率：2.80req/s] [内存消耗：3,640.28kb] [文件加载：43]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.128007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] INSERT INTO `fm_user` (`user_name` , `passalt` , `password`) VALUES ('admin' , 'mVD6Gx3j' , '87a8aa4ece361d77d1ea2ea47c35171c') [ RunTime:0.092005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:05:56+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.389022s][吞吐率：2.57req/s] [内存消耗：3,641.02kb] [文件加载：43]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.146008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.098006s ]
+[ sql ] [ SQL ] INSERT INTO `fm_user` (`user_name` , `passalt` , `password`) VALUES ('admin' , 'tklJuty8' , 'e0a2fad08351514d65d77084b17b37ff') [ RunTime:0.103006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:09:11+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：2,535.63kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function app\console\user\controller\datetime()[E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php:42]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:09:26+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.393023s][吞吐率：2.54req/s] [内存消耗：3,643.01kb] [文件加载：43]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.095006s ]
+[ sql ] [ SQL ] INSERT INTO `fm_user` (`user_name` , `passalt` , `password` , `create_time`) VALUES ('admin' , 'URZk6pXe' , 'a289ccd6d51875ff76ad21ac82165e18' , '2017-03-12 18:09:25') [ RunTime:0.101005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:12:55+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：1.914109s][吞吐率：0.52req/s] [内存消耗：3,768.38kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.677096s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.098006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:13:27+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.367021s][吞吐率：2.72req/s] [内存消耗：4,024.35kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.137008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.088005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.088005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:13:30+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,516.84kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html[E:\wamp\www\bazhonglvyou\thinkphp\library\think\view\driver\Think.php:80]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:13:33+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.366020s][吞吐率：2.73req/s] [内存消耗：3,768.40kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.089006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.089005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:15:15+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：2,799.61kb] [文件加载：44]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: categorys[E:\wamp\www\bazhonglvyou\runtime\console\temp\fa9cedbf8a5e23e68684192c9aacec44.php:55]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:15:24+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.383022s][吞吐率：2.61req/s] [内存消耗：3,768.40kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.142008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.097005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:15:25+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：2,832.60kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:16:56+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.051002s][吞吐率：19.61req/s] [内存消耗：2,826.75kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:17:13+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,826.48kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:17:15+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：2,565.95kb] [文件加载：39]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:17:31+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：2,826.86kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:23:53+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,825.98kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:41:57+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：2,833.97kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:42:15+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：2,833.97kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:42:31+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/user/lists/save
+[ log ] 192.168.1.103/console.php/user/lists/save [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：2,783.92kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '61',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'test',
+  'password' => '123456',
+  'password_confirm' => '123456',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->save[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to a member function getError() on a non-object[E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php:63]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:42:46+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/user/lists/save
+[ log ] 192.168.1.103/console.php/user/lists/save [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：2,783.92kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '61',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'test',
+  'password' => '123456',
+  'password_confirm' => '123456',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->save[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to a member function getError() on a non-object[E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php:63]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:43:16+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/user/lists/save
+[ log ] 192.168.1.103/console.php/user/lists/save [运行时间：0.033001s][吞吐率：30.30req/s] [内存消耗：2,691.84kb] [文件加载：37]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '61',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'test',
+  'password' => '123456',
+  'password_confirm' => '123456',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->save[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:49:53+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,834.62kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:50:27+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/user/lists/save
+[ log ] 192.168.1.103/console.php/user/lists/save [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：2,692.41kb] [文件加载：37]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '61',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'test',
+  'password' => '123456',
+  'password_confirm' => '123456',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->save[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:51:09+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/user/lists/save
+[ log ] 192.168.1.103/console.php/user/lists/save [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：2,692.41kb] [文件加载：37]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '61',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'test',
+  'password' => '123456',
+  'password_confirm' => '123456',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->save[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:51:33+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/user/lists/save
+[ log ] 192.168.1.103/console.php/user/lists/save [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：2,692.33kb] [文件加载：37]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '61',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'test',
+  'password' => '123456',
+  'password_confirm' => '123456',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->save[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:52:40+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/user/lists/save
+[ log ] 192.168.1.103/console.php/user/lists/save [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：2,775.67kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '61',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'test',
+  'password' => '123456',
+  'password_confirm' => '123456',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->save[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]call_user_func_array() expects parameter 1 to be a valid callback, class 'app\api\user\validate\Lists' does not have a method 'comfirm'[E:\wamp\www\bazhonglvyou\thinkphp\library\think\Validate.php:391]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:53:43+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/user/lists/save
+[ log ] 192.168.1.103/console.php/user/lists/save [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：2,775.37kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '61',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'test',
+  'password' => '123456',
+  'password_confirm' => '123456',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->save[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]call_user_func_array() expects parameter 1 to be a valid callback, class 'app\api\user\validate\Lists' does not have a method 'comfirm'[E:\wamp\www\bazhonglvyou\thinkphp\library\think\Validate.php:391]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:54:34+08:00 ] 192.168.1.103 192.168.1.103 POST /console.php/user/lists/save
+[ log ] 192.168.1.103/console.php/user/lists/save [运行时间：2.638151s][吞吐率：0.38req/s] [内存消耗：3,916.07kb] [文件加载：44]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '61',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'test',
+  'password' => '123456',
+  'password_confirm' => '123456',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->save[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:2.420138s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.086005s ]
+[ sql ] [ SQL ] INSERT INTO `fm_user` (`type` , `user_name` , `passalt` , `password` , `create_time`) VALUES (2 , 'test' , 'XzrNIUAB' , 'ee09cb466f74962610bf6bcd723f9eeb' , '2017-03-12 18:54:31') [ RunTime:0.091006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:54:34+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.373022s][吞吐率：2.68req/s] [内存消耗：3,778.32kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.139008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.095006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:55:04+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.426024s][吞吐率：2.35req/s] [内存消耗：3,778.43kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.177010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.097005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:55:42+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.387022s][吞吐率：2.58req/s] [内存消耗：4,114.80kb] [文件加载：51]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.129007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.086005s ]
+[ error ] [8]未定义数组索引: nickname[E:\wamp\www\bazhonglvyou\runtime\console\temp\d0d5cb0761be45544b200abf280f767f.php:81]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:55:49+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.409023s][吞吐率：2.44req/s] [内存消耗：4,114.73kb] [文件加载：51]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.095005s ]
+[ error ] [8]未定义数组索引: nic_kname[E:\wamp\www\bazhonglvyou\runtime\console\temp\d0d5cb0761be45544b200abf280f767f.php:81]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:55:56+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.364021s][吞吐率：2.75req/s] [内存消耗：4,035.69kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/add',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.088005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.094005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:56:18+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/
+[ log ] 192.168.1.103/console.php/menu/menu/ [运行时间：0.369021s][吞吐率：2.71req/s] [内存消耗：3,971.90kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->index[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.130008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.088005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:57:18+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.388023s][吞吐率：2.58req/s] [内存消耗：4,036.58kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.147009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.100005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.097006s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:57:23+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.367021s][吞吐率：2.72req/s] [内存消耗：3,777.98kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.095005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:57:25+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/
+[ log ] 192.168.1.103/console.php/menu/menu/ [运行时间：0.347020s][吞吐率：2.88req/s] [内存消耗：3,971.90kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->index[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.129007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.088005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:57:42+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.346020s][吞吐率：2.89req/s] [内存消耗：4,036.58kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.126007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.084005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.087005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:57:47+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/menu/menu/
+[ log ] 192.168.1.103/console.php/menu/menu/ [运行时间：0.372021s][吞吐率：2.69req/s] [内存消耗：3,971.90kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'menu',
+    1 => 'menu',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\menu\controller\Menu->index[ E:\wamp\www\bazhonglvyou\app\console\menu\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\menu\view\menu\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.095005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:58:03+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php
+[ log ] 192.168.1.103/console.php [运行时间：0.359020s][吞吐率：2.79req/s] [内存消耗：3,840.91kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/login/login/.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->index[ E:\wamp\www\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\index\view\index\index.html [ array (
+  0 => 'result',
+  1 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.128007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.084005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status`,`module`,`controller`,`action`,`parameter` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.087005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:58:03+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/index/index/main
+[ log ] 192.168.1.103/console.php/index/index/main [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：2,450.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->main[ E:\wamp\www\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\index\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:58:05+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.389022s][吞吐率：2.57req/s] [内存消耗：4,036.58kb] [文件加载：47]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.095005s ]
+
+---------------------------------------------------------------
+[ 2017-03-12T18:58:17+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/add
+[ log ] 192.168.1.103/console.php/user/lists/add [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,572.30kb] [文件加载：39]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php/user/lists/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-12T18:58:19+08:00 ] 192.168.1.103 192.168.1.103 GET /console.php/user/lists/index
+[ log ] 192.168.1.103/console.php/user/lists/index [运行时间：0.358021s][吞吐率：2.79req/s] [内存消耗：3,777.94kb] [文件加载：45]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://192.168.1.103/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313; PHPSESSID=2rftru08bf00n1c5pbjcpoid45; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ E:\wamp\www\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.126007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.084005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.086005s ]
+
+---------------------------------------------------------------
