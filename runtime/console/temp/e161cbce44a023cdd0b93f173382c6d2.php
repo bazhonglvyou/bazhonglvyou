@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"E:\phpStudy\WWW\app\console\menu\view\menu\create.html";i:1489058861;s:67:"E:\phpStudy\WWW\app\console\menu\view\..\..\common\view\header.html";i:1489043266;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"E:\phpStudy\WWW\app\console\menu\view\menu\create.html";i:1489127493;s:67:"E:\phpStudy\WWW\app\console\menu\view\..\..\common\view\header.html";i:1489043266;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -62,7 +62,7 @@
                         <div class="form-group hide">
                             <label class="col-sm-2 control-label">菜单图标：</label>
                             <div class="col-sm-4">
-                                <input type="hidden" name="icon" id="icon" value="">
+                                <input type="hidden" name="icon" id="icon" value="check">
                                 <button data-toggle="tooltip" data-placement="top" data-original-title="点击选择图标"
                                         class="btn btn-primary btn-ico" type="button"><i class="fa fa-check"></i>
                                 </button>
@@ -110,11 +110,11 @@
                             <label class="col-sm-2 control-label">状态：</label>
                             <div class="col-sm-4">
                                 <div class="radio radio-success radio-inline">
-                                    <input type="radio" id="redio-show" value="1" name="is_show" checked="">
+                                    <input type="radio" id="redio-show" value="1" name="status" checked="">
                                     <label for="redio-show"> 显示</label>
                                 </div>
                                 <div class="radio radio-inline">
-                                    <input type="radio" id="redio-hidden" value="0" name="is_show">
+                                    <input type="radio" id="redio-hidden" value="2" name="status">
                                     <label for="redio-hidden"> 不显示</label>
                                 </div>
                             </div>
@@ -363,7 +363,7 @@
 <script>
     $("#menu").bind('change', function () {
         //二级菜单显示icon图标上传
-        var childMenu = <?php echo $childMenu; ?>;
+        var childMenu = <?php echo $parentMenu; ?>;
         var childMenuId = [];
         $.each(childMenu, function (i, j) {
             childMenuId.push(j.id);

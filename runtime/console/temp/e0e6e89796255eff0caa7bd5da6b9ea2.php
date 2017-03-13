@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"E:\phpStudy\WWW\app\console\menu\view\menu\index.html";i:1489064601;s:67:"E:\phpStudy\WWW\app\console\menu\view\..\..\common\view\header.html";i:1489043266;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpStudy\WWW\app\console\user\view\privilege\lists.html";i:1489390118;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489043266;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -29,16 +29,16 @@
 <body class="gray-bg">
 <div class="wrapper wrapper-content">
     <div class="col-sm-12">
-        <h3 class="pull-left">菜单管理</h3>
+        <h3 class="pull-left">权限管理</h3>
         <ol class="breadcrumb pull-right">
             <li>
                 <a href="index.html"><i class="fa fa-dashboard"></i> 管理中心</a>
             </li>
             <li>
-                系统设置
+                权限管理
             </li>
             <li>
-                菜单管理
+                角色列表
             </li>
         </ol>
     </div>
@@ -50,7 +50,7 @@
                         <div class="col-sm-6 m-b-xs">
                             <div class="input-group">
                                 <div class="btn-group">
-                                    <a href="<?php echo Url('/menu/menu/create','',false,true); ?>" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;新建菜单</a>
+                                    <a href="" class="btn btn-primary"><i class="fa fa-plus"></i>添加角色</a>
                                 </div>
                             </div>
                         </div>
@@ -61,22 +61,25 @@
                         <table class="table table-striped table-bordered table-hover">
                             <thead>
                             <tr>
-                                <th width="8%">ID</th>
-                                <th width="8%">排序</th>
-                                <th width="59%">菜单名称</th>
-                                <th width="10%">状态</th>
-                                <th width="15%">操作</th>
+                                <th>角色编号</th>
+                                <th>角色名称</th>
+                                <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php echo $list; ?>
+                            <?php if(is_array($role) || $role instanceof \think\Collection || $role instanceof \think\Paginator): $i = 0; $__LIST__ = $role;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                            <tr>
+                                <td><?php echo $v['role_id']; ?></td>
+                                <td><?php echo $v['role_name']; ?></td>
+                                <td>
+                                    <a href="<?php echo Url('user/privilege/adduser',['roleid'=>$v['role_id']],false,true); ?>" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="为角色添加用户">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
                             </tbody>
                         </table>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <button class="btn btn-sm btn-primary btn-outline" type="button">排序</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -95,25 +98,6 @@
     $('.ibox-content').tooltip({
         selector: "[data-toggle=tooltip]",
         container: "body"
-    });
-
-    // 删除
-    $('.delete').on('click', function() {
-        var id = $(this).attr("data-id");
-        layer.confirm('确定删除该菜单？', {
-            skin: 'layui-layer-molv',
-            icon: 3,
-            shadeClose: false,
-        }, function(index, layero) {
-            $.get("<?php echo Url('/menu/menu/delete', '', false, true); ?>?id=" + id, function(data,status){
-                if (data.code) {
-                    layer.msg(data.msg, {icon: 5});
-                } else {
-                    // 删除成功
-                    window.location.reload();
-                }
-            });
-        });
     });
 </script>
 </body>

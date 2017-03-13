@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"E:\phpStudy\WWW\app\console\index\view\index\index.html";i:1489042812;s:68:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\header.html";i:1489043266;s:72:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\navigation.html";i:1489025959;s:74:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\sidebar_left.html";i:1489030235;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"E:\phpStudy\WWW\app\console\index\view\index\index.html";i:1489127493;s:68:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\header.html";i:1489043266;s:72:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\navigation.html";i:1489025959;s:74:"E:\phpStudy\WWW\app\console\index\view\..\..\common\view\sidebar_left.html";i:1489030235;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -245,6 +245,9 @@
                     }
                 }
             };
+
+            // MetsiMenu
+            $('#J_sidebar').metisMenu();
         });
         // 默认选中第一个导航
         $('#J_navbar li:first > a').click();
