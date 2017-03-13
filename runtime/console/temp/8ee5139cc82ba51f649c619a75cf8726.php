@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:60:"E:\phpStudy\WWW\app\console\user\view\privilege\adduser.html";i:1489393301;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489392067;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:60:"E:\phpStudy\WWW\app\console\user\view\privilege\adduser.html";i:1489410305;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489392067;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -47,7 +47,9 @@
         <div class="col-sm-12">
             <div class="ibox">
                 <div class="ibox-title">
-                    <form class="form-horizontal m-t" onsubmit="return false;" method="post" id="userForm">
+                    <form class="form-horizontal m-t" onsubmit="return false;" method="post" id="roleForm">
+                        <input type="hidden" name="user_id" id="user_id" value="">
+                        <input type="hidden" name="role_code" value="<?php echo $role['role_code']; ?>">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">当前角色：</label>
                             <p class="form-control-static"><?php echo $role['role_name']; ?></p>
@@ -57,12 +59,15 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">会员：</label>
                             <div class="col-sm-10">
-                                <table id="exampleTablePagination" data-toggle="table">
+                                <table id="exampleTablePagination" data-search="true" data-click-to-select="true"
+                                       data-side-pagination="client" data-pagination="true" data-toggle="table"
+                                       data-striped="true" data-sort-stable="true"
+                                       data-url="<?php echo Url('user/privilege/userList'); ?>">
                                     <thead>
                                     <tr>
                                         <th data-field="state" data-checkbox="true"></th>
                                         <th data-field="id">ID</th>
-                                        <th data-field="name">名称</th>
+                                        <th data-field="user_name">帐号</th>
                                     </tr>
                                     </thead>
                                 </table>
@@ -71,7 +76,7 @@
 
                         <div class="form-group has-error">
                             <div class="col-sm-4 col-sm-offset-2">
-                                <span id="server-error" class="help-block m-b-none hide"></span>
+                                <span id="server-error" class="help-block m-b-none"></span>
                             </div>
                         </div>
                         <div class="form-group">
@@ -98,68 +103,47 @@
 
 <script>
 
-    var menuForm = $("#userForm"),
-            submitBtn = $("#submit"),
-            serverError = $("#server-error"),
-            cancel = $("#cancel");
-    // 表单验证
-    $.validator.setDefaults({
-        highlight: function (element) {
-            $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+    $('#exampleTablePagination').bootstrapTable({
+        onCheck: function (element) {
+            var cur_user_id = element.id;
+            var user_id = $("#user_id").val();
+            if (user_id == '') {
+                $("#user_id").val(cur_user_id);
+            } else {
+                $("#user_id").val(user_id + ',' + cur_user_id);
+            }
         },
-        success: function (element) {
-            element.closest('.form-group').removeClass('has-error').addClass('has-success');
-        },
-        errorElement: "span",
-        errorClass: "help-block m-b-none",
-        validClass: ""
-    });
-    $().ready(function () {
+        onUncheck: function (element) {
+            var cur_user_id = element.id.toString();
+            var user_id = $("#user_id").val();
 
-        $('.i-checks').iCheck({
-            checkboxClass: 'icheckbox_square-green',
-            radioClass: 'iradio_square-green',
-        });
+            var user_id_arr = user_id.split(',');
+            user_id_arr.splice($.inArray(cur_user_id, user_id_arr), 1);
+            $("#user_id").val(user_id_arr.join());
+        },
+        onCheckAll: function (element) {
+            var user_id = '';
+            $.each(element, function (i, j) {
+                user_id += ',' + j.id;
+            })
+            $("#user_id").val(user_id.substr(1, user_id.length));
+        },
+        onUncheckAll: function (element) {
+            $("#user_id").val('');
+        }
+    })
+
+    var menuForm = $("#roleForm"),
+        submitBtn = $("#submit"),
+        serverError = $("#server-error"),
+        cancel = $("#cancel");
+
+    // 表单验证
+    $().ready(function () {
 
         var icon = "<i class='fa fa-times'></i> ";
         menuForm.validate({
             debug: true,
-            rules: {
-                user_name: {
-                    required: true,
-                    minlength: 2,
-                    maxlength: 10
-                },
-                password: {
-                    required: true,
-                    minlength: 5,
-                    maxlength: 20,
-                },
-                password_confirm: {
-                    required: true,
-                    minlength: 5,
-                    maxlength: 20,
-                    equalTo: "#password"
-                },
-            },
-            messages: {
-                user_name: {
-                    required: icon + "请输入会员帐号",
-                    minlength: icon + "用户名必须2个字符以上",
-                    maxlength: icon + "用户名必须10个字符以内"
-                },
-                password: {
-                    required: icon + "请输入密码",
-                    minlength: icon + "密码必须5个字符以上",
-                    maxlength: icon + "密码必须20个字符以内"
-                },
-                password_confirm: {
-                    required: icon + "请再次输入密码",
-                    minlength: icon + "密码必须5个字符以上",
-                    maxlength: icon + "密码必须10个字符以内",
-                    equalTo: icon + "两次输入密码不一致",
-                },
-            },
             submitHandler: function () {
                 // 禁用按钮
                 submitBtn.attr({
@@ -167,16 +151,23 @@
                 }).html("提交中...");
                 // 提交表单
                 $.ajax({
-                    url: "<?php echo Url('/user/lists/addsave','',false, true); ?>",
+                    url: "<?php echo Url('/user/privilege/save','',false, true); ?>",
                     type: "post",
                     dataType: "json",
                     data: menuForm.serialize(),
+                    beforeSend:function(){
+                        var user_id = $("#user_id").val();
+                        if(user_id == ''){
+                            serverError.show().html(icon + "必须选择会员");
+                            submitBtn.removeAttr("disabled").html("提交");
+                            return false;
+                        }
+                    },
                     success: function (data) {
                         if (data.code === 0) {
                             self.location = document.referrer;
                         } else {
-                            console.log("错误码：" + data.code);
-                            serverError.removeClass('hide').html(icon + data.msg);
+                            serverError.show().html(icon + data.msg);
                         }
                     },
                     complete: function () {
@@ -184,7 +175,7 @@
                         submitBtn.removeAttr("disabled").html("提交");
                     },
                     error: function () {
-                        serverError.removeClass('hide').html(icon + "网络错误，请检查网络后重试");
+                        serverError.show().html(icon + "网络错误，请检查网络后重试");
                     }
                 });
             }

@@ -11,15 +11,16 @@ use think\Validate;
 class Privilege extends Validate
 {
     protected $rule = [
-        'roleid' => 'require|number',
+        'role_code' => 'require',
+        'user_id' => 'require',
     ];
 
     protected $message = [
-        'roleid.require' => 'id必须',
-        'roleid.number' => 'id类型不正确',
+        'role_code.require'=>'角色编码必须',
+        'user_id.require'=>'会员编号必须',
     ];
 
     protected $scene = [
-        'add' => ['role_id'], // 创建
+        'save' => ['role_code','user_id'], // 保存
     ];
 }

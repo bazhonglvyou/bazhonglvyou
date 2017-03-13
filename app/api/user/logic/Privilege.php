@@ -30,7 +30,7 @@ class Privilege
      */
     public function addUser($data)
     {
-        $pri = Db::name('user_role')->insertGetId($data);
+        $pri = Db::name('user_role')->insertAll($data);
         return $pri;
     }
 
