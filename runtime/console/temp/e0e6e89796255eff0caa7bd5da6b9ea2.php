@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpStudy\WWW\app\console\user\view\privilege\lists.html";i:1489390118;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489392067;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpStudy\WWW\app\console\user\view\privilege\lists.html";i:1489478725;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489478184;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -24,6 +24,7 @@
     <link href="/static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
     <link href="/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
     <link href="/static/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="/static/css/plugins/treeview/bootstrap-treeview.css" rel="stylesheet">
 </head>
 
 
@@ -39,7 +40,7 @@
                 权限管理
             </li>
             <li>
-                角色列表
+                权限列表
             </li>
         </ol>
     </div>
@@ -50,37 +51,39 @@
                     <div class="row">
                         <div class="col-sm-6 m-b-xs">
                             <div class="input-group">
-                                <div class="btn-group">
-                                    <a href="" class="btn btn-primary"><i class="fa fa-plus"></i>添加角色</a>
-                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                         </div>
                     </div>
                     <div class="table-responsive">
-                        <table class="table table-striped table-bordered table-hover">
-                            <thead>
-                            <tr>
-                                <th>角色编号</th>
-                                <th>角色名称</th>
-                                <th>操作</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php if(is_array($role) || $role instanceof \think\Collection || $role instanceof \think\Paginator): $i = 0; $__LIST__ = $role;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-                            <tr>
-                                <td><?php echo $v['role_id']; ?></td>
-                                <td><?php echo $v['role_name']; ?></td>
-                                <td>
-                                    <a href="<?php echo Url('user/privilege/adduser',['roleid'=>$v['role_id']],false,true); ?>" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="为角色添加用户">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <?php endforeach; endif; else: echo "" ;endif; ?>
-                            </tbody>
-                        </table>
+                        <div class="col-sm-4">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>自定义图标</h5>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="buttons.html#">选项1</a>
+                                            </li>
+                                            <li><a href="buttons.html#">选项2</a>
+                                            </li>
+                                        </ul>
+                                        <a class="close-link">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div id="treeview5" class="test"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,14 +94,74 @@
 <script src="/static/js/jquery.min.js?v=2.1.4"></script>
 <script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
 <!-- Data Tables -->
-<script src="/static/js/plugins/dataTables/jquery.dataTables.js"></script>
-<script src="/static/js/plugins/dataTables/dataTables.bootstrap.js"></script>
-<!-- layer javascript -->
-<script src="/static/js/plugins/layer/layer.min.js"></script>
+<script src="/static/js/plugins/treeview/bootstrap-treeview.js"></script>
 <script>
-    $('.ibox-content').tooltip({
-        selector: "[data-toggle=tooltip]",
-        container: "body"
+    $(function () {
+
+        $('.ibox-content').tooltip({
+            selector: "[data-toggle=tooltip]",
+            container: "body"
+        });
+
+
+        var defaultData = [
+            {
+                text: '父节点 1',
+                href: '#parent1',
+                tags: ['4'],
+                nodes: [
+                    {
+                        text: '子节点 1',
+                        href: '#child1',
+                        tags: ['2'],
+                        nodes: [
+                            {
+                                text: '孙子节点 1',
+                                href: '#grandchild1',
+                                tags: ['0']
+                            },
+                            {
+                                text: '孙子节点 2',
+                                href: '#grandchild2',
+                                tags: ['0']
+                            }
+                        ]
+                    },
+                    {
+                        text: '子节点 2',
+                        href: '#child2',
+                        tags: ['0']
+                    }
+                ]
+            },
+            {
+                text: '父节点 2',
+                href: '#parent2',
+                tags: ['0']
+            },
+            {
+                text: '父节点 3',
+                href: '#parent3',
+                tags: ['0']
+            },
+            {
+                text: '父节点 4',
+                href: '#parent4',
+                tags: ['0']
+            },
+            {
+                text: '父节点 5',
+                href: '#parent5',
+                tags: ['0']
+            }
+        ];
+
+        $('#treeview5').treeview({
+            multiSelect:true,
+            showCheckbox:true,
+            data: defaultData,
+        });
+
     });
 </script>
 </body>

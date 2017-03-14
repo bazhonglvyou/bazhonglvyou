@@ -1,4 +1,31 @@
-{include file="../../common/view/header" /}
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:51:"E:\phpStudy\WWW\app\console\user\view\role\add.html";i:1489477166;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489392067;}*/ ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>TIGER·商户中心</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/static/css/bootstrap.min.css?v=3.3.8" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css?v=4.1.1" rel="stylesheet">
+    <link href="/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/static/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="/static/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="/static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="/static/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+</head>
+
 
 <body class="gray-bg">
 <div class="wrapper wrapper-content">
@@ -22,11 +49,11 @@
                 <div class="ibox-title">
                     <form class="form-horizontal m-t" onsubmit="return false;" method="post" id="roleForm">
                         <input type="hidden" name="user_id" id="user_id" value="">
-                        <input type="hidden" name="role_code" value="{$role.role_code}">
+                        <input type="hidden" name="role_code" value="<?php echo $role['role_code']; ?>">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">当前角色：</label>
-                            <p class="form-control-static">{$role.role_name}</p>
-                            <input type="hidden" name="role_code" value="{$role.role_code}">
+                            <p class="form-control-static"><?php echo $role['role_name']; ?></p>
+                            <input type="hidden" name="role_code" value="<?php echo $role['role_code']; ?>">
                         </div>
 
                         <div class="form-group">
@@ -35,7 +62,7 @@
                                 <table id="exampleTablePagination" data-search="true" data-click-to-select="true"
                                        data-side-pagination="client" data-pagination="true" data-toggle="table"
                                        data-striped="true" data-sort-stable="true"
-                                       data-url="{:Url('user/privilege/userList')}">
+                                       data-url="<?php echo Url('user/role/userList'); ?>">
                                     <thead>
                                     <tr>
                                         <th data-field="state" data-checkbox="true"></th>
@@ -124,7 +151,7 @@
                 }).html("提交中...");
                 // 提交表单
                 $.ajax({
-                    url: "{:Url('/user/privilege/save','',false, true)}",
+                    url: "<?php echo Url('/user/privilege/save','',false, true); ?>",
                     type: "post",
                     dataType: "json",
                     data: menuForm.serialize(),

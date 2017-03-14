@@ -45,6 +45,10 @@ class Menu extends Base
      */
     public function create()
     {
+
+        $request = Request::instance();
+        $parentId = $request->get('parentid', 0, 'trim');
+
         // 获取数据
         $menu = new menuApi();
         $fields = 'id,name,listorder,parent_id,status';
@@ -56,10 +60,18 @@ class Menu extends Base
 
         //获取一级菜单
         $parentMenu = $menu->getParentMenu();
-        $this->assign('parentMenu', $parentMenu);
+        $this->assign('parentMenu', json_encode($parentMenu));
+
+        //一级菜单显示图标选择
+        foreach ($parentMenu as $item) {
+            $id[] = $item['id'];
+        }
+        if (in_array($parentId, $id)) {
+            $this->assign('showIcon', 1);
+        }
 
         // 生成树形DOM
-        $categorys = $menu->getSelectDom($result);
+        $categorys = $menu->getSelectDom($result, $parentId);
 
         // 模板赋值
         $this->assign('categorys', $categorys);
@@ -144,7 +156,7 @@ class Menu extends Base
 
         //获取一级菜单
         $parentMenu = $menu->getParentMenu();
-        $this->assign('parentMenu', $parentMenu);
+        $this->assign('parentMenu', json_encode($parentMenu));
 
         return $this->fetch();
     }

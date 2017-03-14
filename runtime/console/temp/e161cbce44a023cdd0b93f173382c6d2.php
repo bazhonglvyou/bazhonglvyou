@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"E:\phpStudy\WWW\app\console\menu\view\menu\create.html";i:1489127493;s:67:"E:\phpStudy\WWW\app\console\menu\view\..\..\common\view\header.html";i:1489043266;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:54:"E:\phpStudy\WWW\app\console\menu\view\menu\create.html";i:1489475831;s:67:"E:\phpStudy\WWW\app\console\menu\view\..\..\common\view\header.html";i:1489392067;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -22,6 +22,7 @@
     <link href="/static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
     <link href="/static/css/plugins/summernote/summernote.css" rel="stylesheet">
     <link href="/static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
     <link href="/static/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
 </head>
 
@@ -59,10 +60,10 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group hide">
+                        <div class="form-group <?php if(empty($showIcon) || (($showIcon instanceof \think\Collection || $showIcon instanceof \think\Paginator ) && $showIcon->isEmpty())): ?> hide <?php endif; ?>">
                             <label class="col-sm-2 control-label">菜单图标：</label>
                             <div class="col-sm-4">
-                                <input type="hidden" name="icon" id="icon" value="check">
+                                <input type="hidden" name="icon" id="icon" value="">
                                 <button data-toggle="tooltip" data-placement="top" data-original-title="点击选择图标"
                                         class="btn btn-primary btn-ico" type="button"><i class="fa fa-check"></i>
                                 </button>

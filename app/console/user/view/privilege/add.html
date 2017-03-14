@@ -1,0 +1,66 @@
+{include file="../../common/view/header" /}
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content">
+    <div class="col-sm-12">
+        <h3 class="pull-left">为角色添加权限</h3>
+        <ol class="breadcrumb pull-right">
+            <li>
+                <a href="index.html"><i class="fa fa-dashboard"></i> 管理中心</a>
+            </li>
+            <li>
+                权限管理
+            </li>
+            <li>
+                为角色添加权限
+            </li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <form class="form-horizontal m-t" onsubmit="return false;" method="post" id="roleForm">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">当前角色：</label>
+                            <p class="form-control-static"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">会员：</label>
+                            <div class="col-sm-10">
+                            </div>
+                        </div>
+
+                        <div class="form-group has-error">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <span id="server-error" class="help-block m-b-none"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-primary" type="submit" id="submit">提交</button>
+                                <button class="btn btn-white" type="button" id="cancel">取 消</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 全局js -->
+<script src="/static/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
+<!-- jQuery Validation plugin javascript-->
+<script src="/static/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="/static/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="/static/js/plugins/iCheck/icheck.min.js"></script>
+<script src="/static/js/plugins/validate/jquery.validate.min.js"></script>
+
+<script>
+</script>
+</body>
+
+</html>

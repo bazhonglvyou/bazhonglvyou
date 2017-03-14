@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:52:"E:\phpStudy\WWW\app\console\menu\view\menu\edit.html";i:1489063336;s:67:"E:\phpStudy\WWW\app\console\menu\view\..\..\common\view\header.html";i:1489043266;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:52:"E:\phpStudy\WWW\app\console\menu\view\menu\edit.html";i:1489476394;s:67:"E:\phpStudy\WWW\app\console\menu\view\..\..\common\view\header.html";i:1489392067;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -22,6 +22,7 @@
     <link href="/static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
     <link href="/static/css/plugins/summernote/summernote.css" rel="stylesheet">
     <link href="/static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
     <link href="/static/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
 </head>
 
@@ -339,6 +340,16 @@
 
                         <div class="fa-hover col-md-2 col-sm-4"><a href="#circle"><i class="fa fa-circle"></i></a></div>
 
+                        <div class="fa-hover col-md-2 col-sm-4"><a href="#users"><i class="fa fa-group"></i></a></div>
+
+                        <div class="fa-hover col-md-2 col-sm-4"><a href="#user"><i class="fa fa-user"></i></a></div>
+
+                        <div class="fa-hover col-md-2 col-sm-4"><a href="#unlock-alt"><i class="fa fa-unlock-alt"></i></a></div>
+
+                        <div class="fa-hover col-md-2 col-sm-4"><a href="#ticket"><i class="fa fa-ticket"></i></a></div>
+
+                        <div class="fa-hover col-md-2 col-sm-4"><a href="#cog"><i class="fa fa-cog"></i></a></div>
+
                     </div>
                 </div>
             </div>
@@ -366,11 +377,13 @@
             if ($.inArray(parseInt($(this).val()), childMenuId) >= 0) {
                 //图标显示
                 $(".btn-ico").closest('.form-group').removeClass('hide');
+                //设置默认图标
+                $("#icon").val('check');
             } else {
                 //图标隐藏
                 $(".btn-ico").closest('.form-group').addClass('hide');
-                //设为默认图标
-                $("#icon").val('check');
+                //设置默认图标
+                $("#icon").val('');
                 $(".btn-ico").children('i').attr('class', 'fa fa-check');
             }
         })

@@ -177,7 +177,7 @@ class Menu
     public function getParentMenu()
     {
         $result = Db::name('menu')->field('id')->where('parent_id', 0)->select();
-        return json_encode($result);
+        return $result;
     }
 
     /**
