@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"E:\phpStudy\WWW\app\console\user\view\role\lists.html";i:1489478129;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489478184;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"E:\phpStudy\WWW\app\console\user\view\role\lists.html";i:1489478255;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489498073;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
-    <title>TIGER·商户中心</title>
+    <title>飞猫旅行·管理中心</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <!--[if lt IE 9]>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpStudy\WWW\app\console\user\view\privilege\lists.html";i:1489478725;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489478184;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpStudy\WWW\app\console\user\view\privilege\lists.html";i:1489564438;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489498073;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
-    <title>TIGER·商户中心</title>
+    <title>飞猫旅行·管理中心</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <!--[if lt IE 9]>
@@ -51,36 +51,43 @@
                     <div class="row">
                         <div class="col-sm-6 m-b-xs">
                             <div class="input-group">
+                                <div class="btn-group">
+                                    <a href="javascript:history.go(-1)" class="btn btn-primary"><i
+                                            class="fa fa-reply"></i> 返回上一页</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                         </div>
                     </div>
                     <div class="table-responsive">
-                        <div class="col-sm-4">
+                        <div class="col-sm-12">
                             <div class="ibox float-e-margins">
-                                <div class="ibox-title">
-                                    <h5>自定义图标</h5>
-                                    <div class="ibox-tools">
-                                        <a class="collapse-link">
-                                            <i class="fa fa-chevron-up"></i>
-                                        </a>
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#">
-                                            <i class="fa fa-wrench"></i>
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-user">
-                                            <li><a href="buttons.html#">选项1</a>
-                                            </li>
-                                            <li><a href="buttons.html#">选项2</a>
-                                            </li>
-                                        </ul>
-                                        <a class="close-link">
-                                            <i class="fa fa-times"></i>
-                                        </a>
-                                    </div>
-                                </div>
                                 <div class="ibox-content">
-                                    <div id="treeview5" class="test"></div>
+                                    <div class="form-group">
+                                        <table class="table table-striped table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10%" class="text-center"><input type="checkbox" class="i-checks"></th>
+                                                    <th width="59%">菜单名称</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php echo $list; ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="form-group has-error">
+                                        <div class="col-sm-6 col-sm-offset-4">
+                                            <span id="server-error" class="help-block m-b-none"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-6 col-sm-offset-4">
+                                            <button class="btn btn-primary" type="submit" id="submit">提交</button>
+                                            <button class="btn btn-white" type="button" id="cancel">取 消</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -93,75 +100,12 @@
 <!-- 全局js -->
 <script src="/static/js/jquery.min.js?v=2.1.4"></script>
 <script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
-<!-- Data Tables -->
-<script src="/static/js/plugins/treeview/bootstrap-treeview.js"></script>
+<script src="/static/js/plugins/iCheck/icheck.min.js"></script>
 <script>
-    $(function () {
-
-        $('.ibox-content').tooltip({
-            selector: "[data-toggle=tooltip]",
-            container: "body"
-        });
-
-
-        var defaultData = [
-            {
-                text: '父节点 1',
-                href: '#parent1',
-                tags: ['4'],
-                nodes: [
-                    {
-                        text: '子节点 1',
-                        href: '#child1',
-                        tags: ['2'],
-                        nodes: [
-                            {
-                                text: '孙子节点 1',
-                                href: '#grandchild1',
-                                tags: ['0']
-                            },
-                            {
-                                text: '孙子节点 2',
-                                href: '#grandchild2',
-                                tags: ['0']
-                            }
-                        ]
-                    },
-                    {
-                        text: '子节点 2',
-                        href: '#child2',
-                        tags: ['0']
-                    }
-                ]
-            },
-            {
-                text: '父节点 2',
-                href: '#parent2',
-                tags: ['0']
-            },
-            {
-                text: '父节点 3',
-                href: '#parent3',
-                tags: ['0']
-            },
-            {
-                text: '父节点 4',
-                href: '#parent4',
-                tags: ['0']
-            },
-            {
-                text: '父节点 5',
-                href: '#parent5',
-                tags: ['0']
-            }
-        ];
-
-        $('#treeview5').treeview({
-            multiSelect:true,
-            showCheckbox:true,
-            data: defaultData,
-        });
-
+    //复选框按钮样式
+    $('.i-checks').iCheck({
+        checkboxClass: 'icheckbox_square-green',
+        radioClass: 'iradio_square-green',
     });
 </script>
 </body>

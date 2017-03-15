@@ -3,9 +3,8 @@
 namespace app\console\user\controller;
 
 use app\api\common\controller\Base;
+use app\api\menu\logic\Menu as menuApi;
 use app\api\user\logic\Privilege as privilegeApi;
-use app\api\user\validate\Privilege as priviliegeValidate;
-use app\api\user\logic\Lists as userList;
 use think\Request;
 
 /**
@@ -34,6 +33,19 @@ class Privilege extends Base
      */
     public function lists()
     {
+        $menu = new menuApi();
+        $fields = 'id,name,listorder,icon,parent_id,status';
+        $map = [
+            'status' => ['in', '1,2'],
+        ];
+        $order = 'listorder desc';
+        $result = $menu->getList($fields, $map, $order);
+
+        // 生成树形DOM
+        $pri = new privilegeApi();
+        $list = $pri->getTableDom($result);
+        $this->assign('list', $list);
+
         return $this->fetch();
     }
 }

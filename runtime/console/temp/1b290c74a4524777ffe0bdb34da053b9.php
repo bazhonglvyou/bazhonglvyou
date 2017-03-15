@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"E:\phpStudy\WWW\app\console\menu\view\menu\index.html";i:1489064601;s:67:"E:\phpStudy\WWW\app\console\menu\view\..\..\common\view\header.html";i:1489392067;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"E:\phpStudy\WWW\app\console\menu\view\menu\index.html";i:1489064601;s:67:"E:\phpStudy\WWW\app\console\menu\view\..\..\common\view\header.html";i:1489498073;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
-    <title>TIGER·商户中心</title>
+    <title>飞猫旅行·管理中心</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <!--[if lt IE 9]>
@@ -24,6 +24,7 @@
     <link href="/static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
     <link href="/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
     <link href="/static/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="/static/css/plugins/treeview/bootstrap-treeview.css" rel="stylesheet">
 </head>
 
 
