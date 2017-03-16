@@ -147,6 +147,7 @@ class Menu
     {
         // 补全数据
         $info['create_time'] = date('Y-m-d H:i:s');
+        $info['code'] = strtoupper($info['module'] . ($info['controller'] ? '_' . $info['controller'] : '') . ($info['action'] ? '_' . $info['action'] : ''));
 
         // 保存菜单信息
         $insertNum = Db::name('menu')->insert($info);
@@ -193,6 +194,7 @@ class Menu
     {
         // 补全数据
         $info['update_time'] = date('Y-m-d H:i:s');
+        $info['code'] = strtoupper($info['module'] . ($info['controller'] ? '_' . $info['controller'] : '') . ($info['action'] ? '_' . $info['action'] : ''));
 
         // 保存菜单信息
         return Db::name('Menu')->where($map)->update($info);

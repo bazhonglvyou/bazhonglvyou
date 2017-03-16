@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"E:\phpStudy\WWW\app\console\user\view\role\lists.html";i:1489478255;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489498073;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:53:"E:\phpStudy\WWW\app\console\user\view\role\lists.html";i:1489649883;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489498073;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -80,7 +80,7 @@
                                     <a href="<?php echo Url('user/role/look',['roleid'=>$v['role_id']],false,true); ?>" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="查看角色具有的用户">
                                         <i class="fa fa-search"></i>
                                     </a>
-                                    <a href="<?php echo Url('user/privilege/lists',['roleid'=>$v['role_id']],false,true); ?>" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="添加角色权限">
+                                    <a href="<?php echo Url('user/privilege/lists',['roleid'=>$v['role_id']],false,true); ?>" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="管理角色权限">
                                         <i class="fa fa-unlock-alt"></i>
                                     </a>
                                 </td>

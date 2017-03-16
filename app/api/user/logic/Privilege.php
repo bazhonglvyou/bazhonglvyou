@@ -19,7 +19,7 @@ class Privilege
      * @param    array $result 数据集
      * @return   mixed               表格DOM结构
      */
-    public function getTableDom($result = [])
+    public function getTableDom($result = [], $selectCode = 'SYSTEM')
     {
         if (empty($result)) {
             return false;
@@ -30,7 +30,7 @@ class Privilege
 
         $htmlDom = "<tr>
                         <td class='text-center'>
-                            <input type='checkbox' name='id[\$id]' value='\$listorder' class='i-checks'>
+                            <input type='checkbox' name='code[]' value='\$code' class='i-checks'>
                         </td>
                         <td>
                             \$spacer &nbsp;\$name
@@ -38,5 +38,30 @@ class Privilege
                     </tr>";
         $tree->init($result);
         return $tree->get_tree(0, $htmlDom);
+    }
+
+    /**
+     * 保存选择的权限
+     * @author:yanghuna
+     * @datetime:2017/3/16 14:15
+     */
+    public function save($data)
+    {
+        Db::startTrans();
+        $map = [];
+        foreach ($data['code'] as $key => $item) {
+            $map[$key]['role_code'] = $data['role_code'];
+            $map[$key]['pri_code'] = $item;
+        }
+
+        Db::name('user_privilege')->where('role_code', $data['role_code'])->delete();
+
+        $result = Db::name('user_privilege')->insertAll($map);
+        if ($result) {
+            Db::commit();
+            return $result;
+        }
+        Db::rollback();
+        return false;
     }
 }

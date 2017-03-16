@@ -54,7 +54,7 @@ class Role
     public function look($roleCode)
     {
         $userInfo = [];
-        $userId = Db::name('user_role')->field('ur_id,user_id')->where('role_code', $roleCode)->where('status',0)->select();
+        $userId = Db::name('user_role')->field('ur_id,user_id')->where('role_code', $roleCode)->where('status', 0)->select();
         if ($userId) {
             foreach ($userId as $key => $ur) {
                 $userInfo[$key]['ur_id'] = $ur['ur_id'];
@@ -75,5 +75,17 @@ class Role
     public function del($urId)
     {
         return Db::name('user_role')->where('ur_id', $urId)->setField('status', 1);
+    }
+
+    /**
+     * 查询角色权限
+     * @author:yanghuna
+     * @datetime:2017/3/16 15:13
+     * @param $roleCode 角色编码
+     */
+    public function queryRolePrivilege($roleCode)
+    {
+        $result = Db::name('user_privilege')->where('role_code', $roleCode)->select();
+        return $result ? $result : false;
     }
 }

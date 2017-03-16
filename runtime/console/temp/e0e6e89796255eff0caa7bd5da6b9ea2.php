@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpStudy\WWW\app\console\user\view\privilege\lists.html";i:1489564438;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489498073;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpStudy\WWW\app\console\user\view\privilege\lists.html";i:1489650498;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489498073;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -67,13 +67,15 @@
                                     <div class="form-group">
                                         <table class="table table-striped table-bordered table-hover">
                                             <thead>
-                                                <tr>
-                                                    <th width="10%" class="text-center"><input type="checkbox" class="i-checks"></th>
-                                                    <th width="59%">菜单名称</th>
-                                                </tr>
+                                            <tr>
+                                                <th width="10%" class="text-center"><input type="checkbox"
+                                                                                           class="i-checks checkAll">
+                                                </th>
+                                                <th width="59%">菜单名称</th>
+                                            </tr>
                                             </thead>
-                                            <tbody>
-                                                <?php echo $list; ?>
+                                            <tbody class="pri">
+                                            <?php echo $list; ?>
                                             </tbody>
                                         </table>
                                     </div>
@@ -84,7 +86,9 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-6 col-sm-offset-4">
-                                            <button class="btn btn-primary" type="submit" id="submit">提交</button>
+                                            <button class="btn btn-primary" data-rolecode="<?php echo $rolecode; ?>" type="submit"
+                                                    id="submit">提交
+                                            </button>
                                             <button class="btn btn-white" type="button" id="cancel">取 消</button>
                                         </div>
                                     </div>
@@ -102,11 +106,95 @@
 <script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
 <script src="/static/js/plugins/iCheck/icheck.min.js"></script>
 <script>
-    //复选框按钮样式
-    $('.i-checks').iCheck({
-        checkboxClass: 'icheckbox_square-green',
-        radioClass: 'iradio_square-green',
-    });
+
+    $(function () {
+
+        //复选框按钮样式
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+        });
+
+        //全选权限
+        $('.checkAll').on('ifChecked ifUnchecked', function (event) {
+            var checkbox = $('.pri').find('input[type="checkbox"]');
+            $.each(checkbox, function (i, j) {
+                event.type == 'ifChecked' ? $(j).iCheck('check') : $(j).iCheck('uncheck');
+            })
+        });
+
+        //添加权限
+        $("#submit").bind('click', function () {
+            var code = [],
+                cover = $("input[name='code[]']"),
+                error = $("#serverError"),
+                submit = $(this),
+                rolecode = submit.data('rolecode'),
+                icon = '<i class="fa fa-times"></i>';
+            if (cover.length > 0) {
+                $.each(cover, function (i, j) {
+                    if ($(j).is(':checked')) {
+                        code.push($(j).val());
+                    }
+                })
+                if (code.length > 0) {
+                    $.ajax({
+                        method: 'POST',
+                        url: '<?php echo Url("user/privilege/save","",false,true); ?>',
+                        data: {code: code, rolecode: rolecode},
+                        dataType: 'json',
+                        beforeSend: function () {
+                            submit.attr('disabled', "disabled").html('保存中...');
+                        },
+                        success: function (data) {
+                            if (data.code === 0) {
+                                self.location = document.referrer;
+                            } else {
+                                error.show().html(icon + data.msg);
+                            }
+                        },
+                        complete: function (XMLHttpRequest, status) {
+                            if (status == 'timeout') {
+                                error.show().html(icon + '请求超时，请重试');
+                            }
+                            submit.removeAttr('disabled').html('保存');
+                        },
+                        error: function () {
+                            error.show().html(icon + '网络错误，请重试');
+                            submit.removeAttr("disabled").html('保存');
+                        }
+
+                    })
+                }
+            } else {
+                error.show().html(icon + '请选择权限');
+            }
+        })
+
+        //渲染角色已有权限
+        var cover = $("input[name='code[]']"),
+            pri = <?php echo $roleprivilege; ?>;
+            $.each(pri, function (i, j) {
+            $(j).each(function (k, v) {
+                $.each(cover, function (m, n) {
+                    if ($(n).val() == v.pri_code) {
+                        $(n).iCheck('check');
+                    }
+                })
+            })
+        })
+
+        var flag = false;
+        $.each(cover, function (i, j) {
+            if (!$(j).is(':checked')) {
+                flag = true;
+                return false;
+            }
+        })
+        if (!flag) {
+            $(".checkAll").iCheck('check');
+        }
+    })
 </script>
 </body>
 
