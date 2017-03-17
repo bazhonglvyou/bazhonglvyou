@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpStudy\WWW\app\console\user\view\privilege\lists.html";i:1489650498;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489498073;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:58:"E:\phpStudy\WWW\app\console\user\view\privilege\lists.html";i:1489650710;s:67:"E:\phpStudy\WWW\app\console\user\view\..\..\common\view\header.html";i:1489498073;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -184,6 +184,7 @@
             })
         })
 
+        //查询权限是否全选
         var flag = false;
         $.each(cover, function (i, j) {
             if (!$(j).is(':checked')) {
@@ -191,6 +192,8 @@
                 return false;
             }
         })
+
+        //权限全选时，顶部全选复选框处于选中状态
         if (!flag) {
             $(".checkAll").iCheck('check');
         }

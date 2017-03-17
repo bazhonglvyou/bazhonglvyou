@@ -13,7 +13,7 @@ class Menu extends Validate
     protected $rule = [
         'id' => 'number',
         'parent' => 'number',
-        'name' => 'require|length:2,12',
+        'name' => 'require|length:6,12',
         'module' => 'require|alpha',
         'controller' => 'alpha',
         'action' => 'alpha',
@@ -24,7 +24,7 @@ class Menu extends Validate
         'id.number' => '缺少ID',
         'parent.number' => '上级菜单必填',
         'name.require' => '菜单名称必填',
-        'name.length' => '菜单名称2-10个字',
+        'name.length' => '菜单名称2-4个字',
         'module.require' => '模块名字必填',
         'module.alpha' => '模块名字必须为英文字符',
         'controller.alpha' => '控制器名字必须为英文字符',

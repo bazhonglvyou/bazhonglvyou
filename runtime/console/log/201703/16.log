@@ -6544,3 +6544,323 @@
 [ sql ] [ SQL ] SELECT * FROM `fm_role` [ RunTime:0.180010s ]
 
 ---------------------------------------------------------------
+[ 2017-03-16T16:36:26+08:00 ] ::1 ::1 GET /console.php
+[ log ] localhost/console.php [运行时间：0.554031s][吞吐率：1.80req/s] [内存消耗：2,127.43kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3903326208; PHPSESSID=45hli49g1ugid015d13a14fvk1; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->index[ E:\phpStudy\WWW\app\console\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\console\index\view\index\index.html [ array (
+  0 => 'result',
+  1 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.194011s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.128008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status`,`module`,`controller`,`action`,`parameter` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.138008s ]
+
+---------------------------------------------------------------
+[ 2017-03-16T16:36:26+08:00 ] ::1 ::1 GET /console.php/index/index/main
+[ log ] localhost/console.php/index/index/main [运行时间：0.049002s][吞吐率：20.41req/s] [内存消耗：1,356.21kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; PHPSESSID=45hli49g1ugid015d13a14fvk1; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->main[ E:\phpStudy\WWW\app\console\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\console\index\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T16:36:35+08:00 ] ::1 ::1 GET /console.php/user/role/lists
+[ log ] localhost/console.php/user/role/lists [运行时间：0.563032s][吞吐率：1.78req/s] [内存消耗：2,087.18kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'role',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/console.php',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; PHPSESSID=45hli49g1ugid015d13a14fvk1; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Role->lists[ E:\phpStudy\WWW\app\console\user\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\console\user\view\role\lists.html [ array (
+  0 => 'role',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.202012s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_role` [ RunTime:0.130007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_role` [ RunTime:0.131008s ]
+
+---------------------------------------------------------------
+[ 2017-03-16T16:36:38+08:00 ] ::1 ::1 GET /console.php/user/privilege/lists?roleid=1
+[ log ] localhost/console.php/user/privilege/lists?roleid=1 [运行时间：1.181068s][吞吐率：0.85req/s] [内存消耗：2,348.21kb] [文件加载：50]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'privilege',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/console.php/user/role/lists',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; PHPSESSID=45hli49g1ugid015d13a14fvk1; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'roleid' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Privilege->lists[ E:\phpStudy\WWW\app\console\user\controller\Privilege.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\console\user\view\privilege\lists.html [ array (
+  0 => 'rolecode',
+  1 => 'roleprivilege',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.196011s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_role` [ RunTime:0.135008s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_role` WHERE  `role_id` = 1 LIMIT 1 [ RunTime:0.140008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user_privilege` [ RunTime:0.196011s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user_privilege` WHERE  `role_code` = 'SYSTEMADMIN' [ RunTime:0.137008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.132008s ]
+[ sql ] [ SQL ] SELECT `id`,`code`,`name`,`listorder`,`icon`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.133008s ]
+
+---------------------------------------------------------------
+[ 2017-03-16T16:37:02+08:00 ] ::1 ::1 POST /console.php/user/privilege/save
+[ log ] localhost/console.php/user/privilege/save [运行时间：0.760044s][吞吐率：1.32req/s] [内存消耗：1,983.09kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'privilege',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '139',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/console.php/user/privilege/lists?roleid=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; PHPSESSID=45hli49g1ugid015d13a14fvk1; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'code' => 
+  array (
+    0 => 'MEMBER',
+    1 => 'USER',
+    2 => 'USER_ROLE_LISTS',
+    3 => 'MEMBER_MEMBER_LIST',
+    4 => 'USER_LISTS_INDEX',
+  ),
+  'rolecode' => 'SYSTEMADMIN',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Privilege->save[ E:\phpStudy\WWW\app\console\user\controller\Privilege.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.185011s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user_privilege` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] DELETE FROM `fm_user_privilege`    WHERE  `role_code` = 'SYSTEMADMIN' [ RunTime:0.121007s ]
+[ sql ] [ SQL ] INSERT INTO `fm_user_privilege` (`role_code` , `pri_code`) SELECT 'SYSTEMADMIN','MEMBER' UNION ALL SELECT 'SYSTEMADMIN','USER' UNION ALL SELECT 'SYSTEMADMIN','USER_ROLE_LISTS' UNION ALL SELECT 'SYSTEMADMIN','MEMBER_MEMBER_LIST' UNION ALL SELECT 'SYSTEMADMIN','USER_LISTS_INDEX' [ RunTime:0.120007s ]
+
+---------------------------------------------------------------
+[ 2017-03-16T16:37:03+08:00 ] ::1 ::1 GET /console.php/user/role/lists
+[ log ] localhost/console.php/user/role/lists [运行时间：0.561032s][吞吐率：1.78req/s] [内存消耗：2,087.26kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'role',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/console.php/user/privilege/lists?roleid=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; PHPSESSID=45hli49g1ugid015d13a14fvk1; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Role->lists[ E:\phpStudy\WWW\app\console\user\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\console\user\view\role\lists.html [ array (
+  0 => 'role',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.214012s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_role` [ RunTime:0.139008s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_role` [ RunTime:0.136008s ]
+
+---------------------------------------------------------------
+[ 2017-03-16T16:37:14+08:00 ] ::1 ::1 GET /console.php/user/privilege/lists?roleid=1
+[ log ] localhost/console.php/user/privilege/lists?roleid=1 [运行时间：1.186068s][吞吐率：0.84req/s] [内存消耗：2,190.60kb] [文件加载：48]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'privilege',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/console.php/user/role/lists',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; PHPSESSID=45hli49g1ugid015d13a14fvk1; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'roleid' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Privilege->lists[ E:\phpStudy\WWW\app\console\user\controller\Privilege.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\console\user\view\privilege\lists.html [ array (
+  0 => 'rolecode',
+  1 => 'roleprivilege',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.193011s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_role` [ RunTime:0.131008s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_role` WHERE  `role_id` = 1 LIMIT 1 [ RunTime:0.136007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user_privilege` [ RunTime:0.129007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user_privilege` WHERE  `role_code` = 'SYSTEMADMIN' [ RunTime:0.238014s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.133007s ]
+[ sql ] [ SQL ] SELECT `id`,`code`,`name`,`listorder`,`icon`,`parent_id`,`status` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.138007s ]
+
+---------------------------------------------------------------
