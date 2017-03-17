@@ -6,10 +6,10 @@
             <input class="upload_botton list_ye_head" id="create_ticket" type="submit" value="创建门票" >
             <input class="upload_botton list_ye_head" id="upload_ticket" type="submit" value="跟新" >
             <input class="upload_botton list_ye_head" id="delete_ticket" type="submit" value="删除" >
-            <input class="upload_botton list_ye_head"  type="submit" value="查看详情" >
+            <input class="upload_botton list_ye_head" id="select_ticket" type="submit" value="查看详情" >
             <input id="shousuo" type="search" placeholder="请输入关键字搜索" data-label="搜索框">
             <img id="u270_img" class="img " src="/static/img/u270.png" style=" width: 19px;height: 22px; margin-left: 10px;">
-            <span style="color:  #aaaaaa; cursor: pointer" id="select_ticket">搜索</span>
+            <span style="color: #aaaaaa;">搜索</span>
         </div>
         <div style="margin-left: 10px; margin-top: 6px;">
             <table class="ticket_table">
@@ -174,10 +174,7 @@
         });
         $('#select_ticket').click(
                 function(){
-                    var value = $('#shousuo').val();
-                    if(value){
-                        location.href = 'selectgong?value='+value;
-                    }
+                    location.href = '{:url("ticket/ticket/addticket")}';
                 }
         );
     </script>

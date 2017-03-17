@@ -1,4 +1,32 @@
-{include file="../../common/view/header" /}
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html";i:1489721138;s:73:"D:\WWW\bazhonglvyou\app\console\ticket\view\..\..\common\view\header.html";i:1489718237;}*/ ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>飞猫旅行·管理中心</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/static/css/bootstrap.min.css?v=3.3.8" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css?v=4.1.1" rel="stylesheet">
+    <link href="/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/static/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="/static/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="/static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="/static/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="/static/css/plugins/treeview/bootstrap-treeview.css" rel="stylesheet">
+</head>
+
 <link href="/static/css/tickt.css" rel="stylesheet" type="text/css">
 <body>
     <div class="">
@@ -47,28 +75,24 @@
                 <div style="margin-left: 300px;">
                     <!--分页开始-->
                     <?php if($page>=1) {?>
-                    <a href="{:url('ticket/ticket/lists',['page'=> 1])}" style="width: 50px;" class="jiantou">首页</a>
-                    <?php } ?>
-                    <?php if($page>1) {?>
-                    <a href="{:url('ticket/ticket/lists',['page'=> $page-1])}" class="jiantou"><</a>
+                    <a href="<?php echo url('ticket/ticket/lists',['page'=> 1]); ?>" style="width: 50px;" class="jiantou">首页</a>
+                    <?php } if($page>1) {?>
+                    <a href="<?php echo url('ticket/ticket/lists',['page'=> $page-1]); ?>" class="jiantou"><</a>
                     <?php } ?>
                     <span>
                         <?php for($i = $page-$ye+1;$i<$page;$i++) { if($i>0){ ?>
-                         <a href="{:url('ticket/ticket/lists',['page'=> $i])}" style="display: inline-block; height: 20px; cursor: pointer; width: 26px; line-height: 20px;text-align: center; color: #333333;"><?php echo $i?></a>
-                        <?php } ?>
-                        <?php } ?>
-                         <a href="{:url('ticket/ticket/lists',['page'=> $page])}" style="display: inline-block; height: 20px; background: #009DDA; cursor: pointer;width: 26px; line-height: 20px;text-align: center;color: #ffffff "><?php echo $page ?></a>
+                         <a href="<?php echo url('ticket/ticket/lists',['page'=> $i]); ?>" style="display: inline-block; height: 20px; cursor: pointer; width: 26px; line-height: 20px;text-align: center; color: #333333;"><?php echo $i?></a>
+                        <?php } } ?>
+                         <a href="<?php echo url('ticket/ticket/lists',['page'=> $page]); ?>" style="display: inline-block; height: 20px; background: #009DDA; cursor: pointer;width: 26px; line-height: 20px;text-align: center;color: #ffffff "><?php echo $page ?></a>
                         <?php for($i = $page+1;$i<$page+$ye;$i++) {
                             if($i<=$maxpage){ ?>
-                         <a href="{:url('ticket/ticket/lists',['page'=> $i])}" style="display: inline-block; height: 20px;cursor: pointer; width: 26px; line-height: 20px;text-align: center;color: #333333;"><?php echo $i?></a>
-                        <?php } ?>
-                        <?php } ?>
+                         <a href="<?php echo url('ticket/ticket/lists',['page'=> $i]); ?>" style="display: inline-block; height: 20px;cursor: pointer; width: 26px; line-height: 20px;text-align: center;color: #333333;"><?php echo $i?></a>
+                        <?php } } ?>
                     </span>
                     <?php if ($page<$maxpage) { ?>
-                        <a href="{:url('ticket/ticket/lists',['page'=> $page+1])}" class="jiantou">></a>
-                    <?php } ?>
-                    <?php if ($maxpage>1) {?>
-                    <a href="{:url('ticket/ticket/lists',['page'=> $maxpage])}" class="jiantou" style="width: 50px;">尾页</a>
+                        <a href="<?php echo url('ticket/ticket/lists',['page'=> $page+1]); ?>" class="jiantou">></a>
+                    <?php } if ($maxpage>1) {?>
+                    <a href="<?php echo url('ticket/ticket/lists',['page'=> $maxpage]); ?>" class="jiantou" style="width: 50px;">尾页</a>
                     <?php } ?>
                 </div>
             </div>
@@ -87,7 +111,7 @@
                 alert('你至少需要选择一个ticket');
             }
             else{
-                $.post('{:url("ticket/ticket/del")}',{'listid':idlist},function(reg) {
+                $.post('<?php echo url("ticket/ticket/del"); ?>',{'listid':idlist},function(reg) {
                     alert('删除成功');
                     window.location.reload()
                     /*$('.onecheck').each(function(){
@@ -152,7 +176,7 @@
     <script>
         $('#create_ticket').click(
                 function(){
-                    location.href = '{:url("ticket/ticket/addticket")}';
+                    location.href = '<?php echo url("ticket/ticket/addticket"); ?>';
                 }
         );
         $('#upload_ticket').click(function(){

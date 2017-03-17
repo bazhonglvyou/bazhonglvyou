@@ -1,0 +1,79 @@
+.p11{ width: 140px; float: left; font-size: 16px;    font-family: 'Arial Negreta', 'Arial';  font-weight: 700;  font-size: 16px;
+    text-align: center; height: 34px;margin: 0px; line-height:34px; text-align: center;  color:#333333; }
+.p22{ width: 600px; float: left; height: 34px; line-height: 34px;}
+.p22>input,select{  width: 250px;  height: 25px;font: 13.3333px Arial; color: #000000;}
+.div11{margin-top: 3px;}
+.clear{clear: both; height: 0px; width: 0px; margin: 0; padding: 0; overflow: hidden;}
+.upload_botton{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 25px;
+    vertical-align: middle;
+    background: rgb(218,216,215);
+}
+.text_area_type{
+    width: 405px;
+    height: 100px;
+    text-align: left;
+    font-family: 'Arial';
+    font-size: 13px;
+    color: #000000;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+.list_ye_head{
+    background:rgb(222,222,222);
+    margin-right: 20px;
+}
+#shousuo{
+    width: 210px;
+    height: 25px;
+    text-align: left;
+    font-family: 'Arial';
+    font-size: 13px;
+    color: #777777;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    border-color: transparent;
+    outline-style: none;
+    border: 1px #dddddd solid;
+    opacity: 1;
+}
+.ticket_table>tr>th{
+
+     color: #000000;
+ }
+.ticket_table>tr>td{
+    border: 1px #888888 solid;
+}
+.ticket_table>tr>th>span{
+    font-size: 14px;
+    color: #000000;
+}
+.td11{
+    background: #009dd9;
+    height: 84px;
+    width: 87px;
+}
+.jiantou{
+    font-family: 'Arial Negreta', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    color: #009DDA;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    width: 26px;
+    line-height: 20px;
+    text-align: center;
+}
