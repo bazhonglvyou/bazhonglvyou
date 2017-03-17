@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"D:\wamp\www\bazhonglvyou\app\console\login\view\login\index.html";i:1489758165;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -107,7 +108,7 @@
                     }).html("登录中...");
                     // 提交表单
                     $.ajax({
-                        url: "{:Url('/login/login/login','',false,true)}",
+                        url: "<?php echo Url('/login/login/login','',false,true); ?>",
                         type: "post",
                         dataType: "json",
                         data: loginForm.serialize(),

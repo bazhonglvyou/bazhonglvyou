@@ -1,9 +1,12 @@
 <?php
 namespace app\console\login\controller;
 
-use think\Controller;
+use app\api\login\validate\Login as loginValidate;
+use app\api\user\logic\User;
+use think\Db;
 use think\Request;
 use think\Session;
+use think\Controller;
 
 /**
  * 后台-登录类
@@ -16,12 +19,45 @@ class Login extends Controller
 {
     public function index()
     {
+        return $this->fetch();
+    }
+
+    /**
+     * 登录验证
+     * @author yanghuan
+     * @datetime 2017/3/17 21:06
+     */
+    public function login()
+    {
         $request = Request::instance();
         if ($request->isPost()) {
-            Session::set('adminUser', 1);
-            $this->redirect('/' . APP_NAME . EXT);
-        } else {
-            return $this->fetch();
+            $data['username'] = $request->post('username');
+            $data['password'] = $request->post('password');
+
+            $loginValidate = new loginValidate();
+            if (!$loginValidate->scene('login')->check($data)) {
+                return ['code' => 50000, 'msg' => $loginValidate->getError()];
+            }
+
+            $user = new User();
+            $userInfo = $user->userInfoByUserName($data['username']);
+            if ($userInfo) {
+
+                //目前只有超级管理员才能登录这里
+                if (!in_array($userInfo['type'],[0])) {
+                    return ['code' => 50003, 'msg' => '当前用户不能登录这里'];
+                }
+
+                $userName = $data['username'];
+                $password = md5($data['password'] . $userInfo['passalt']);
+                $result = $user->userInfoByPassword($userName, $password);
+                if ($result) {
+                    Session::set('adminUser', $userInfo);
+                    return ['code' => 0, 'url' => Url(DS, '', false, true)];
+                }
+                return ['code' => 50002, 'msg' => '用户名或密码不正确'];
+            }
+            return ['code' => 50001, 'msg' => '会员不存在'];
         }
     }
 }
