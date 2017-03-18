@@ -63,7 +63,7 @@ class Privilege extends Base
         $request = Request::instance();
         if ($request->isPost()) {
             $data['code'] = $request->post('code/a'); //权限编码
-            $data['role_code'] = $request->post('rolecode'); //角色编码
+            $data['role_code'] = $request->post('role_code'); //角色编码
 
             if ($data['code'] && $data['role_code']) {
                 $pri = new privilegeApi();

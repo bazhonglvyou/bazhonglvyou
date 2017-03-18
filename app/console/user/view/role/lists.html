@@ -24,7 +24,7 @@
                         <div class="col-sm-6 m-b-xs">
                             <div class="input-group">
                                 <div class="btn-group">
-                                    <a href="" class="btn btn-primary"><i class="fa fa-plus"></i>添加角色</a>
+                                    <a href="{:Url('user/role/addrole','',false,true)}" class="btn btn-primary"><i class="fa fa-plus"></i>添加角色</a>
                                 </div>
                             </div>
                         </div>
@@ -46,6 +46,9 @@
                                 <td>{$v.role_id}</td>
                                 <td>{$v.role_name}</td>
                                 <td>
+                                    <a href="{:Url('user/role/editrole',['roleid'=>$v.role_id],false,true)}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="修改角色">
+                                        <i class="fa fa-pencil"></i>
+                                    </a>
                                     <a href="{:Url('user/role/add',['roleid'=>$v.role_id],false,true)}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="为角色添加用户">
                                         <i class="fa fa-plus"></i>
                                     </a>
@@ -54,6 +57,9 @@
                                     </a>
                                     <a href="{:Url('user/privilege/lists',['roleid'=>$v.role_id],false,true)}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="管理角色权限">
                                         <i class="fa fa-unlock-alt"></i>
+                                    </a>
+                                    <a class="btn delete btn-warning btn-xs btn-circle" data-roleid="{$v.role_id}" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除角色">
+                                        <i class="fa fa-trash"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -75,10 +81,31 @@
 <!-- layer javascript -->
 <script src="/static/js/plugins/layer/layer.min.js"></script>
 <script>
-    $('.ibox-content').tooltip({
-        selector: "[data-toggle=tooltip]",
-        container: "body"
-    });
+    $(function(){
+        $('.ibox-content').tooltip({
+            selector: "[data-toggle=tooltip]",
+            container: "body"
+        });
+
+        // 删除
+        $('.delete').on('click', function () {
+            var roleid = $(this).data("roleid");
+            layer.confirm('确定删除该角色？', {
+                skin: 'layui-layer-molv',
+                icon: 3,
+                shadeClose: false,
+            }, function (index, layero) {
+                $.get("{:Url('/user/role/delrole', '', false, true)}?roleid=" + roleid, function (data, status) {
+                    if (data.code) {
+                        layer.msg(data.msg, {icon: 5});
+                    } else {
+                        // 删除成功
+                        window.location.reload();
+                    }
+                });
+            });
+        });
+    })
 </script>
 </body>
 

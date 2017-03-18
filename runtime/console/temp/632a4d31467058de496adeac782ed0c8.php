@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:64:"D:\wamp\www\bazhonglvyou\app\console\index\view\index\index.html";i:1489832979;s:77:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\header.html";i:1489832979;s:81:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\navigation.html";i:1489832979;s:83:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\sidebar_left.html";i:1489832979;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:64:"D:\wamp\www\bazhonglvyou\app\console\index\view\index\index.html";i:1489832979;s:77:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\header.html";i:1489832979;s:81:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\navigation.html";i:1489839085;s:83:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\sidebar_left.html";i:1489832979;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -52,7 +52,7 @@
                 <li class="m-t-xs">
                     <div class="dropdown-messages-box">
                         <a href="profile.html" class="pull-left">
-                            <img alt="image" class="img-circle" src="static/img/a7.jpg">
+                            <img alt="image" class="img-circle" src="/static/img/a7.jpg">
                         </a>
                         <div class="media-body">
                             <small class="pull-right">46小时前</small>
@@ -66,7 +66,7 @@
                 <li>
                     <div class="dropdown-messages-box">
                         <a href="profile.html" class="pull-left">
-                            <img alt="image" class="img-circle" src="static/img/a4.jpg">
+                            <img alt="image" class="img-circle" src="/static/img/a4.jpg">
                         </a>
                         <div class="media-body ">
                             <small class="pull-right text-navy">25小时前</small>

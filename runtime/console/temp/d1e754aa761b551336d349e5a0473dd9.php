@@ -1,4 +1,32 @@
-{include file="../../common/view/header" /}
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"D:\wamp\www\bazhonglvyou\app\console\user\view\privilege\lists.html";i:1489841939;s:76:"D:\wamp\www\bazhonglvyou\app\console\user\view\..\..\common\view\header.html";i:1489832979;}*/ ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>飞猫旅行·管理中心</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/static/css/bootstrap.min.css?v=3.3.8" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css?v=4.1.1" rel="stylesheet">
+    <link href="/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/static/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="/static/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="/static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="/static/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="/static/css/plugins/treeview/bootstrap-treeview.css" rel="stylesheet">
+</head>
+
 
 <body class="gray-bg">
 <div class="wrapper wrapper-content">
@@ -47,7 +75,7 @@
                                             </tr>
                                             </thead>
                                             <tbody class="pri">
-                                            {$list}
+                                            <?php echo $list; ?>
                                             </tbody>
                                         </table>
                                     </div>
@@ -58,7 +86,7 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-6 col-sm-offset-4">
-                                            <button class="btn btn-primary" data-rolecode="{$rolecode}" type="submit"
+                                            <button class="btn btn-primary" data-rolecode="<?php echo $rolecode; ?>" type="submit"
                                                     id="submit">提交
                                             </button>
                                             <button class="btn btn-white" type="button" id="cancel">取 消</button>
@@ -112,7 +140,7 @@
                 if (code.length > 0) {
                     $.ajax({
                         method: 'POST',
-                        url: '{:Url("user/privilege/save","",false,true)}',
+                        url: '<?php echo Url("user/privilege/save","",false,true); ?>',
                         data: {code: code, rolecode: rolecode},
                         dataType: 'json',
                         beforeSend: function () {
@@ -145,7 +173,7 @@
 
         //渲染角色已有权限
         var cover = $("input[name='code[]']"),
-            pri = {$roleprivilege};
+            pri = <?php echo $roleprivilege; ?>;
         if(pri != ''){
             $.each(pri, function (i, j) {
                 $(j).each(function (k, v) {
