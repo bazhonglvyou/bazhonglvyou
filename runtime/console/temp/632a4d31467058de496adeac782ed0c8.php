@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:64:"D:\wamp\www\bazhonglvyou\app\console\index\view\index\index.html";i:1489753168;s:77:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\header.html";i:1489753168;s:81:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\navigation.html";i:1489758970;s:83:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\sidebar_left.html";i:1489753168;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:64:"D:\wamp\www\bazhonglvyou\app\console\index\view\index\index.html";i:1489832979;s:77:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\header.html";i:1489832979;s:81:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\navigation.html";i:1489832979;s:83:"D:\wamp\www\bazhonglvyou\app\console\index\view\..\..\common\view\sidebar_left.html";i:1489832979;}*/ ?>
 <!DOCTYPE html>
 <html>
 

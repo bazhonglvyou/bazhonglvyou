@@ -1,0 +1,436 @@
+[ 2017-03-18T18:49:05+08:00 ] 192.168.0.119 192.168.0.119 GET /console.php/login/login/.html
+[ log ] 192.168.0.119/console.php/login/login/.html [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：1,793.13kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, */*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'host' => '192.168.0.119',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\console\login\controller\Login->index[ D:\wamp\www\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ VIEW ] D:\wamp\www\bazhonglvyou\app\console\login\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T18:49:11+08:00 ] 192.168.0.119 192.168.0.119 POST /console.php/login/login/login
+[ log ] 192.168.0.119/console.php/login/login/login [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,796.45kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'referer' => 'http://192.168.0.119/console.php/login/login/.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.0.119',
+  'content-length' => '30',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\console\login\controller\Login->login[ D:\wamp\www\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T18:49:19+08:00 ] 192.168.0.119 192.168.0.119 POST /console.php/login/login/login
+[ log ] 192.168.0.119/console.php/login/login/login [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：1,796.22kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'referer' => 'http://192.168.0.119/console.php/login/login/.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.0.119',
+  'content-length' => '30',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9fm6534t2j82hpojmeuo47tp63',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\console\login\controller\Login->login[ D:\wamp\www\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T18:49:29+08:00 ] 192.168.0.119 192.168.0.119 POST /console.php/login/login/login
+[ log ] 192.168.0.119/console.php/login/login/login [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,796.22kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'referer' => 'http://192.168.0.119/console.php/login/login/.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.0.119',
+  'content-length' => '30',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9fm6534t2j82hpojmeuo47tp63',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\console\login\controller\Login->login[ D:\wamp\www\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T18:49:34+08:00 ] 192.168.0.119 192.168.0.119 POST /console.php/login/login/login
+[ log ] 192.168.0.119/console.php/login/login/login [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：1,796.22kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'referer' => 'http://192.168.0.119/console.php/login/login/.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.0.119',
+  'content-length' => '33',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9fm6534t2j82hpojmeuo47tp63',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456789',
+)
+[ info ] [ RUN ] app\console\login\controller\Login->login[ D:\wamp\www\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T18:49:39+08:00 ] 192.168.0.119 192.168.0.119 POST /console.php/login/login/login
+[ log ] 192.168.0.119/console.php/login/login/login [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,796.22kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'referer' => 'http://192.168.0.119/console.php/login/login/.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.0.119',
+  'content-length' => '30',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9fm6534t2j82hpojmeuo47tp63',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\console\login\controller\Login->login[ D:\wamp\www\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T18:50:05+08:00 ] 192.168.0.119 192.168.0.119 POST /console.php/login/login/login
+[ log ] 192.168.0.119/console.php/login/login/login [运行时间：0.699040s][吞吐率：1.43req/s] [内存消耗：2,548.70kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'referer' => 'http://192.168.0.119/console.php/login/login/.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.0.119',
+  'content-length' => '30',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9fm6534t2j82hpojmeuo47tp63',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\console\login\controller\Login->login[ D:\wamp\www\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.251015s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.131007s ]
+[ sql ] [ SQL ] SELECT `id`,`type`,`user_name`,`passalt` FROM `fm_user` WHERE  `user_name` = 'admin' LIMIT 1 [ RunTime:0.142008s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_user` WHERE  `user_name` = 'admin'  AND `password` = 'a289ccd6d51875ff76ad21ac82165e18' LIMIT 1 [ RunTime:0.141008s ]
+
+---------------------------------------------------------------
+[ 2017-03-18T18:50:05+08:00 ] 192.168.0.119 192.168.0.119 GET /console.php/
+[ log ] 192.168.0.119/console.php/ [运行时间：0.470027s][吞吐率：2.13req/s] [内存消耗：2,646.90kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, */*',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'referer' => 'http://192.168.0.119/console.php/login/login/.html',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.0.119',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=9fm6534t2j82hpojmeuo47tp63',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->index[ D:\wamp\www\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\bazhonglvyou\app\console\index\view\index\index.html [ array (
+  0 => 'result',
+  1 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.176010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status`,`module`,`controller`,`action`,`parameter` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.117006s ]
+
+---------------------------------------------------------------
+[ 2017-03-18T18:50:05+08:00 ] 192.168.0.119 192.168.0.119 GET /console.php/static/img/a4.jpg
+[ log ] 192.168.0.119/console.php/static/img/a4.jpg [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,251.99kb] [文件加载：32]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'a4.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'referer' => 'http://192.168.0.119/console.php/',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.0.119',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=9fm6534t2j82hpojmeuo47tp63',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T18:50:05+08:00 ] 192.168.0.119 192.168.0.119 GET /console.php/static/img/a7.jpg
+[ log ] 192.168.0.119/console.php/static/img/a7.jpg [运行时间：0.023002s][吞吐率：43.47req/s] [内存消耗：1,251.94kb] [文件加载：32]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'a7.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'referer' => 'http://192.168.0.119/console.php/',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.0.119',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=9fm6534t2j82hpojmeuo47tp63',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T18:50:05+08:00 ] 192.168.0.119 192.168.0.119 GET /console.php/favicon.ico
+[ log ] 192.168.0.119/console.php/favicon.ico [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,251.10kb] [文件加载：32]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.119',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T18:50:05+08:00 ] 192.168.0.119 192.168.0.119 GET /console.php/index/index/main
+[ log ] 192.168.0.119/console.php/index/index/main [运行时间：0.027001s][吞吐率：37.04req/s] [内存消耗：1,718.13kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, */*',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0) Core/1.53.2372.400 QQBrowser/9.5.10548.400',
+  'referer' => 'http://192.168.0.119/console.php/',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.0.119',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=9fm6534t2j82hpojmeuo47tp63',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->main[ D:\wamp\www\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\www\bazhonglvyou\app\console\index\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

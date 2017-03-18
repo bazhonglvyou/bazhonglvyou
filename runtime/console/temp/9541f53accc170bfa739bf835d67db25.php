@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"D:\wamp\www\bazhonglvyou\app\console\login\view\login\index.html";i:1489758165;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"D:\wamp\www\bazhonglvyou\app\console\login\view\login\index.html";i:1489832979;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

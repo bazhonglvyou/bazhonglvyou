@@ -11,7 +11,7 @@ use think\Db;
  * @author yanghuan
  * @datetime 2017/3/17 21:14
  */
-class User extends Base
+class User
 {
     /**
      * 根据会员名查询会员信息
