@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:59:"E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html";i:1490020751;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh_CN">
 <head >
@@ -20,7 +21,7 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<!--<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -46,7 +47,7 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav>-->
 <section id="contact">
     <div class="lvjing">
         <div class="container">
