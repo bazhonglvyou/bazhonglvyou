@@ -1,0 +1,146 @@
+[ 2017-03-20T08:59:05+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php
+[ log ] 192.168.10.147/console.php [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：1,105.42kb] [文件加载：37]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T08:59:05+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/login/login/.html
+[ log ] 192.168.10.147/console.php/login/login/.html [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,252.23kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=ov3r0s0afug233fa3i4lmh1t44',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\console\login\controller\Login->index[ D:\WWW\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\login\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T08:59:07+08:00 ] 192.168.10.147 192.168.10.147 POST /console.php/login/login/
+[ log ] 192.168.10.147/console.php/login/login/ [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,055.24kb] [文件加载：35]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=ov3r0s0afug233fa3i4lmh1t44',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.10.147/console.php/login/login/.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://192.168.10.147',
+  'cache-control' => 'max-age=0',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\console\login\controller\Login->index[ D:\WWW\bazhonglvyou\app\console\login\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T08:59:07+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php
+[ log ] 192.168.10.147/console.php [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,643.86kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=ov3r0s0afug233fa3i4lmh1t44',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/login/login/.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->index[ D:\WWW\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=127.0.0.1;port=3306;charset=utf8
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.fm_menu' doesn't exist[D:\WWW\bazhonglvyou\thinkphp\library\think\db\connector\Mysql.php:63]
+
+---------------------------------------------------------------

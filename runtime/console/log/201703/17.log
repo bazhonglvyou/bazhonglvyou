@@ -18175,3 +18175,2171 @@
 [ sql ] [ SQL ] SELECT * FROM `fm_gysfl` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.089005s ]
 
 ---------------------------------------------------------------
+[ 2017-03-17T16:07:29+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gonglist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gonglist [运行时间：0.609035s][吞吐率：1.64req/s] [内存消耗：1,703.38kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gonglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gonglist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gonglist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gonglist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.165009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gys` [ RunTime:0.083005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gys` LIMIT 1 [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gys` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.083004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.083005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.082005s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:07:30+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gongtypelist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gongtypelist [运行时间：0.396023s][吞吐率：2.53req/s] [内存消耗：1,696.41kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gongtypelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gongtypelist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gongtypelist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gongtypelist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.123007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gysfl` LIMIT 1 [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.083004s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:07:32+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gonglist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gonglist [运行时间：0.590034s][吞吐率：1.69req/s] [内存消耗：1,703.51kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gonglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gonglist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gonglist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gonglist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gys` [ RunTime:0.081005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gys` LIMIT 1 [ RunTime:0.081005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gys` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.103006s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:07:34+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/lists
+[ log ] 192.168.10.147/console.php/ticket/ticket/lists [运行时间：0.497028s][吞吐率：2.01req/s] [内存消耗：1,704.80kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->lists[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'ticket',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.146008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_ticket` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_ticket` LIMIT 1 [ RunTime:0.101006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_ticket` ORDER BY `createTime`  desc LIMIT 0,2 [ RunTime:0.102006s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:07:37+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/lists.html?page=2
+[ log ] 192.168.10.147/console.php/ticket/ticket/lists.html?page=2 [运行时间：0.522030s][吞吐率：1.92req/s] [内存消耗：1,705.02kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/ticket/ticket/lists',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->lists[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'ticket',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.151009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_ticket` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_ticket` LIMIT 1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_ticket` ORDER BY `createTime`  desc LIMIT 2,2 [ RunTime:0.122007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:07:38+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/lists.html?page=2
+[ log ] 192.168.10.147/console.php/ticket/ticket/lists.html?page=2 [运行时间：0.487028s][吞吐率：2.05req/s] [内存消耗：1,705.12kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/ticket/ticket/lists.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->lists[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'ticket',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.136008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_ticket` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_ticket` LIMIT 1 [ RunTime:0.102005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_ticket` ORDER BY `createTime`  desc LIMIT 2,2 [ RunTime:0.103006s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:07:39+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/lists.html?page=3
+[ log ] 192.168.10.147/console.php/ticket/ticket/lists.html?page=3 [运行时间：0.539031s][吞吐率：1.86req/s] [内存消耗：1,703.68kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/ticket/ticket/lists.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->lists[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'ticket',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.145009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_ticket` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_ticket` LIMIT 1 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_ticket` ORDER BY `createTime`  desc LIMIT 4,2 [ RunTime:0.122007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:07:41+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/lists.html?page=3
+[ log ] 192.168.10.147/console.php/ticket/ticket/lists.html?page=3 [运行时间：0.524030s][吞吐率：1.91req/s] [内存消耗：1,703.68kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/ticket/ticket/lists.html?page=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->lists[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'ticket',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.175010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_ticket` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_ticket` LIMIT 1 [ RunTime:0.102006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_ticket` ORDER BY `createTime`  desc LIMIT 4,2 [ RunTime:0.102006s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:07:43+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/lists.html?page=2
+[ log ] 192.168.10.147/console.php/ticket/ticket/lists.html?page=2 [运行时间：0.563032s][吞吐率：1.78req/s] [内存消耗：1,705.12kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/ticket/ticket/lists.html?page=3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->lists[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'ticket',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.174010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_ticket` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_ticket` LIMIT 1 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_ticket` ORDER BY `createTime`  desc LIMIT 2,2 [ RunTime:0.121007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:09:36+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/role/lists
+[ log ] 192.168.10.147/console.php/user/role/lists [运行时间：0.371021s][吞吐率：2.70req/s] [内存消耗：1,810.93kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'role',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Role->lists[ D:\WWW\bazhonglvyou\app\console\user\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\role\lists.html [ array (
+  0 => 'role',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.174010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_role` [ RunTime:0.081005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_role` [ RunTime:0.081004s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:09:53+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/index
+[ log ] 192.168.10.147/console.php/user/lists/index [运行时间：0.418024s][吞吐率：2.39req/s] [内存消耗：1,834.29kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.145008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.122007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:10:11+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/add
+[ log ] 192.168.10.147/console.php/user/lists/add [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：1,288.34kb] [文件加载：41]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/user/lists/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->add[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T16:10:27+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/role/lists
+[ log ] 192.168.10.147/console.php/user/role/lists [运行时间：0.428025s][吞吐率：2.34req/s] [内存消耗：1,688.54kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'role',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Role->lists[ D:\WWW\bazhonglvyou\app\console\user\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\role\lists.html [ array (
+  0 => 'role',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.198012s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_role` [ RunTime:0.102006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_role` [ RunTime:0.102005s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:10:31+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gonglist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gonglist [运行时间：0.715041s][吞吐率：1.40req/s] [内存消耗：1,703.51kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gonglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gonglist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gonglist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gonglist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.196012s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gys` [ RunTime:0.082004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gys` LIMIT 1 [ RunTime:0.081005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gys` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.103006s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:10:35+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gongtypelist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gongtypelist [运行时间：0.391022s][吞吐率：2.56req/s] [内存消耗：1,696.34kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gongtypelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gongtypelist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gongtypelist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gongtypelist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.082004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gysfl` LIMIT 1 [ RunTime:0.081005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.083005s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:10:49+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gongtypelist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gongtypelist [运行时间：0.405023s][吞吐率：2.47req/s] [内存消耗：1,696.34kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gongtypelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gongtypelist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gongtypelist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gongtypelist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.123007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gysfl` LIMIT 1 [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.090005s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:10:51+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gonglist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gonglist [运行时间：0.556031s][吞吐率：1.80req/s] [内存消耗：1,703.51kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gonglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gonglist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gonglist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gonglist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.123007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gys` [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gys` LIMIT 1 [ RunTime:0.080004s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gys` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.082004s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:10:52+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/index
+[ log ] 192.168.10.147/console.php/user/lists/index [运行时间：0.324018s][吞吐率：3.09req/s] [内存消耗：1,706.70kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.128007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.086005s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:13:56+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gonglist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gonglist [运行时间：0.812046s][吞吐率：1.23req/s] [内存消耗：1,703.38kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gonglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gonglist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gonglist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gonglist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.189011s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gys` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gys` LIMIT 1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gys` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.103006s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:14:01+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gongtypelist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gongtypelist [运行时间：0.483027s][吞吐率：2.07req/s] [内存消耗：1,696.34kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gongtypelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gongtypelist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gongtypelist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gongtypelist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.148008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gysfl` LIMIT 1 [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.102006s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:14:06+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/lists
+[ log ] 192.168.10.147/console.php/ticket/ticket/lists [运行时间：0.538031s][吞吐率：1.86req/s] [内存消耗：1,704.80kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->lists[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'ticket',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.143008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_ticket` [ RunTime:0.123008s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_ticket` LIMIT 1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_ticket` ORDER BY `createTime`  desc LIMIT 0,2 [ RunTime:0.122007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:14:57+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/addticket.html
+[ log ] 192.168.10.147/console.php/ticket/ticket/addticket.html [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,156.73kb] [文件加载：39]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'addticket',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/ticket/ticket/lists',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->addticket[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\addticket.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T16:14:59+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/lists
+[ log ] 192.168.10.147/console.php/ticket/ticket/lists [运行时间：0.569032s][吞吐率：1.76req/s] [内存消耗：1,704.80kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->lists[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'ticket',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.172010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_ticket` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_ticket` LIMIT 1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_ticket` ORDER BY `createTime`  desc LIMIT 0,2 [ RunTime:0.123007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:15:02+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gonglist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gonglist [运行时间：0.741043s][吞吐率：1.35req/s] [内存消耗：1,703.51kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gonglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gonglist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gonglist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gonglist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.163010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gys` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gys` LIMIT 1 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gys` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.082004s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:15:04+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/addgong.html
+[ log ] 192.168.10.147/console.php/supplier/supplier/addgong.html [运行时间：0.411024s][吞吐率：2.43req/s] [内存消耗：1,699.07kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'addgong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/supplier/supplier/gonglist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->addgong[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\addgong.html [ array (
+  0 => 'gongtype',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.160009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` [ RunTime:0.103006s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:15:06+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/
+[ log ] 192.168.10.147/console.php/supplier/supplier/ [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,130.25kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/supplier/supplier/addgong.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'ShockwaveFlash/24.0.0.186',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T16:16:21+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gonglist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gonglist [运行时间：0.832047s][吞吐率：1.20req/s] [内存消耗：1,703.51kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gonglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gonglist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gonglist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gonglist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.183011s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gys` [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gys` LIMIT 1 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gys` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.122007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:16:23+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/index
+[ log ] 192.168.10.147/console.php/user/lists/index [运行时间：0.420024s][吞吐率：2.38req/s] [内存消耗：1,706.70kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.171010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.133008s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:16:25+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/role/lists
+[ log ] 192.168.10.147/console.php/user/role/lists [运行时间：0.440025s][吞吐率：2.27req/s] [内存消耗：1,688.54kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'role',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Role->lists[ D:\WWW\bazhonglvyou\app\console\user\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\role\lists.html [ array (
+  0 => 'role',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.152009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_role` [ RunTime:0.122006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_role` [ RunTime:0.143009s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:16:27+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/index
+[ log ] 192.168.10.147/console.php/user/lists/index [运行时间：0.432025s][吞吐率：2.31req/s] [内存消耗：1,706.70kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.163009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.123007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:17:29+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/role/lists
+[ log ] 192.168.10.147/console.php/user/role/lists [运行时间：0.433025s][吞吐率：2.31req/s] [内存消耗：1,688.54kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'role',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Role->lists[ D:\WWW\bazhonglvyou\app\console\user\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\role\lists.html [ array (
+  0 => 'role',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.183011s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_role` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_role` [ RunTime:0.102006s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:17:32+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gonglist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gonglist [运行时间：0.642037s][吞吐率：1.56req/s] [内存消耗：1,703.51kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gonglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gonglist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gonglist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gonglist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.153009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gys` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gys` LIMIT 1 [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gys` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.082004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.081005s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:17:59+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/addgong.html
+[ log ] 192.168.10.147/console.php/supplier/supplier/addgong.html [运行时间：0.448025s][吞吐率：2.23req/s] [内存消耗：1,699.07kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'addgong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/supplier/supplier/gonglist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->addgong[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\addgong.html [ array (
+  0 => 'gongtype',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.181010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` [ RunTime:0.122007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:18:03+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/
+[ log ] 192.168.10.147/console.php/supplier/supplier/ [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,130.25kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/supplier/supplier/addgong.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'ShockwaveFlash/24.0.0.186',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T16:18:55+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/supplier/supplier/gonglist
+[ log ] 192.168.10.147/console.php/supplier/supplier/gonglist [运行时间：0.595034s][吞吐率：1.68req/s] [内存消耗：1,703.51kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'supplier',
+    1 => 'supplier',
+    2 => 'gonglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\supplier\controller\Supplier->gonglist[ D:\WWW\bazhonglvyou\app\console\supplier\controller\Supplier.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\gonglist.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'gonglist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.129007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gys` [ RunTime:0.102006s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_gys` LIMIT 1 [ RunTime:0.085005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gys` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.082004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_gysfl` [ RunTime:0.083005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_gysfl` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.086005s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:19:11+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/lists
+[ log ] 192.168.10.147/console.php/ticket/ticket/lists [运行时间：0.427024s][吞吐率：2.34req/s] [内存消耗：1,704.80kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->lists[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'ticket',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.130007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_ticket` [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_ticket` LIMIT 1 [ RunTime:0.081005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_ticket` ORDER BY `createTime`  desc LIMIT 0,2 [ RunTime:0.102006s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:19:27+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/ticket/ticket/lists.html?page=2
+[ log ] 192.168.10.147/console.php/ticket/ticket/lists.html?page=2 [运行时间：0.468026s][吞吐率：2.14req/s] [内存消耗：1,705.06kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ticket',
+    1 => 'ticket',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/ticket/ticket/lists',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\ticket\controller\Ticket->lists[ D:\WWW\bazhonglvyou\app\console\ticket\controller\Ticket.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\ticket\view\ticket\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'ticket',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.123007s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_ticket` [ RunTime:0.117006s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_ticket` LIMIT 1 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_ticket` ORDER BY `createTime`  desc LIMIT 2,2 [ RunTime:0.083005s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:20:13+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/index
+[ log ] 192.168.10.147/console.php/user/lists/index [运行时间：0.367021s][吞吐率：2.72req/s] [内存消耗：1,706.76kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.161009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.089005s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:20:16+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/edit?id=5
+[ log ] 192.168.10.147/console.php/user/lists/edit?id=5 [运行时间：0.316018s][吞吐率：3.16req/s] [内存消耗：1,828.49kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/user/lists/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->edit[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\edit.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.124008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.082004s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.081005s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:20:28+08:00 ] 192.168.10.147 192.168.10.147 POST /console.php/user/lists/edit
+[ log ] 192.168.10.147/console.php/user/lists/edit [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,219.66kb] [文件加载：38]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.10.147/console.php/user/lists/edit?id=5',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://192.168.10.147',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '61',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'user_name' => 'test1',
+  'password' => '123',
+  'password_confirm' => '123',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->edit[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-17T16:20:37+08:00 ] 192.168.10.147 192.168.10.147 POST /console.php/user/lists/edit
+[ log ] 192.168.10.147/console.php/user/lists/edit [运行时间：0.411023s][吞吐率：2.43req/s] [内存消耗：1,762.91kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.10.147/console.php/user/lists/edit?id=5',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://192.168.10.147',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '67',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+  'user_name' => 'test1',
+  'password' => 'qwerty',
+  'password_confirm' => 'qwerty',
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->edit[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.141008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] UPDATE `fm_user`  SET `type`=2,`user_name`='test1',`passalt`='qjGBhXCy',`password`='817b26d8f1468d6592a0d2d2f5836310',`update_time`='2017-03-17 16:20:37'  WHERE  `id` = 5 [ RunTime:0.123007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:20:38+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/index
+[ log ] 192.168.10.147/console.php/user/lists/index [运行时间：0.381021s][吞吐率：2.62req/s] [内存消耗：1,706.94kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/user/lists/edit?id=5',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.137008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.098005s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.123007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:20:41+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/edit?id=5
+[ log ] 192.168.10.147/console.php/user/lists/edit?id=5 [运行时间：0.427024s][吞吐率：2.34req/s] [内存消耗：1,701.02kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/user/lists/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->edit[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\edit.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.157009s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.122007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:20:43+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/index
+[ log ] 192.168.10.147/console.php/user/lists/index [运行时间：0.446025s][吞吐率：2.24req/s] [内存消耗：1,706.94kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php/user/lists/edit?id=5',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.174010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.124007s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:22:10+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/lists/index
+[ log ] 192.168.10.147/console.php/user/lists/index [运行时间：0.365020s][吞吐率：2.74req/s] [内存消耗：1,706.70kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Lists->index[ D:\WWW\bazhonglvyou\app\console\user\controller\Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\lists\index.html [ array (
+  0 => 'userList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.173010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_user` [ RunTime:0.084004s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_user` WHERE  `type` <> 0 [ RunTime:0.082004s ]
+
+---------------------------------------------------------------
+[ 2017-03-17T16:22:11+08:00 ] 192.168.10.147 192.168.10.147 GET /console.php/user/role/lists
+[ log ] 192.168.10.147/console.php/user/role/lists [运行时间：0.591034s][吞吐率：1.69req/s] [内存消耗：1,688.54kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'role',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; PHPSESSID=g4r46usedq3g4guv3pncla6ng6; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.10.147/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\user\controller\Role->lists[ D:\WWW\bazhonglvyou\app\console\user\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\user\view\role\lists.html [ array (
+  0 => 'role',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.133008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_role` [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_role` [ RunTime:0.337019s ]
+
+---------------------------------------------------------------

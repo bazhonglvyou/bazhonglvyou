@@ -13,7 +13,7 @@ use think\Db;
  */
 class Supplier extends Base
 {
-    public function gonglist(){
+    public function lists(){
         //每一页显示的数据条数
         $pagesize = 1;
         //当前可以显示的条数为($ye-1)*2+1
@@ -46,17 +46,17 @@ class Supplier extends Base
         $this->assign('ye',$ye);
         $this->assign('maxpage',$maxpage);
         //分页结束
-        $ticket =  Db::table('fm_gys')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
-        foreach($ticket as $key => $value){
-            $data = Db::table('fm_gysfl')->where(array('id' => $value['type']))->find();
-            $ticket[$key]['gys_type'] = $data['type_name'];
+        $lists =  Db::table('fm_gys')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
+        foreach($lists as $key => $value){
+            $data = Db::table('fm_gysfl')->where(array('id' => $value['gys_type']))->find();
+            $lists[$key]['gys_type'] = $data['type_name'];
             //$ticket[$key]['ScenicSpot'] = M('newsimage')->where(array('id' => $value['ScenicSpotId']))->select();
         }
-        $this->assign('gonglist',$ticket);
+        $this->assign('lists',$lists);
         return $this->fetch();
 
     }
-    public function addgong(){
+    public function addList(){
         if(isset($_GET['id'])){
             $ticket =  Db::table('fm_gys')->where(array('id' => $_GET['id']))->find();
             if(($ticket['yy_url'])){
@@ -65,17 +65,18 @@ class Supplier extends Base
             else{
 
             }
-            $this->assign('ticket',$ticket);
+            $this->assign('list_type',Db::table('fm_gysfl')->select());
+            $this->assign('lists',$ticket);
             $this->assign('id',$_GET['id']);
-            $this->assign('gongtype',Db::table('fm_gysfl')->select());
+            //$this->assign('gongtype',Db::table('fm_gys')->select());
             return $this->fetch();
         }
         else{
-            $this->assign('gongtype',Db::table('fm_gysfl')->select());
+            $this->assign('list_type',Db::table('fm_gysfl')->select());
             return $this->fetch();
         }
     }
-    public function addgonggo(){
+    public function add(){
         $url = 0;
         if(isset($_POST['yy_url'])){
             $url = serialize($_POST['yy_url']);
@@ -84,7 +85,7 @@ class Supplier extends Base
 
         }
         $data = array(
-            'type' => $_POST['type'],
+            'gys_type' => $_POST['gys_type'],
             'gy_name' => $_POST['gy_name'],
             'fz_name' => $_POST['fz_name'],
             'sex' => $_POST['sex'],
@@ -97,43 +98,41 @@ class Supplier extends Base
         );
         if($id = $_POST['id']){
             if(Db::table('fm_gys')->where(array('id' => $id ))->update($data)){
-                return 1;
+                return json_encode(array(
+                    'code' => 1,
+                    'msg' => 'success'
+                ));
             }
         }
         else{
             if(Db::table('fm_gys')->insert($data)){
-                return 1;
+                return json_encode(array(
+                    'code' => 1,
+                    'msg' => 'success'
+                ));
             }
         }
-        return 0;
+        return json_encode(array(
+            'code' => 500,
+            'msg' => 'false'
+        ));
     }
-    public function delgong(){
-        $id = $_POST['listid'];
-        foreach($id as $key => $value){
-            Db::table('fm_gys')->where(array('id' => $value))->delete();
+    public function del(){
+        $id = $_GET['id'];
+        if(Db::table('fm_gys')->where(array('id' => $id))->delete()){
+            return json_encode(array(
+                'code' => 1,
+                'success' => 'success'
+            ));
         }
-        return 1;
-    }
-    public function selectgong(){
-        $value = $_GET['value'];
-        $ticket = Db::table('fm_gys')
-            ->where('gy_name','like',"%$value%")
-            ->whereOr('fz_name','like',"%$value%")
-            ->whereOr('sex','like',"%$value%")
-            ->whereOr('tel','like',"%$value%")
-            ->whereOr('qq','like',"%$value%")
-            ->select();
-        foreach($ticket as $key => $value){
-            //$ticket[$key]['supplier'] = M('newsimage')->where(array('id' => $value['supplierId']))->select();
-            //$ticket[$key]['ScenicSpot'] = M('newsimage')->where(array('id' => $value['ScenicSpotId']))->select();
+        else{
+            return json_encode(array(
+                'code' => 500,
+                'msg'=>'参数输入错误'
+            ));
         }
-        $this->assign('gonglist',$ticket);
-        $this->assign('page',1);
-        $this->assign('maxpage',1);
-        $this->assign('ye',1);
-        return $this->fetch('gonglist');
     }
-    public function gongtypelist(){
+    public function listsType(){
         //每一页显示的数据条数
         $pagesize = 1;
         //当前可以显示的条数为($ye-1)*2+1
@@ -166,15 +165,15 @@ class Supplier extends Base
         $this->assign('ye',$ye);
         $this->assign('maxpage',$maxpage);
         //分页结束
-        $ticket =  Db::table('fm_gysfl')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
-        foreach($ticket as $key => $value){
+        $lists =  Db::table('fm_gysfl')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
+        foreach($lists as $key => $value){
             //$ticket[$key]['supplier'] = M('newsimage')->where(array('id' => $value['supplierId']))->select();
             //$ticket[$key]['ScenicSpot'] = M('newsimage')->where(array('id' => $value['ScenicSpotId']))->select();
         }
-        $this->assign('gongtypelist',$ticket);
+        $this->assign('lists',$lists);
         return $this->fetch();
     }
-    public function addtypegong(){
+    public function addTypeList(){
         if(isset($_GET['id'])){
             $ticket =  Db::table('fm_gysfl')->where(array('id' => $_GET['id']))->find();
             $this->assign('ticket',$ticket);
@@ -185,7 +184,7 @@ class Supplier extends Base
             return $this->fetch();
         }
     }
-    public function addtypegonggo(){
+    public function addType(){
         $url = 0;
         $data = array(
             'type_name' => $_POST['type_name'],
@@ -194,21 +193,38 @@ class Supplier extends Base
         );
         if($id = $_POST['id']){
             if(Db::table('fm_gysfl')->where(array('id' => $id ))->update($data)){
-                return 1;
+                return json_encode(array(
+                    'code' => 1,
+                    'msg' => 'success'
+                ));
             }
         }
         else{
             if(Db::table('fm_gysfl')->insert($data)){
-                return 1;
+                return json_encode(array(
+                    'code' => 1,
+                    'msg' => 'success'
+                ));
             }
         }
-        return 0;
+        return json_encode(array(
+            'code' => 500,
+            'msg' => '添加失败'
+        ));
     }
-    public function deltypegong(){
-        $id = $_POST['listid'];
-        foreach($id as $key => $value){
-            Db::table('fm_gysfl')->where(array('id' => $value))->delete();
+    public function delType(){
+        $id = $_GET['id'];
+        if(Db::table('fm_gysfl')->where(array('id' => $id))->delete()){
+            return json_encode(array(
+                'code' => 1,
+                'success' => 'success'
+            ));
         }
-        return 1;
+        else{
+            return json_encode(array(
+                'code' => 500,
+                'msg'=>'参数输入错误'
+            ));
+        }
     }
 }

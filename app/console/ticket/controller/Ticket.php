@@ -57,10 +57,44 @@ class Ticket extends Base
         $this->assign('ticket',$ticket->getPage($page,$pagesize));
         return $this->fetch();
     }
-    public function addjindian(){
+    public function listsgo(){
+        //每一页显示的数据条数
+        $pagesize = 2;
+        //当前可以显示的条数为($ye-1)*2+1
+        $ye = 6;
+        //查找总共有多少条数据
+        $all = Db::table('fm_ticket')->count();
+        //算出总共有多少你页
+        $maxpage = ceil($all/$pagesize);
+        //获取当前页数
+        $page = 1;
+        if(!isset($_GET['page'])){
+
+        }
+        else{
+            $page = $_GET['page'];
+        }
+        if($page <= 1){
+            $page = 1;
+        }
+        else if($page>=$maxpage){
+            $page = $maxpage;
+        }
+        else{
+            $page = $_GET['page'];
+        }
+        if($maxpage==0){
+            $maxpage =1;
+        }
+        $this->assign('page',$page);
+        $this->assign('ye',$ye);
+        $this->assign('maxpage',$maxpage);
+        //分页结束
+        $ticket = new listsApi();
+        $this->assign('ticket',$ticket->getPage($page,$pagesize));
         return $this->fetch();
     }
-    public function addticket(){
+    public function addList(){
         if(isset($_GET['id'])){
             $ticket = new listsApi();
             $this->assign('ticket',$ticket->get_one_ticket($_GET['id']));
@@ -74,21 +108,31 @@ class Ticket extends Base
     public function add(){
         $ticket = new listsApi();
         if($ticket->add()){
-            return 1;
+            return json_encode(array(
+                'code' => 1,
+                'success' => 'success'
+            ));
         }
-        return 0;
+        return json_encode(array(
+            'code' => 500,
+            'msg'=>'参数输入错误'
+        ));
     }
     public function del(){
-        $id = $_POST['listid'];
+        $id = $_GET['id'];
         $ticket = new listsApi();
-        $ticket->del($id);
-
-    }
-    public function select_detail(){
-
-    }
-    public function select_like(){
-
+        if( $ticket->del($id)){
+            return json_encode(array(
+                'code' => 1,
+                'success' => 'success'
+            ));
+        }
+        else{
+            return json_encode(array(
+                'code' => 500,
+                'msg'=>'参数输入错误'
+            ));
+        }
     }
     public function upload(Request $request){
         $targetFolder = "/public/uploads/"; // Relative to the root
@@ -102,26 +146,10 @@ class Ticket extends Base
             $fileParts = pathinfo($_FILES['Filedata']['name']);
             if (in_array($fileParts['extension'],$fileTypes)) {
                 move_uploaded_file($tempFile,$targetFile);
-                return '/public/uploads/'.$name.$_FILES['Filedata']['name'];
+                return '/extend/uploads/'.$name.$_FILES['Filedata']['name'];
             } else {
                 echo '0';
             }
         }
-    }
-    public function selectgong(){
-        $value = $_GET['value'];
-        $ticket = Db::table('fm_ticket')
-            ->where('productName','like',"%$value%")
-            ->whereOr('salePrice','like',"%$value%")
-            ->select();
-        foreach($ticket as $key => $value){
-            //$ticket[$key]['supplier'] = M('newsimage')->where(array('id' => $value['supplierId']))->select();
-            //$ticket[$key]['ScenicSpot'] = M('newsimage')->where(array('id' => $value['ScenicSpotId']))->select();
-        }
-        $this->assign('ticket',$ticket);
-        $this->assign('page',1);
-        $this->assign('maxpage',1);
-        $this->assign('ye',1);
-        return $this->fetch('lists');
     }
 }

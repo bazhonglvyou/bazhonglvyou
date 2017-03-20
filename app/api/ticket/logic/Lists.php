@@ -22,10 +22,12 @@ class Lists
         return $ticket;
     }
     public function del($id){
-        foreach($id as $key => $value){
-            Db::table('fm_ticket')->where(array('id' => $value))->delete();
+        if(Db::table('fm_ticket')->where(array('id' => $id))->delete()){
+            return 1;
         }
-        return 1;
+        else{
+            return 0;
+        }
     }
     public function get_one_ticket($id){
         $ticket =  Db::table('fm_ticket')->where(array('id' => $id))->find();

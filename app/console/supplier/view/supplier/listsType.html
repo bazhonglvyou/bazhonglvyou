@@ -3,16 +3,16 @@
 <body class="gray-bg">
 <div class="wrapper wrapper-content">
     <div class="col-sm-12">
-        <h3 class="pull-left">门票管理</h3>
+        <h3 class="pull-left">供应商类型管理</h3>
         <ol class="breadcrumb pull-right">
             <li>
                 <a href="index.html"><i class="fa fa-dashboard"></i> 管理中心</a>
             </li>
             <li>
-                门票管理
+                供应商类型管理
             </li>
             <li>
-                门票列表
+                供应商类型列表
             </li>
         </ol>
     </div>
@@ -24,7 +24,7 @@
                         <div class="col-sm-6 m-b-xs">
                             <div class="input-group">
                                 <div class="btn-group">
-                                    <a href="{:Url('ticket/ticket/addList')}" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;新增门票</a>
+                                    <a href="{:Url('supplier/supplier/addTypeList')}" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;新增供应商类型</a>
                                 </div>
                             </div>
                         </div>
@@ -36,36 +36,26 @@
                             <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>票型名称</th>
-                                <th>所属供应商</th>
                                 <th>供应商类型</th>
-                                <th>所属景点</th>
-                                <th>产品分类</th>
+                                <th>排序</th>
                                 <th>创建时间</th>
-                                <th>销售价格</th>
-                                <th>原价</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
-                            {empty name="ticket"}
+                            {empty name="lists"}
                                 <tr>
                                     <th colspan="6" class="text-center">没有会员记录</th>
                                 </tr>
                             {else}
-                                {volist name="ticket" id="v"}
+                                {volist name="lists" id="v"}
                                 <tr>
                                     <th>{$v.id}</th>
-                                    <th>{$v.productName}</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th>{$v.productType}</th>
+                                    <th>{$v.type_name}</th>
+                                    <th>{$v.sort}</th>
                                     <th>{$v.createTime}</th>
-                                    <th>{$v.salePrice}</th>
-                                    <th>{$v.onePrice}</th>
                                     <th>
-                                        <a href="{:Url('ticket/ticket/addList',['id'=>$v.id],false,true)}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
+                                        <a href="{:Url('supplier/supplier/addTypeList',['id'=>$v.id],false,true)}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
                                             <i class="fa fa-pencil"></i>
                                         </a>
                                         <a href="javascript:;" data-id="{$v.id}" class="btn btn-warning btn-xs btn-circle delete" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
@@ -87,30 +77,30 @@
     <div style="margin-left: 300px;">
         <!--分页开始-->
         {if condition="($page>=1)"}
-        <a href="{:url('ticket/ticket/lists',['page'=> 1])}" style="width: 50px;" class="jiantou">首页</a>
+        <a href="{:url('supplier/supplier/listsType',['page'=> 1])}" style="width: 50px;" class="jiantou">首页</a>
         {/if}
         {if condition="($page>1)"}
-        <a href="{:url('ticket/ticket/lists',['page'=> $page-1])}" class="jiantou"><</a>
+        <a href="{:url('supplier/supplier/listsType',['page'=> $page-1])}" class="jiantou"><</a>
         {/if}
                     <span>
                         {for start = "$page-$ye+1" end = "$page" step="1")}
                         {if condition="($i>0)"}
-                         <a class="page_a_css" href="{:url('ticket/ticket/lists',['page'=> $i])}" style="">{$i}</a>
+                         <a class="page_a_css" href="{:url('supplier/supplier/listsType',['page'=> $i])}" style="">{$i}</a>
                         {/if}
                         {/for}
-                        <a class="page_a_css_select" href="{:url('ticket/ticket/lists',['page'=> $page])}">{$page}</a>
+                        <a class="page_a_css_select" href="{:url('supplier/supplier/listsType',['page'=> $page])}">{$page}</a>
                         {for start= "$page+1" end="$page+$ye"}
                             {if condition="($i<=$maxpage)")}
-                        <a class="page_a_css" href="{:url('ticket/ticket/lists',['page'=> $i])}">{$i}</a>
+                        <a class="page_a_css" href="{:url('supplier/supplier/listsType',['page'=> $i])}">{$i}</a>
                         {/if}
                         {/for}
                     </span>
         {if condition="($page<$maxpage)"}
-        <a href="{:url('ticket/ticket/lists',['page'=> $page+1])}" class="jiantou">></a>
+        <a href="{:url('supplier/supplier/listsType',['page'=> $page+1])}" class="jiantou">></a>
         {/if}
 
         {if condition="($maxpage>1)"}
-        <a href="{:url('ticket/ticket/lists',['page'=> $maxpage])}" class="jiantou" style="width: 50px;">尾页</a>
+        <a href="{:url('supplier/supplier/listsType',['page'=> $maxpage])}" class="jiantou" style="width: 50px;">尾页</a>
         {/if}
 
     </div>
@@ -132,12 +122,12 @@
     // 删除
     $('.delete').on('click', function() {
         var id = $(this).attr("data-id");
-        layer.confirm('确定删除该会员？', {
+        layer.confirm('确定删除该供应商类型？', {
             skin: 'layui-layer-molv',
             icon: 3,
             shadeClose: false,
         }, function(index, layero) {
-            $.get("{:Url('/ticket/ticket/del', '', false, true)}?id=" + id, function(data,status){
+            $.get("{:Url('/supplier/supplier/delType', '', false, true)}?id=" + id, function(data,status){
                 data = eval('('+data+')');
                 if (data.code == 500) {
                     layer.msg(data.msg, {icon: 5});
