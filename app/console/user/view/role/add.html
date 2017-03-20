@@ -123,7 +123,7 @@
                 }).html("提交中...");
                 // 提交表单
                 $.ajax({
-                    url: "{:Url('/user/privilege/save','',false, true)}",
+                    url: "{:Url('/user/role/save','',false, true)}",
                     type: "post",
                     dataType: "json",
                     data: menuForm.serialize(),

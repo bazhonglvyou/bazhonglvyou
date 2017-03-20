@@ -146,15 +146,17 @@
         //渲染角色已有权限
         var cover = $("input[name='code[]']"),
             pri = {$roleprivilege};
+        if(pri != ''){
             $.each(pri, function (i, j) {
-            $(j).each(function (k, v) {
-                $.each(cover, function (m, n) {
-                    if ($(n).val() == v.pri_code) {
-                        $(n).iCheck('check');
-                    }
+                $(j).each(function (k, v) {
+                    $.each(cover, function (m, n) {
+                        if ($(n).val() == v.pri_code) {
+                            $(n).iCheck('check');
+                        }
+                    })
                 })
             })
-        })
+        }
 
         //查询权限是否全选
         var flag = false;

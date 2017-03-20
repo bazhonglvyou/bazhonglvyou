@@ -34,13 +34,20 @@
             </div>
         </div>
         <div class="col-sm-5">
-            <form method="post" action="{:Url('/login/login/','',false,true)}">
+            <form method="post" id="loginForm" onsubmit="return false">
                 <h4 class="no-margins">登录：</h4>
                 <p class="m-t-md">登录到飞猫旅行网后台</p>
-                <input type="text" class="form-control uname" placeholder="用户名" />
-                <input type="password" class="form-control pword m-b" placeholder="密码" />
+                <div class="form-group">
+                    <input type="text" class="form-control uname" name="username" placeholder="用户名"/>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control pword m-b" name="password" placeholder="密码"/>
+                </div>
                 <a href="">忘记密码了？</a>
-                <button class="btn btn-success btn-block">登录</button>
+                <div class="form-group has-error">
+                    <span class="help-block m-b-none server-error"></span>
+                    <button class="btn btn-success btn-block" id="submit">登录</button>
+                </div>
             </form>
         </div>
     </div>
@@ -50,5 +57,79 @@
         </div>
     </div>
 </div>
+<script src="/static/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/static/js/plugins/validate/jquery.validate.min.js"></script>
+<script>
+    $(function(){
+        var loginForm = $("#loginForm"),
+                submitBtn = $("#submit"),
+                serverError = $(".server-error");
+        // 表单验证
+        $.validator.setDefaults({
+            highlight: function (element) {
+                $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+            },
+            success: function (element) {
+                element.closest('.form-group').removeClass('has-error').addClass('has-success');
+            },
+            errorPlacement: function(error, element) {
+                element.before(error);
+            },
+            errorElement: "span",
+            errorClass: "help-block m-b-none",
+            validClass: ""
+        });
+        $().ready(function () {
+            var icon = "<i class='fa fa-times'></i> ";
+            loginForm.validate({
+                debug: true,
+                rules: {
+                    username: {
+                        required: true,
+                    },
+                    password: {
+                        required: true,
+                    },
+                },
+                messages: {
+                    username: {
+                        required: icon + "请输入用户名",
+                    },
+                    password: {
+                        required: icon + "请输入密码",
+                    }
+                },
+                submitHandler: function () {
+                    // 禁用按钮
+                    submitBtn.attr({
+                        disabled: "disabled"
+                    }).html("登录中...");
+                    // 提交表单
+                    $.ajax({
+                        url: "{:Url('/login/login/login','',false,true)}",
+                        type: "post",
+                        dataType: "json",
+                        data: loginForm.serialize(),
+                        success: function (data) {
+                            if (data.code === 0) {
+                                self.location = data.url;
+                            } else {
+                                serverError.show().html(icon + data.msg);
+                            }
+                        },
+                        complete: function () {
+                            // 恢复按钮可用
+                            submitBtn.removeAttr("disabled").html("登录");
+                        },
+                        error: function () {
+                            serverError.show().html(icon + "帐号或密码不正确");
+                        }
+                    });
+                }
+            })
+        });
+    })
+</script>
 </body>
 </html>

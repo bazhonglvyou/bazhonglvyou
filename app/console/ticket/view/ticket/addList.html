@@ -29,6 +29,7 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">所属景点：</label>
                             <div class="col-sm-2">
+                                <input class="ScenicSpotId_id" type="text" style="display: none;" value="{$ticket['ScenicSpotId'] ?? ''}">
                                 <select class="form-control" name="ScenicSpotId" value="{$ticket['ScenicSpotId'] ?? ''}">
                                     <option value="1">门票</option>
                                     <option value="2">酒店</option>
@@ -40,7 +41,8 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">产品分类：</label>
                             <div class="col-sm-2">
-                                <select class="form-control" name="productType" value="{$ticket['ScenicSpotId'] ?? ''}">
+                                <input class="product_type_name" type="text" style="display: none;" value="{$ticket['productType'] ?? ''}">
+                                <select class="form-control" name="productType" value="{$ticket['productType'] ?? ''}">
                                     <option value="1">门票</option>
                                     <option value="2">酒店</option>
                                     <option value="3">特产</option>
@@ -57,9 +59,9 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">是否上架：</label>
                             <div class="col-sm-5">
-                                <input class="yes_c" type="radio" value="1" name="statu" style="width: 15px;vertical-align: middle;">
+                                <input class="yes_c" type="radio" value="1" {$ticket["statu"]==1 ? 'checked' : ''} name="statu" style="width: 15px;vertical-align: middle;">
                                 <span style="vertical-align: middle;color: #111111">是</span>
-                                <input  class="no_c" type="radio" value="0"  name="statu" style="width: 15px;vertical-align: middle; margin-left: 16px;">
+                                <input  class="no_c" type="radio" value="0" {$ticket["statu"]==0 ? 'checked' : ''}  name="statu" style="width: 15px;vertical-align: middle; margin-left: 16px;">
                                 <span style="vertical-align: middle;color: #111111">否</span>
                             </div>
                         </div>
@@ -177,6 +179,8 @@
             self.location = document.referrer;
         });
     });
+   $('select[name="ScenicSpotId"]').val($('.ScenicSpotId_id').val());
+    $('select[name="productType"]').val($('.product_type_name').val());
 </script>
 </body>
 
