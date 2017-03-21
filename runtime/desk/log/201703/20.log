@@ -1,0 +1,3074 @@
+[ 2017-03-20T19:39:36+08:00 ] ::1 ::1 GET /
+[ log ] localhost/ [运行时间：0.542031s][吞吐率：1.84req/s] [内存消耗：1,083.60kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3903326208',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:39:57+08:00 ] ::1 ::1 GET /index.php/desk/sign
+[ log ] localhost/index.php/desk/sign [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,083.69kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'desk',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:40:52+08:00 ] ::1 ::1 GET /index.php/desk/sign/sign
+[ log ] localhost/index.php/desk/sign/sign [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：1,083.67kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'desk',
+    1 => 'sign',
+    2 => 'sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:43:00+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.136008s][吞吐率：7.35req/s] [内存消耗：1,097.25kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\desk\sign\controller\Sign::fetch()[E:\phpStudy\WWW\app\desk\sign\controller\Sign.php:8]
+
+---------------------------------------------------------------
+[ 2017-03-20T19:46:08+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.144008s][吞吐率：6.94req/s] [内存消耗：1,365.91kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:E:\phpStudy\WWW\app\desk\sign\view\sign\index.html[E:\phpStudy\WWW\thinkphp\library\think\view\driver\Think.php:80]
+
+---------------------------------------------------------------
+[ 2017-03-20T19:46:26+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.132008s][吞吐率：7.58req/s] [内存消耗：1,485.63kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:52:11+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.082004s][吞吐率：12.19req/s] [内存消耗：1,530.12kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:52:24+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,356.61kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:52:27+08:00 ] ::1 ::1 GET /
+[ log ] localhost/ [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：1,082.27kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:52:27+08:00 ] ::1 ::1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,082.91kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:52:32+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：1,356.81kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:53:02+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,356.81kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:54:33+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.065003s][吞吐率：15.38req/s] [内存消耗：1,530.22kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:55:56+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.056004s][吞吐率：17.86req/s] [内存消耗：1,356.82kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:57:33+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：1,530.30kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:58:47+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:59:51+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T19:59:57+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:00:25+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:00:28+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:00:30+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:00:31+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.048002s][吞吐率：20.83req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:00:32+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:01:52+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.065003s][吞吐率：15.38req/s] [内存消耗：1,496.79kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:04:37+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,348.84kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:04:53+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：1,348.80kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:05:18+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：1,491.31kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:33:20+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,496.82kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:33:20+08:00 ] ::1 ::1 GET /index.php/sign/images/ad_6.jpg
+[ log ] localhost/index.php/sign/images/ad_6.jpg [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,084.29kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'images',
+    2 => 'ad_6.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/sign/sign',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:33:20+08:00 ] ::1 ::1 GET /index.php/sign/images/ad_4.jpg
+[ log ] localhost/index.php/sign/images/ad_4.jpg [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,084.29kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'images',
+    2 => 'ad_4.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/sign/sign',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:33:20+08:00 ] ::1 ::1 GET /index.php/sign/images/huazilogo.png
+[ log ] localhost/index.php/sign/images/huazilogo.png [运行时间：0.077005s][吞吐率：12.99req/s] [内存消耗：1,084.31kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'images',
+    2 => 'huazilogo.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/sign/sign',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:33:20+08:00 ] ::1 ::1 GET /index.php/sign/images/ad_7.jpg
+[ log ] localhost/index.php/sign/images/ad_7.jpg [运行时间：0.120007s][吞吐率：8.33req/s] [内存消耗：1,084.29kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'images',
+    2 => 'ad_7.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/sign/sign',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:33:20+08:00 ] ::1 ::1 GET /index.php/sign/images/ad_8.jpg
+[ log ] localhost/index.php/sign/images/ad_8.jpg [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：1,084.29kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'images',
+    2 => 'ad_8.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/sign/sign',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:33:20+08:00 ] ::1 ::1 GET /index.php/sign/images/ad_5.jpg
+[ log ] localhost/index.php/sign/images/ad_5.jpg [运行时间：0.128007s][吞吐率：7.81req/s] [内存消耗：1,084.37kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'images',
+    2 => 'ad_5.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/index.php/sign/sign',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:33:43+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,496.93kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:33:58+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：1,493.94kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:34:18+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,348.80kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:35:03+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：1,494.13kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:35:04+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,348.80kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:35:16+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.047002s][吞吐率：21.28req/s] [内存消耗：1,348.80kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:36:09+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,494.12kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:36:09+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,348.83kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:36:35+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.056004s][吞吐率：17.86req/s] [内存消耗：1,494.12kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:36:48+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：1,494.10kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:37:00+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,494.03kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:37:14+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：1,494.10kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:37:22+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：1,494.10kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:37:29+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：1,348.83kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:43:48+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：1,497.29kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:50:02+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,500.61kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:50:08+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：1,348.78kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:50:33+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.074005s][吞吐率：13.51req/s] [内存消耗：1,500.63kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:50:53+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：1,500.76kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:51:07+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,500.78kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:51:44+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,500.92kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:52:02+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：1,500.86kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:52:39+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：1,500.88kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:53:21+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,500.90kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:53:22+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,348.84kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:53:42+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,348.84kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:53:56+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.053004s][吞吐率：18.87req/s] [内存消耗：1,500.92kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:54:04+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,500.98kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T20:55:51+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：1,502.05kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:00:47+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,504.94kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:01:32+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：1,504.86kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:04:01+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,504.99kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:04:03+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,348.80kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:04:15+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,504.98kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:05:46+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,505.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:06:03+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：1,505.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:06:32+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,505.82kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:07:04+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,505.85kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:07:18+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,505.85kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:07:39+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：1,506.04kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:08:10+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.065003s][吞吐率：15.38req/s] [内存消耗：1,506.04kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:08:21+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,506.04kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:09:06+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,506.09kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:09:20+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：1,506.09kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:09:46+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,506.08kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:09:57+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：1,506.04kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:10:12+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,506.09kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:10:29+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,505.85kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:10:30+08:00 ] ::1 ::1 GET /index.php
+[ log ] localhost/index.php [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,081.85kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:11:30+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,506.08kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:13:11+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,506.27kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:14:39+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,506.08kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:15:44+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：1,348.80kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T21:16:13+08:00 ] ::1 ::1 GET /index.php/sign/sign
+[ log ] localhost/index.php/sign/sign [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,348.80kb] [文件加载：38]
+[ info ] [ LANG ] E:\phpStudy\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=3903326208; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\phpStudy\WWW\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:18:29+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,702.92kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:18:34+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：2,436.54kb] [文件加载：38]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:22:16+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.032001s][吞吐率：31.25req/s] [内存消耗：2,703.24kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:29:32+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,703.21kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:30:00+08:00 ] 192.168.1.103 192.168.1.103 POST /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.048002s][吞吐率：20.83req/s] [内存消耗：2,358.01kb] [文件加载：36]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'content-length' => '77',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://192.168.1.103',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://192.168.1.103/index.php/sign/sign',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+  'stu_name' => '1',
+  'stu_phone' => '1',
+  'stu_age' => '1',
+  'stu_sex' => '0',
+  'stu_qq' => '1',
+  'stu_xueli' => '1',
+  'stu_zhuanye' => '0',
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:30:25+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：2,703.62kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:30:53+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,703.59kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:32:37+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：2,704.44kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:35:09+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：2,704.99kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:35:22+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,704.93kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:36:49+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：2,705.40kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:37:19+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.048002s][吞吐率：20.83req/s] [内存消耗：2,705.40kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-20T22:39:13+08:00 ] 192.168.1.103 192.168.1.103 GET /index.php/sign/sign
+[ log ] 192.168.1.103/index.php/sign/sign [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：2,705.88kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp\www\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sign',
+    1 => 'sign',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.103',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; AJSTAT_ok_times=1; QUHTR254_username=admin; QUHTR254_nickname=admin; QUHTR254_admin_key=1; QUHTR254_password=cqqigao1313',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\desk\sign\controller\Sign->index[ E:\wamp\www\bazhonglvyou\app\desk\sign\controller\Sign.php ]
+[ info ] [ VIEW ] E:\wamp\www\bazhonglvyou\app\desk\sign\view\sign\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

