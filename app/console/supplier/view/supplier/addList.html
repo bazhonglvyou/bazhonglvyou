@@ -76,7 +76,7 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">详细地址：</label>
                             <div class="col-sm-2">
-                                <input id="" value="{$lists['detail_address'] ?? ''}" name="detail_address" class="form-control" type="text">
+                                <input  value="{$lists['detail_address'] ?? ''}" name="detail_address" class="form-control" type="text">
                             </div>
                         </div>
                         <div class="form-group">
@@ -84,13 +84,14 @@
                             <div class="col-sm-2">
                                 <input id="file_upload1" name="file_upload" type="file" multiple="true" style="width: 185px; height: 25px;opacity:0;position: absolute;margin-top:12px;vertical-align: middle;" >
                                 <div id="img_yulan1">
-                                    <?php if(isset($ticket)){if(is_array($ticket['yy_url'])){
-                            foreach($ticket['yy_url'] as $key => $value){
-                                    ?>
-                                    <img src="<?php echo $value?>" alt='' height='80' style='margin:0px 0px 5px 5px;'>
-                                    <?php } ?>
-                                    <?php } ?>
-                                    <?php } ?>
+                                    {if condition="isset($lists)"}
+                                    {if condition="is_array($lists['yy_url'])"}
+                                    {foreach name="lists['yy_url']" item="vo")}
+                                    <img src="{$vo}" alt='' height='80' style='margin:10px 0px 5px 5px;'>
+                                    {/foreach}
+                                    <input name='yy_url' type='text' value="{$lists['input_url']}" style='display:none;'>
+                                    {/if}
+                                    {/if}
                             </div>
                         </div>
                         <div class="form-group has-error">
@@ -116,7 +117,8 @@
 <script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
 <!-- jQuery Validation plugin javascript-->
 <script src="/static/js/plugins/validate/jquery.validate.min.js"></script>
-
+<script src="/extend/upload/jquery.uploadify.min.js"></script>
+<script src="/static/js/upload.js"></script>
 <script>
     var menuForm = $("#userForm"),
             submitBtn = $("#submit"),

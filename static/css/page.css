@@ -8,3 +8,10 @@
     cursor: pointer; width: 26px; line-height: 20px;
     text-align: center;
 }
+.text_area_type{
+    width: 100%;
+    min-height: 100px;
+}
+.upload_css_a{
+    display: inline-block; height: 26px; width: 100%; background: #aaaaaa; color: #ffffff; text-align: center;line-height: 26px;font-size: 14px;
+}

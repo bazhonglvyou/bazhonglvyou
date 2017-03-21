@@ -50,6 +50,7 @@ class Supplier extends Base
         foreach($lists as $key => $value){
             $data = Db::table('fm_gysfl')->where(array('id' => $value['gys_type']))->find();
             $lists[$key]['gys_type'] = $data['type_name'];
+            //$lists[$key]['yy_url'] = unserialize($value['yy_url']);
             //$ticket[$key]['ScenicSpot'] = M('newsimage')->where(array('id' => $value['ScenicSpotId']))->select();
         }
         $this->assign('lists',$lists);
@@ -61,6 +62,19 @@ class Supplier extends Base
             $ticket =  Db::table('fm_gys')->where(array('id' => $_GET['id']))->find();
             if(($ticket['yy_url'])){
                 $ticket['yy_url'] = unserialize($ticket['yy_url']);
+                foreach($ticket['yy_url'] as $key => $value){
+                    if(count($ticket['yy_url']) == 1){
+                        $ticket['input_url'] = $value;
+                    }
+                    else{
+                        if($key == 0){
+                            $ticket['input_url'] = $value;
+                        }
+                        else{
+                            $ticket['input_url'] = $ticket['input_url'].'$'.$value;
+                        }
+                    }
+                }
             }
             else{
 
@@ -79,7 +93,8 @@ class Supplier extends Base
     public function add(){
         $url = 0;
         if(isset($_POST['yy_url'])){
-            $url = serialize($_POST['yy_url']);
+            $url = explode("$", $_POST['yy_url']);
+            $url = serialize($url);
         }
         else{
 
