@@ -60,4 +60,14 @@ class Login extends Controller
             return ['code' => 50001, 'msg' => '会员不存在'];
         }
     }
+
+    /**
+     * 退出
+     * author: yanghuan
+     * date:2017/3/22 20:09
+     */
+    public function out(){
+        Session::delete('adminUser');
+        $this->redirect('login/login/');
+    }
 }
