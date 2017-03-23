@@ -51,7 +51,7 @@ class Login extends Controller
                 $password = md5($data['password'] . $userInfo['passalt']);
                 $result = $user->userInfoByPassword($userName, $password);
                 if ($result) {
-                    Session::set('adminUser', $userInfo);
+                    Session::set('businessUser', $userInfo);
                     return ['code' => 0, 'url' => Url(DS, '', false, true)];
                 }
                 return ['code' => 50002, 'msg' => '用户名或密码不正确'];
@@ -66,7 +66,7 @@ class Login extends Controller
      * date:2017/3/22 20:09
      */
     public function out(){
-        Session::delete('adminUser');
+        Session::delete('businessUser');
         $this->redirect('login/login/');
     }
 }

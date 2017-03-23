@@ -24,20 +24,23 @@ class Base extends Controller
         define('MODULE', strtoupper(Request::instance()->module()));
         define('ACTION', strtoupper(Request::instance()->action()));
 
-        if (Session::has('adminUser')) {
-
-            $this->userInfo = Session::get('adminUser');
-
-            //非系统管理员，需要验证权限
-            if (!in_array($this->userInfo['type'], [0])) {
-                $this->auth = $this->queryPrivilege();
-                if (!in_array(CONTROLLER, $this->auth) || !in_array(MODULE, $this->auth) || !in_array(ACTION, $this->auth)) {
-                    $this->redirect(Url('error/error/', '', false, true));
+        if (APP_NAME == 'business') {
+            if (Session::has('businessUser')) {
+                $this->userInfo = Session::get('businessUser');
+                //非系统管理员，需要验证权限
+                if (!in_array($this->userInfo['type'], [0])) {
+                    $this->auth = $this->queryPrivilege();
+                    if (!in_array(CONTROLLER, $this->auth) || !in_array(CONTROLLER . '_' . MODULE, $this->auth) || !in_array(CONTROLLER . '_' . MODULE . '_' . ACTION, $this->auth)) {
+                        $this->redirect(Url('error/error/', '', false, true));
+                    }
                 }
+            } else {
+                $this->redirect(Url('login/login/', '', false, true));
             }
-
-        } else {
-            $this->redirect(Url('login/login/', '', false, true));
+        } else if (APP_NAME == 'console') {
+            if (!Session::has('adminUser')) {
+                $this->redirect(Url('login/login/', '', false, true));
+            }
         }
     }
 
@@ -67,7 +70,7 @@ class Base extends Controller
     public function queryPrivilege()
     {
         //默认具有的权限
-        $auth = ['INDEX', 'MAIN'];
+        $auth = ['INDEX', 'INDEX_INDEX', 'INDEX_INDEX_MAIN'];
 
         $userId = $this->userInfo['id'];
         $result = Db::name('user_role')
