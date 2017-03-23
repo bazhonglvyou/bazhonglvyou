@@ -4,6 +4,7 @@ namespace app\api\common\controller;
 use think\Controller;
 use think\Session;
 use think\Db;
+use think\Request;
 
 /**
  * 后台-公共类
@@ -19,6 +20,10 @@ class Base extends Controller
 
     protected function _initialize()
     {
+        define('CONTROLLER', strtoupper(Request::instance()->controller()));
+        define('MODULE', strtoupper(Request::instance()->module()));
+        define('ACTION', strtoupper(Request::instance()->action()));
+
         if (Session::has('adminUser')) {
 
             $this->userInfo = Session::get('adminUser');
@@ -26,10 +31,13 @@ class Base extends Controller
             //非系统管理员，需要验证权限
             if (!in_array($this->userInfo['type'], [0])) {
                 $this->auth = $this->queryPrivilege();
+                if (!in_array(CONTROLLER, $this->auth) || !in_array(MODULE, $this->auth) || !in_array(ACTION, $this->auth)) {
+                    $this->redirect(Url('error/error/', '', false, true));
+                }
             }
 
         } else {
-            $this->redirect('login/login/');
+            $this->redirect(Url('login/login/', '', false, true));
         }
     }
 
@@ -58,6 +66,9 @@ class Base extends Controller
      */
     public function queryPrivilege()
     {
+        //默认具有的权限
+        $auth = ['INDEX', 'MAIN'];
+
         $userId = $this->userInfo['id'];
         $result = Db::name('user_role')
             ->alias('ur')
