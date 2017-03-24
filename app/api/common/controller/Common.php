@@ -2,6 +2,7 @@
 namespace app\api\common\controller;
 
 use think\Controller;
+use think\Request;
 
 /**
  * 前台-公共类
@@ -12,8 +13,10 @@ use think\Controller;
  */
 class Common extends Controller
 {
+    protected $request = '';
+
     protected function _initialize()
     {
-
+        $this->request = Request::instance();
     }
 }
