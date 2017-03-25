@@ -3,6 +3,7 @@ namespace app\desk\weixin\controller;
 
 use app\api\common\controller\Common;
 use think\Cache;
+use Weixin\Weixin;
 
 /**
  * 微信类
@@ -21,7 +22,9 @@ class Index extends Common
      */
     public function index()
     {
-        return $this->fetch();
+        $options = array('token' => '1354717176', 'appid' => 'wx7271dd3df7a03d6a', 'appsecret' => '976268b8286ebb103fc49e926636ef8d');
+        $wx = new Weixin($options);
+        $type = $wx->getRev()->getRevType();
     }
 
     /**
