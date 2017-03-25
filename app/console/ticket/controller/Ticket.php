@@ -22,7 +22,7 @@ class Ticket extends Base
     public function lists()
     {
         //每一页显示的数据条数
-        $pagesize = 2;
+        $pagesize = 20;
         //当前可以显示的条数为($ye-1)*2+1
         $ye = 6;
         //查找总共有多少条数据

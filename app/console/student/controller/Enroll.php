@@ -4,13 +4,12 @@ use app\api\student\logic\Enroll as enrollAPI;
 use app\api\common\controller\Base;
 use think\Request;
 /**
- * 
+ * @desc 学员报名类
  * @author Administrator
- *
  */
 class Enroll extends Base{
     /**
-     * 
+     * @desc 首页列表
      * @return mixed|string
      */
     public function index(){
