@@ -1,0 +1,134 @@
+﻿.carousel-indicators .active{
+    background-color:#ccc;
+    width:18px;
+    height:18px;
+    background-color: #FE9210;
+    }
+    .carousel-indicators li{
+    border:1px solid #ccc;
+    width:16px;
+    height:16px;
+    
+    }
+
+    @media screen and (min-width: 375px){
+      .carousel-control .icon-prev,.carousel-control .icon-next{
+          font-size:70px;
+          margin-top:-40px;
+      }
+      .carousel-inner .item img{
+        width: 100%;
+        height: 400px;
+      }
+      .container .row .col-sm-4 img{
+        width: 140px;
+        height: 140px;
+        text-align: center;
+
+      }
+      .container .row .col-sm-4{
+        text-align: center;
+      }
+	}
+	 @media only screen and (max-width: 375px) {
+   	.topLoop .div3,.div5,.div6{display: none;}
+    .topLoop .div1{width:25%;}
+   	.topLoop .div2{width:25%;}
+   	.topLoop .div4{width:25%;}
+   	.topLoop .div7{width:25%;}
+    .courselist>table{width: 90% !important;}
+   }
+.box{box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);}
+.banner{ margin-top:50px;}
+.grade{ width:80%; margin-left:auto; margin-right:auto; margin-top:20px;}
+.grade h2{ height:35px; line-height:35px; overflow:hidden; font-weight:bolder; color:#00F;}
+.grade .text{ color:#999; font-size:12px;line-height:20px;}
+.teacher{width:80%; margin-left:auto; margin-right:auto; margin-top:20px;}
+.teacher h3{height: 30px;line-height: 30px;font-weight: bolder;color: #5E66FD;}
+.teacher .text{color:#999; font-size:12px; line-height:20px;}
+.class{box-shadow:none;}
+.class table tr td{border-top: 1px dotted #ddd; font-size:12px;vertical-align: middle;}
+.class table tr td a{  display: inline-block;height: 25px;line-height: 25px;overflow: hidden;}
+.class .panel-heading{color: #fff; font-weight: bold; font-size: 18px;}
+.class .title{ text-align:center;}
+.class .title span{display: inline-block;width: 50%; background-color: #8CC9F5; border-radius: 60%;height: 35px; line-height: 35px; text-align: center; color: #fff;}
+.report{width:80%; margin-left:auto; margin-right:auto; margin-top:20px;}
+.report table thead{ background:#258AD4; font-size:14px; font-weight:700; color:#FFF;}
+.report table tbody{ background:#E7F7FB; font-size:12px; font-weight:normal; color:#aaa;}
+.report table tbody tr th{ height:20px; line-height:20px; border-top:none;}
+
+@media only screen and (min-width: 800px) {
+  #xzIntro{margin: 0px;background:#EC7B3F;height: 137px;}
+  #boyd_php_show{padding: 23px;}
+}
+
+#footer{margin-top: 10px;}
+#content_fooert{color:#9B9B9A;padding-top: 20px;font-family:'microsoft yahei','Arial';}
+#footer #nav_conet{width: 100%;height: 150px; background:#333333; border: 0px; text-align: center;}
+#footer *{ margin:0px; padding:0px;}
+#footer p{ margin-top:15px;}
+@media only screen and (max-width:900px ) {
+  #logo_img_px{margin-top:-8px;}
+}
+   
+@media only screen and (min-width: 1300px) and (max-width: 900px) {
+  #logo_show{margin-left: 80px;}
+}
+@media only screen and (min-width:1300px ) {
+   #logo_show{margin-left: 250px;}
+   #nav_header{height: 80px;}
+   #nav_list{margin: 12px;font-size:20px;}
+   #nav_list ul li a{font-size: 16px;}
+   #logo_img_px{margin-top: 5px;}
+   #footer{padding:0px; margin: 0px;}
+}
+
+/*css optimizing start*/
+body{
+  background-color: #f3f3f3;
+  padding-top: 53px;
+  font-family: "Arial","Verdana","微软雅黑","宋体";
+}
+.courselist>table{
+  margin-bottom: 20px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px #bbb;
+  -webkit-box-shadow: 0px 1px 2px #bbb;
+}
+.courselist>table tr.borderTop{
+  border-top: 1px solid #dfdfdf;
+}
+.courselist>table tr.borderBottom{
+  border-bottom: 1px solid #dfdfdf;
+}
+.courselist>table td{
+  padding: 8px 12px;
+  font-family: "Arial","Verdana","微软雅黑","宋体";
+  font-weight: 500;
+  border: none;
+}
+.courselist>table td.header{
+  background-color: #6699CC;
+  height: 20px;
+}
+.courselist>table td.title{
+  background-color: #99CCFF;
+  height: 20px;
+}
+.navbar-default .navbar-nav>li>a.active{
+  color: #337ab7;
+}
+.courselist>table td.bl{
+  border-left: 1px solid #dfdfdf;
+}
+@media screen and (min-width: 1367px) {
+  .courselist>table{width: 60% !important;}
+}
+@media screen and (min-width: 769px) and (max-width: 1366px){
+  .courselist>table{width: 80% !important;}
+}
+@media screen and (max-width: 768px) {
+  .courselist>table{width: 90% !important;}
+}
+/*css optimizing end*/
