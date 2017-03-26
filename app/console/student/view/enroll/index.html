@@ -68,16 +68,41 @@
                                 <tr>
                                     <th>{$v.stu_id}</th>
                                     <th>{$v.stu_name}</th>
-                                    <th><if condition="$v.stu_sex eq 0">美女 <else/> 帅哥</if>
-                                   
-                                    <!-- <th>if($v.stu_sex eq 0){echo '美女'; }
-                                    	if($v.stu_sex == 1){echo '帅哥'; }
-                                    </th> -->
-                                    <!-- <th>{$v.stu_sex}</th> -->
+                                    <th>
+                                    	{switch name="$v.stu_sex"}
+                                        {case value="0"}男{/case}
+                                        {case value="1"}女{/case}
+                                        {default /}default
+                                        {/switch}
+                                    </th>
                                     <th>{$v.stu_phone}</th>
                                     <th>{$v.stu_qq}</th>
-                                    <th>{$v.stu_xueli}</th>
-                                    <th>{$v.stu_zhuanye}</th>
+                                    <th>
+                                    	{switch name="$v.stu_xueli"}
+                                        {case value="0"}本科{/case}
+                                        {case value="1"}大专{/case}
+                                        {case value="2"}中专{/case}
+                                        {case value="3"}高中{/case}
+                                        {case value="4"}初中{/case}
+                                        {case value="5"}初中以下{/case}
+                                        {case value="6"}社会人士{/case}
+                                        {default /}default
+                                        {/switch}
+                                    </th>
+                                    <th>
+                                    	{switch name="$v.stu_zhuanye"}
+                                        {case value="0"}普通话技能班{/case}
+                                        {case value="1"}办公技能班{/case}
+                                        {case value="2"}UI设计师就业班{/case}
+                                        {case value="3"}JAVA软件工程师就业班{/case}
+                                        {case value="4"}Web前端工程师就业班{/case}
+                                        {case value="5"}PHP软件工程师就业班{/case}
+                                        {case value="6"}Android软件工程师就业班{/case}
+                                        {case value="7"}大数据工程师就业班{/case}
+                                        {case value="8"}营销推广电商就业班{/case}
+                                        {default /}default
+                                        {/switch}
+                                    </th>
                                     <th>
                                         <a href="{:Url('user/lists/edit',['id'=>$v.stu_id],false,true)}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
                                             <i class="fa fa-pencil"></i>

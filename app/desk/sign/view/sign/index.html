@@ -77,23 +77,24 @@
                         </div>
                         <div class="col-md-12 from-group">
                             <select class="form-control" name="stu_xueli" id="stu_xueli">
-                                <option value="0">您的学历</option>
-                                <option value="1">本科</option>
-                                <option value="2">大专</option>
-                                <option value="3">中专</option>
-                                <option value="4">高中</option>
-                                <option value="5">初中</option>
-                                <option value="6">初中以下</option>
-                                <option value="7">社会人士</option>
+                                <option value="-1">您的学历</option>
+                                <option value="0">本科</option>
+                                <option value="1">大专</option>
+                                <option value="2">中专</option>
+                                <option value="3">高中</option>
+                                <option value="4">初中</option>
+                                <option value="5">初中以下</option>
+                                <option value="6">社会人士</option>
                             </select>
                         </div>
                         <div class="col-md-12 from-group">
                             <select class="form-control" name="stu_zhuanye" id="stu_zhuanye">
-                                <option value="0">意向专业</option>
-                                <option value="1">普通话技能班</option>
-                                <option value="2">办公技能班</option>
-                                <option value="3">UI设计师就业班</option>
-                                <option value="4">JAVA软件工程师就业班</option>
+                                <option value="-1">意向专业</option>
+                                <option value="0">普通话技能班</option>
+                                <option value="1">办公技能班</option>
+                                <option value="2">UI设计师就业班</option>
+                                <option value="3">JAVA软件工程师就业班</option>
+                                <option value="4">Web前端工程师就业班</option>
                                 <option value="5">PHP软件工程师就业班</option>
                                 <option value="6">Android软件工程师就业班</option>
                                 <option value="7">大数据工程师就业班</option>
@@ -224,7 +225,7 @@
                 }).html("提交中...");
                 // 提交表单
                 $.ajax({
-                    url: "",
+                    url: "{:Url('/sign/sign/save','',false, true)}",
                     type: "post",
                     dataType: "json",
                     data: signForm.serialize(),
