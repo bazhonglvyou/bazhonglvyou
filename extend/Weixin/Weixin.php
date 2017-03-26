@@ -163,6 +163,9 @@ class Weixin
     const SHAKEAROUND_STATISTICS_DEVICE = '/shakearound/statistics/device?';//以设备为维度的数据统计接口
     const SHAKEAROUND_STATISTICS_PAGE = '/shakearound/statistics/page?';//以页面为维度的数据统计接口
 
+    //token路径 yanghan 2017/3/26 9:17
+    const TOKEN_PATH = 'runtime/token/';
+
     private $token;
     private $encodingAesKey;
     private $encrypt_type;
@@ -1176,18 +1179,17 @@ class Weixin
      * @param string $appid 如在类初始化时已提供，则可为空
      * @param string $appsecret 如在类初始化时已提供，则可为空
      * @param string $token 手动指定access_token，非必要情况不建议用
+     * @param string $path 指定存放/读取access_token文件的地址 yanghuan 2017/3/26 9:20
      */
 
 
-    public function checkAuth($refresh = 0)
+    public function checkAuth($refresh = 0, $path = self::TOKEN_PATH)
     {
         $appid = $this->appid;
         $secret = $this->appsecret;
-        $filepath = "access_token.json";//待读取文件的相对路径
+        $filepath = $path . "accessToken.json";//待读取文件的相对路径
         $targetfile = realpath($filepath);
-
         $data = json_decode(file_get_contents($targetfile));
-
         $wcs = $data->wcs;
         $wcs = $wcs + 1;
 
