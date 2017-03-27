@@ -120,11 +120,11 @@
         <a href="<?php echo url('supplier/supplier/lists',['page'=> $page-1]); ?>" class="jiantou"><</a>
         <?php endif; ?>
                     <span>
-                        <?php $__FOR_START_13113__=$page-$ye+1;$__FOR_END_13113__=$page;for($i=$__FOR_START_13113__;$i < $__FOR_END_13113__;$i+=1){ if(($i>0)): ?>
+                        <?php $__FOR_START_3161__=$page-$ye+1;$__FOR_END_3161__=$page;for($i=$__FOR_START_3161__;$i < $__FOR_END_3161__;$i+=1){ if(($i>0)): ?>
                          <a class="page_a_css" href="<?php echo url('supplier/supplier/lists',['page'=> $i]); ?>" style=""><?php echo $i; ?></a>
                         <?php endif; } ?>
                         <a class="page_a_css_select" href="<?php echo url('supplier/supplier/lists',['page'=> $page]); ?>"><?php echo $page; ?></a>
-                        <?php $__FOR_START_8994__=$page+1;$__FOR_END_8994__=$page+$ye;for($i=$__FOR_START_8994__;$i < $__FOR_END_8994__;$i+=1){ if(($i<=$maxpage)): ?>
+                        <?php $__FOR_START_19408__=$page+1;$__FOR_END_19408__=$page+$ye;for($i=$__FOR_START_19408__;$i < $__FOR_END_19408__;$i+=1){ if(($i<=$maxpage)): ?>
                         <a class="page_a_css" href="<?php echo url('supplier/supplier/lists',['page'=> $i]); ?>"><?php echo $i; ?></a>
                         <?php endif; } ?>
                     </span>

@@ -8,7 +8,7 @@ use think\Db;
 /**
  * 门票模块
  * Created by PhpStorm.
- * User: yanghuan
+ * User: jianglong
  * Date: 2017/3/8
  * Time: 21:58
  */
@@ -16,7 +16,7 @@ class Ticket extends Base
 {
     /**
      * 门票列表
-     * author: yanghuan
+     * author: jianglogn
      * date:2017/3/8 22:17
      */
     public function lists()
@@ -26,7 +26,7 @@ class Ticket extends Base
         //当前可以显示的条数为($ye-1)*2+1
         $ye = 6;
         //查找总共有多少条数据
-        $all = Db::table('fm_ticket')->count();
+        $all = Db::name('ticket')->count();
         //算出总共有多少你页
         $maxpage = ceil($all/$pagesize);
         //获取当前页数

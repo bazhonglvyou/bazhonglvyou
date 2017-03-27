@@ -14,7 +14,7 @@ class Lists
         return Db::name('ticket')->find();
     }
     public function getPage($page,$pagesize){
-        $ticket =  Db::table('fm_ticket')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
+        $ticket =  Db::name('ticket')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
         foreach($ticket as $key => $value){
             //$ticket[$key]['supplier'] = M('newsimage')->where(array('id' => $value['supplierId']))->select();
             //$ticket[$key]['ScenicSpot'] = M('newsimage')->where(array('id' => $value['ScenicSpotId']))->select();
@@ -22,7 +22,7 @@ class Lists
         return $ticket;
     }
     public function del($id){
-        if(Db::table('fm_ticket')->where(array('id' => $id))->delete()){
+        if(Db::name('ticket')->where(array('id' => $id))->delete()){
             return 1;
         }
         else{
@@ -30,7 +30,7 @@ class Lists
         }
     }
     public function get_one_ticket($id){
-        $ticket =  Db::table('fm_ticket')->where(array('id' => $id))->find();
+        $ticket =  Db::name('ticket')->where(array('id' => $id))->find();
         //$ticket['supplier'] = M('newsimage')->where(array('id' => $ticket['supplierId']))->find();
         //$ticket['ScenicSpot'] = M('newsimage')->where(array('id' => $ticket['ScenicSpotId']))->find();
         return $ticket;
@@ -116,12 +116,12 @@ class Lists
             'createTime' => date('Y-m-d H:i:s')
         );
         if($id = $_POST['id']){
-            if(Db::table('fm_ticket')->where(array('id' => $id ))->update($data)){
+            if(Db::name('ticket')->where(array('id' => $id ))->update($data)){
                 return 1;
             }
         }
         else{
-            if(Db::table('fm_ticket')->insert($data)){
+            if(Db::name('ticket')->insert($data)){
                 return 1;
             }
         }

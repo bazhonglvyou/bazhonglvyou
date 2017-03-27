@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\WWW\bazhonglvyou\app\console\scenery\view\scenery\lists.html";i:1490586951;s:74:"D:\WWW\bazhonglvyou\app\console\scenery\view\..\..\common\view\header.html";i:1489718237;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"D:\WWW\bazhonglvyou\app\console\producttype\view\producttype\lists.html";i:1490599061;s:78:"D:\WWW\bazhonglvyou\app\console\producttype\view\..\..\common\view\header.html";i:1489718237;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -31,16 +31,16 @@
 <body class="gray-bg">
 <div class="wrapper wrapper-content">
     <div class="col-sm-12">
-        <h3 class="pull-left">景点管理</h3>
+        <h3 class="pull-left">商品分类管理</h3>
         <ol class="breadcrumb pull-right">
             <li>
                 <a href="index.html"><i class="fa fa-dashboard"></i> 管理中心</a>
             </li>
             <li>
-                景点商管理
+                商品分类管理
             </li>
             <li>
-                景点列表
+                商品分类列表
             </li>
         </ol>
     </div>
@@ -52,7 +52,7 @@
                         <div class="col-sm-6 m-b-xs">
                             <div class="input-group">
                                 <div class="btn-group">
-                                    <a href="<?php echo Url('scenery/scenery/addList'); ?>" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;新增景点</a>
+                                    <a href="<?php echo Url('producttype/producttype/addList'); ?>" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;新增商品类型</a>
                                 </div>
                             </div>
                         </div>
@@ -64,11 +64,7 @@
                             <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>景点名称</th>
-                                <th>所属供应商</th>
-                                <th>供应商类型</th>
-                                <th>星级</th>
-                                <th>景点地址</th>
+                                <th>商品分类名</th>
                                 <th>排序</th>
                                 <th>创建时间</th>
                                 <th>操作</th>
@@ -77,20 +73,16 @@
                             <tbody>
                             <?php if(empty($lists) || (($lists instanceof \think\Collection || $lists instanceof \think\Paginator ) && $lists->isEmpty())): ?>
                                 <tr>
-                                    <th colspan="6" class="text-center">没有供应商记录</th>
+                                    <th colspan="6" class="text-center">没有会员记录</th>
                                 </tr>
                             <?php else: if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
                                 <tr>
                                     <th><?php echo $v['id']; ?></th>
-                                    <th><?php echo $v['scenery_name']; ?></th>
-                                    <th><?php echo $v['gys_name']; ?></th>
-                                    <th><?php echo $v['gys_type']; ?></th>
-                                    <th><?php echo $v['leverl']; ?></th>
-                                    <th><?php echo $v['detail_address']; ?></th>
+                                    <th><?php echo $v['product_type_name']; ?></th>
                                     <th><?php echo $v['sort']; ?></th>
                                     <th><?php echo $v['createTime']; ?></th>
                                     <th>
-                                        <a href="<?php echo Url('scenery/scenery/addList',['id'=>$v['id']],false,true); ?>" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
+                                        <a href="<?php echo Url('producttype/producttype/addList',['id'=>$v['id']],false,true); ?>" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
                                             <i class="fa fa-pencil"></i>
                                         </a>
                                         <a href="javascript:;" data-id="<?php echo $v['id']; ?>" class="btn btn-warning btn-xs btn-circle delete" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
@@ -106,27 +98,28 @@
                 </div>
             </div>
         </div>
+
     </div>
     <div style="margin-left: 300px;">
         <!--分页开始-->
         <?php if(($page>=1)): ?>
-        <a href="<?php echo url('scenery/scenery/lists',['page'=> 1]); ?>" style="width: 50px;" class="jiantou">首页</a>
+        <a href="<?php echo url('producttype/producttype/lists',['page'=> 1]); ?>" style="width: 50px;" class="jiantou">首页</a>
         <?php endif; if(($page>1)): ?>
-        <a href="<?php echo url('scenery/scenery/lists',['page'=> $page-1]); ?>" class="jiantou"><</a>
+        <a href="<?php echo url('producttype/producttype/lists',['page'=> $page-1]); ?>" class="jiantou"><</a>
         <?php endif; ?>
                     <span>
-                        <?php $__FOR_START_5612__=$page-$ye+1;$__FOR_END_5612__=$page;for($i=$__FOR_START_5612__;$i < $__FOR_END_5612__;$i+=1){ if(($i>0)): ?>
-                         <a class="page_a_css" href="<?php echo url('scenery/scenery/lists',['page'=> $i]); ?>" style=""><?php echo $i; ?></a>
+                        <?php $__FOR_START_32420__=$page-$ye+1;$__FOR_END_32420__=$page;for($i=$__FOR_START_32420__;$i < $__FOR_END_32420__;$i+=1){ if(($i>0)): ?>
+                         <a class="page_a_css" href="<?php echo url('producttype/producttype/lists',['page'=> $i]); ?>" style=""><?php echo $i; ?></a>
                         <?php endif; } ?>
-                        <a class="page_a_css_select" href="<?php echo url('scenery/scenery/lists',['page'=> $page]); ?>"><?php echo $page; ?></a>
-                        <?php $__FOR_START_8796__=$page+1;$__FOR_END_8796__=$page+$ye;for($i=$__FOR_START_8796__;$i < $__FOR_END_8796__;$i+=1){ if(($i<=$maxpage)): ?>
-                        <a class="page_a_css" href="<?php echo url('scenery/scenery/lists',['page'=> $i]); ?>"><?php echo $i; ?></a>
+                        <a class="page_a_css_select" href="<?php echo url('producttype/producttype/lists',['page'=> $page]); ?>"><?php echo $page; ?></a>
+                        <?php $__FOR_START_2617__=$page+1;$__FOR_END_2617__=$page+$ye;for($i=$__FOR_START_2617__;$i < $__FOR_END_2617__;$i+=1){ if(($i<=$maxpage)): ?>
+                        <a class="page_a_css" href="<?php echo url('producttype/producttype/lists',['page'=> $i]); ?>"><?php echo $i; ?></a>
                         <?php endif; } ?>
                     </span>
         <?php if(($page<$maxpage)): ?>
-        <a href="<?php echo url('scenery/scenery/lists',['page'=> $page+1]); ?>" class="jiantou">></a>
+        <a href="<?php echo url('producttype/producttype/lists',['page'=> $page+1]); ?>" class="jiantou">></a>
         <?php endif; if(($maxpage>1)): ?>
-        <a href="<?php echo url('scenery/scenery/lists',['page'=> $maxpage]); ?>" class="jiantou" style="width: 50px;">尾页</a>
+        <a href="<?php echo url('producttype/producttype/lists',['page'=> $maxpage]); ?>" class="jiantou" style="width: 50px;">尾页</a>
         <?php endif; ?>
 
     </div>
@@ -148,12 +141,12 @@
     // 删除
     $('.delete').on('click', function() {
         var id = $(this).attr("data-id");
-        layer.confirm('确定删除该景点？', {
+        layer.confirm('确定删除该供应商类型？', {
             skin: 'layui-layer-molv',
             icon: 3,
             shadeClose: false
         }, function(index, layero) {
-            $.get("<?php echo Url('/scenery/scenery/del', '', false, true); ?>?id=" + id, function(data,status){
+            $.get("<?php echo Url('/producttype/producttype/del', '', false, true); ?>?id=" + id, function(data,status){
                 data = eval('('+data+')');
                 if (data.code == 500) {
                     layer.msg(data.msg, {icon: 5});

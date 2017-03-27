@@ -4255,3 +4255,209 @@
 [ sql ] [ SQL ] SELECT * FROM `fm_scenery` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.086005s ]
 
 ---------------------------------------------------------------
+[ 2017-03-21T14:02:32+08:00 ] 127.0.0.1 127.0.0.1 GET /console.php
+[ log ] xiaolong.com/console.php [运行时间：0.362021s][吞吐率：2.76req/s] [内存消耗：1,746.59kb] [文件加载：45]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=8a2fl1cttq2u78820451v77df2; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://xiaolong.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'xiaolong.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->index[ D:\WWW\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\index\view\index\index.html [ array (
+  0 => 'result',
+  1 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.163010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_menu` [ RunTime:0.081004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`listorder`,`icon`,`parent_id`,`status`,`module`,`controller`,`action`,`parameter` FROM `fm_menu` WHERE  `status` IN (1,2) ORDER BY listorder desc [ RunTime:0.083005s ]
+
+---------------------------------------------------------------
+[ 2017-03-21T14:02:32+08:00 ] 127.0.0.1 127.0.0.1 GET /console.php/index/index/main
+[ log ] xiaolong.com/console.php/index/index/main [运行时间：0.017001s][吞吐率：58.82req/s] [内存消耗：1,098.30kb] [文件加载：38]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=8a2fl1cttq2u78820451v77df2; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://xiaolong.com/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'xiaolong.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\index\controller\Index->main[ D:\WWW\bazhonglvyou\app\console\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\index\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-21T14:02:34+08:00 ] 127.0.0.1 127.0.0.1 GET /console.php/student/enroll/index
+[ log ] xiaolong.com/console.php/student/enroll/index [运行时间：0.015001s][吞吐率：66.66req/s] [内存消耗：873.56kb] [文件加载：32]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'student',
+    1 => 'enroll',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=8a2fl1cttq2u78820451v77df2; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://xiaolong.com/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'xiaolong.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-21T14:02:41+08:00 ] 127.0.0.1 127.0.0.1 GET /console.php/scenery/scenery/lists
+[ log ] xiaolong.com/console.php/scenery/scenery/lists [运行时间：0.525030s][吞吐率：1.90req/s] [内存消耗：1,701.11kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'scenery',
+    1 => 'scenery',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=8a2fl1cttq2u78820451v77df2; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://xiaolong.com/console.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'xiaolong.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\scenery\controller\Scenery->lists[ D:\WWW\bazhonglvyou\app\console\scenery\controller\Scenery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\scenery\view\scenery\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.137008s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_scenery` [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_scenery` LIMIT 1 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_scenery` ORDER BY `createTime`  desc LIMIT 0,1 [ RunTime:0.123007s ]
+
+---------------------------------------------------------------
+[ 2017-03-21T14:02:43+08:00 ] 127.0.0.1 127.0.0.1 GET /console.php/scenery/scenery/lists.html?page=2
+[ log ] xiaolong.com/console.php/scenery/scenery/lists.html?page=2 [运行时间：0.535031s][吞吐率：1.87req/s] [内存消耗：1,701.51kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'scenery',
+    1 => 'scenery',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=8a2fl1cttq2u78820451v77df2; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://xiaolong.com/console.php/scenery/scenery/lists',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'xiaolong.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\console\scenery\controller\Scenery->lists[ D:\WWW\bazhonglvyou\app\console\scenery\controller\Scenery.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\bazhonglvyou\app\console\scenery\view\scenery\lists.html [ array (
+  0 => 'page',
+  1 => 'ye',
+  2 => 'maxpage',
+  3 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.165010s ] mysql:dbname=bdm181660527_db;host=bdm181660527.my3w.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fm_scenery` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fm_scenery` LIMIT 1 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `fm_scenery` ORDER BY `createTime`  desc LIMIT 1,1 [ RunTime:0.102006s ]
+
+---------------------------------------------------------------

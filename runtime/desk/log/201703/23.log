@@ -1,0 +1,53 @@
+[ 2017-03-23T11:02:26+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] xiaolong.com/ [运行时间：0.095005s][吞吐率：10.53req/s] [内存消耗：871.27kb] [文件加载：32]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'xiaolong.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-23T11:02:27+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] xiaolong.com/ [运行时间：0.014001s][吞吐率：71.42req/s] [内存消耗：871.90kb] [文件加载：32]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'xiaolong.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

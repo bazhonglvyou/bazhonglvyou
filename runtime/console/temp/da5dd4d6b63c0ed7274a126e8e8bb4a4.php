@@ -1,9 +1,37 @@
-{include file="../../common/view/header" /}
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"D:\WWW\bazhonglvyou\app\console\supplier\view\supplier\addtypelist.html";i:1490584536;s:75:"D:\WWW\bazhonglvyou\app\console\supplier\view\..\..\common\view\header.html";i:1489718237;}*/ ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>飞猫旅行·管理中心</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/static/css/bootstrap.min.css?v=3.3.8" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css?v=4.1.1" rel="stylesheet">
+    <link href="/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/static/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="/static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="/static/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="/static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="/static/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="/static/css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="/static/css/plugins/treeview/bootstrap-treeview.css" rel="stylesheet">
+</head>
+
 
 <body class="gray-bg">
 <div class="wrapper wrapper-content">
     <div class="col-sm-12">
-        <h3 class="pull-left">{$id?'修改':'添加'}供应商类型</h3>
+        <h3 class="pull-left"><?php echo !empty($id)?'修改':'添加'; ?>供应商类型</h3>
         <ol class="breadcrumb pull-right">
             <li>
                 <a href="index.html"><i class="fa fa-dashboard"></i> 管理中心</a>
@@ -12,7 +40,7 @@
                 供应商类型
             </li>
             <li>
-                {$id?'修改':'添加'}                供应商类型
+                <?php echo !empty($id)?'修改':'添加'; ?>                供应商类型
 
             </li>
         </ol>
@@ -22,15 +50,15 @@
             <div class="ibox">
                 <div class="ibox-title">
                     <form class="form-horizontal m-t" onsubmit="return false;" method="post" id="userForm">
-                        <input type="text" name="id" style="display: none" value="{$id ?? '0'}">
+                        <input type="text" name="id" style="display: none" value="<?php echo isset($id) ? $id :  '0'; ?>">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">分类名称：</label>
-                            <div class="col-sm-2"><input id="user_name" value="{$lists['type_name'] ?? ''}" name="type_name" class="form-control" type="text"></div>
+                            <div class="col-sm-2"><input id="user_name" value="<?php echo isset($lists['type_name']) ? $lists['type_name'] :  ''; ?>" name="type_name" class="form-control" type="text"></div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">排序：</label>
                             <div class="col-sm-2">
-                                <input id="product_one_price" name="sort" value="{$lists['sort'] ?? ''}" class="form-control" type="text">
+                                <input id="product_one_price" name="sort" value="<?php echo isset($lists['sort']) ? $lists['sort'] :  ''; ?>" class="form-control" type="text">
                             </div>
                         </div>
                         <div class="form-group has-error">
@@ -108,7 +136,7 @@
                 }).html("提交中...");
                 // 提交表单
                 $.ajax({
-                    url: "{:Url('/supplier/supplier/addType')}",
+                    url: "<?php echo Url('/supplier/supplier/addType'); ?>",
                     type: "post",
                     dataType: "json",
                     data: menuForm.serialize(),

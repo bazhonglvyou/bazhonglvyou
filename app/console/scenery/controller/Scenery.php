@@ -19,7 +19,7 @@ class Scenery extends Base
         //当前可以显示的条数为($ye-1)*2+1
         $ye = 3;
         //查找总共有多少条数据
-        $all = Db::table('fm_scenery')->count();
+        $all = Db::name('scenery')->count();
         //算出总共有多少你页
         $maxpage = ceil($all/$pagesize);
         //获取当前页数
@@ -46,10 +46,12 @@ class Scenery extends Base
         $this->assign('ye',$ye);
         $this->assign('maxpage',$maxpage);
         //分页结束
-        $lists =  Db::table('fm_scenery')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
+        $lists =  Db::name('scenery')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
         foreach($lists as $key => $value){
-            //$data = Db::table('fm_gysfl')->where(array('id' => $value['gys_type']))->find();
-            //$lists[$key]['gys_type'] = $data['type_name'];
+            $supplier = Db::name('gys')->where(array('id' => $value['supplier_id']))->find();
+            $supplierType = Db::name('gysfl')->where(array('id' => $supplier['gys_type']))->find();
+            $lists[$key]['gys_name'] = $supplier['gy_name'];
+            $lists[$key]['gys_type'] = $supplierType['type_name'];
             //$lists[$key]['yy_url'] = unserialize($value['yy_url']);
             //$ticket[$key]['ScenicSpot'] = M('newsimage')->where(array('id' => $value['ScenicSpotId']))->select();
         }
@@ -59,7 +61,7 @@ class Scenery extends Base
     }
     public function addList(){
         if(isset($_GET['id'])){
-            $lists =  Db::table('fm_scenery')->where(array('id' => $_GET['id']))->find();
+            $lists =  Db::name('scenery')->where(array('id' => $_GET['id']))->find();
             if(($lists['thumbnail'])){
                 $lists['thumbnail'] = unserialize($lists['thumbnail']);
                 foreach($lists['thumbnail'] as $key => $value){
@@ -92,14 +94,14 @@ class Scenery extends Base
                     }
                 }
             }
-            $this->assign('list_type',Db::table('fm_gysfl')->select());
+            $this->assign('list_type',Db::name('gysfl')->select());
             $this->assign('lists',$lists);
             $this->assign('id',$_GET['id']);
             //$this->assign('gongtype',Db::table('fm_gys')->select());
             return $this->fetch();
         }
         else{
-            $this->assign('list_type',Db::table('fm_gysfl')->select());
+            $this->assign('list_type',Db::name('gysfl')->select());
             return $this->fetch();
         }
     }
@@ -140,7 +142,7 @@ class Scenery extends Base
             'createTime' => date('Y-m-d H:i:s')
         );
         if($id = $_POST['id']){
-            if(Db::table('fm_scenery')->where(array('id' => $id ))->update($data)){
+            if(Db::name('scenery')->where(array('id' => $id ))->update($data)){
                 return json_encode(array(
                     'code' => 1,
                     'msg' => 'success'

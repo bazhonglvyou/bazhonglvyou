@@ -46,9 +46,9 @@ class Supplier extends Base
         $this->assign('ye',$ye);
         $this->assign('maxpage',$maxpage);
         //分页结束
-        $lists =  Db::table('fm_gys')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
+        $lists =  Db::name('gys')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
         foreach($lists as $key => $value){
-            $data = Db::table('fm_gysfl')->where(array('id' => $value['gys_type']))->find();
+            $data = Db::name('gysfl')->where(array('id' => $value['gys_type']))->find();
             $lists[$key]['gys_type'] = $data['type_name'];
             //$lists[$key]['yy_url'] = unserialize($value['yy_url']);
             //$ticket[$key]['ScenicSpot'] = M('newsimage')->where(array('id' => $value['ScenicSpotId']))->select();
@@ -59,7 +59,7 @@ class Supplier extends Base
     }
     public function addList(){
         if(isset($_GET['id'])){
-            $ticket =  Db::table('fm_gys')->where(array('id' => $_GET['id']))->find();
+            $ticket =  Db::name('gys')->where(array('id' => $_GET['id']))->find();
             if(($ticket['yy_url'])){
                 $ticket['yy_url'] = unserialize($ticket['yy_url']);
                 foreach($ticket['yy_url'] as $key => $value){
@@ -79,7 +79,7 @@ class Supplier extends Base
             else{
 
             }
-            $this->assign('list_type',Db::table('fm_gysfl')->select());
+            $this->assign('list_type',Db::name('gysfl')->select());
             $this->assign('lists',$ticket);
             $this->assign('id',$_GET['id']);
             //$this->assign('gongtype',Db::table('fm_gys')->select());
@@ -112,7 +112,7 @@ class Supplier extends Base
             'createTime' => date('Y-m-d H:i:s')
         );
         if($id = $_POST['id']){
-            if(Db::table('fm_gys')->where(array('id' => $id ))->update($data)){
+            if(Db::name('gys')->where(array('id' => $id ))->update($data)){
                 return json_encode(array(
                     'code' => 1,
                     'msg' => 'success'
@@ -120,7 +120,7 @@ class Supplier extends Base
             }
         }
         else{
-            if(Db::table('fm_gys')->insert($data)){
+            if(Db::name('gys')->insert($data)){
                 return json_encode(array(
                     'code' => 1,
                     'msg' => 'success'
@@ -134,7 +134,7 @@ class Supplier extends Base
     }
     public function del(){
         $id = $_GET['id'];
-        if(Db::table('fm_gys')->where(array('id' => $id))->delete()){
+        if(Db::name('gys')->where(array('id' => $id))->delete()){
             return json_encode(array(
                 'code' => 1,
                 'success' => 'success'
@@ -153,7 +153,7 @@ class Supplier extends Base
         //当前可以显示的条数为($ye-1)*2+1
         $ye = 3;
         //查找总共有多少条数据
-        $all = Db::table('fm_gysfl')->count();
+        $all = Db::name('gysfl')->count();
         //算出总共有多少你页
         $maxpage = ceil($all/$pagesize);
         //获取当前页数
@@ -180,7 +180,7 @@ class Supplier extends Base
         $this->assign('ye',$ye);
         $this->assign('maxpage',$maxpage);
         //分页结束
-        $lists =  Db::table('fm_gysfl')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
+        $lists =  Db::name('gysfl')->order(array('createTime'  => 'desc' ))->limit(($page-1)*$pagesize,$pagesize)->select();
         foreach($lists as $key => $value){
             //$ticket[$key]['supplier'] = M('newsimage')->where(array('id' => $value['supplierId']))->select();
             //$ticket[$key]['ScenicSpot'] = M('newsimage')->where(array('id' => $value['ScenicSpotId']))->select();
@@ -190,8 +190,8 @@ class Supplier extends Base
     }
     public function addTypeList(){
         if(isset($_GET['id'])){
-            $ticket =  Db::table('fm_gysfl')->where(array('id' => $_GET['id']))->find();
-            $this->assign('ticket',$ticket);
+            $lists =  Db::name('gysfl')->where(array('id' => $_GET['id']))->find();
+            $this->assign('lists',$lists);
             $this->assign('id',$_GET['id']);
             return $this->fetch();
         }
@@ -207,7 +207,7 @@ class Supplier extends Base
             'createTime' => date('Y-m-d H:i:s')
         );
         if($id = $_POST['id']){
-            if(Db::table('fm_gysfl')->where(array('id' => $id ))->update($data)){
+            if(Db::name('gysfl')->where(array('id' => $id ))->update($data)){
                 return json_encode(array(
                     'code' => 1,
                     'msg' => 'success'
@@ -215,7 +215,7 @@ class Supplier extends Base
             }
         }
         else{
-            if(Db::table('fm_gysfl')->insert($data)){
+            if(Db::name('gysfl')->insert($data)){
                 return json_encode(array(
                     'code' => 1,
                     'msg' => 'success'
@@ -229,7 +229,7 @@ class Supplier extends Base
     }
     public function delType(){
         $id = $_GET['id'];
-        if(Db::table('fm_gysfl')->where(array('id' => $id))->delete()){
+        if(Db::name('gysfl')->where(array('id' => $id))->delete()){
             return json_encode(array(
                 'code' => 1,
                 'success' => 'success'

@@ -1,0 +1,112 @@
+[ 2017-03-27T11:21:49+08:00 ] 192.168.10.147 192.168.10.147 GET /
+[ log ] 192.168.10.147/ [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：872.77kb] [文件加载：32]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-27T11:21:49+08:00 ] 192.168.10.147 192.168.10.147 GET /
+[ log ] 192.168.10.147/ [运行时间：0.014001s][吞吐率：71.42req/s] [内存消耗：873.50kb] [文件加载：32]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=58007914.1875540436.1474183359.1476686330.1476693388.6; __utmz=58007914.1476424872.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.1.1875540436.1474183359; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '192.168.10.147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-27T11:21:54+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] xiaolong.com/ [运行时间：0.014001s][吞吐率：71.42req/s] [内存消耗：872.05kb] [文件加载：32]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ogf2gstnflssbtnr247mluc6j5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'xiaolong.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-27T11:21:54+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] xiaolong.com/ [运行时间：0.014001s][吞吐率：71.42req/s] [内存消耗：872.79kb] [文件加载：32]
+[ info ] [ LANG ] D:\WWW\bazhonglvyou\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ogf2gstnflssbtnr247mluc6j5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'xiaolong.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

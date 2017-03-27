@@ -28,8 +28,8 @@
       <file leaf-file-name="Scenery.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/console/scenery/controller/Scenery.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.571428" vertical-offset="1294" max-vertical-offset="3496">
-              <caret line="94" column="71" selection-start-line="94" selection-start-column="71" selection-end-line="94" selection-end-column="71" />
+            <state vertical-scroll-proportion="-23.678572" vertical-offset="287" max-vertical-offset="3534">
+              <caret line="50" column="93" selection-start-line="50" selection-start-column="93" selection-end-line="50" selection-end-column="93" />
               <folding>
                 <element signature="e#49#84#0#PHP" expanded="true" />
               </folding>
@@ -37,11 +37,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lists.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/console/scenery/view/scenery/lists.html">
+      <file leaf-file-name="Producttype.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/console/producttype/controller/Producttype.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11275627" vertical-offset="1535" max-vertical-offset="2983">
-              <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+            <state vertical-scroll-proportion="1.5075494" vertical-offset="488" max-vertical-offset="2204">
+              <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+              <folding>
+                <element signature="e#53#88#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lists.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/console/producttype/view/producttype/lists.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.035715" vertical-offset="1311" max-vertical-offset="2850">
+              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addList.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/console/producttype/view/producttype/addList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.071429" vertical-offset="399" max-vertical-offset="2793">
+              <caret line="27" column="95" selection-start-line="27" selection-start-column="95" selection-end-line="27" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -57,26 +79,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addList.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/console/scenery/view/scenery/addList.html">
+      <file leaf-file-name="addTypeList.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/console/supplier/view/supplier/addTypeList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.0" vertical-offset="2581" max-vertical-offset="5795">
-              <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#11;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#div#0;n#div#11;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-21.714285" vertical-offset="0" max-vertical-offset="2793">
+              <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,25 +108,29 @@
         <option value="$PROJECT_DIR$/app/console/ticket/view/ticket/addticket.html" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/app/console/ticket/view/ticket/addList11.html" />
-        <option value="$PROJECT_DIR$/app/api/ticket/logic/Lists.php" />
         <option value="$PROJECT_DIR$/app/console/supplier/view/supplier/addgong.html" />
         <option value="$PROJECT_DIR$/static/css/tickt.css" />
-        <option value="$PROJECT_DIR$/app/console/supplier/view/supplier/addTypeList.html" />
         <option value="$PROJECT_DIR$/app/console/ticket/view/ticket/lists.html" />
         <option value="$PROJECT_DIR$/app/console/supplier/view/supplier/listsType.html" />
         <option value="$PROJECT_DIR$/app/console/supplier/view/supplier/lists.html" />
         <option value="$PROJECT_DIR$/app/conf/database.php" />
         <option value="$PROJECT_DIR$/app/console/ticket/view/ticket/addList.html" />
-        <option value="$PROJECT_DIR$/app/console/ticket/controller/Ticket.php" />
         <option value="$PROJECT_DIR$/extend/upload/uploadify.php" />
-        <option value="$PROJECT_DIR$/app/console/supplier/controller/Supplier.php" />
         <option value="$PROJECT_DIR$/app/console/supplier/view/supplier/addList.html" />
         <option value="$PROJECT_DIR$/app/console/scenery/controller/scenery.php" />
         <option value="$PROJECT_DIR$/static/css/page.css" />
         <option value="$PROJECT_DIR$/static/js/upload.js" />
-        <option value="$PROJECT_DIR$/app/console/scenery/controller/Scenery.php" />
         <option value="$PROJECT_DIR$/app/console/scenery/view/scenery/addList.html" />
+        <option value="$PROJECT_DIR$/app/console/supplier/view/supplier/addTypeList.html" />
+        <option value="$PROJECT_DIR$/app/console/supplier/controller/Supplier.php" />
+        <option value="$PROJECT_DIR$/app/console/ticket/controller/Ticket.php" />
+        <option value="$PROJECT_DIR$/app/api/ticket/logic/Lists.php" />
         <option value="$PROJECT_DIR$/app/console/scenery/view/scenery/lists.html" />
+        <option value="$PROJECT_DIR$/app/console/scenery/controller/Scenery.php" />
+        <option value="$PROJECT_DIR$/app/console/productType/controller/ProductType.php" />
+        <option value="$PROJECT_DIR$/app/console/producttype/view/producttype/addList.html" />
+        <option value="$PROJECT_DIR$/app/console/producttype/controller/Producttype.php" />
+        <option value="$PROJECT_DIR$/app/console/producttype/view/producttype/lists.html" />
       </list>
     </option>
   </component>
@@ -221,8 +233,36 @@
               <option name="myItemId" value="runtime" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bazhonglvyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bazhonglvyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bazhonglvyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bazhonglvyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -262,7 +302,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ticket" />
+              <option name="myItemId" value="producttype" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -270,7 +310,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ticket" />
+              <option name="myItemId" value="producttype" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,137 +332,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ticket" />
+              <option name="myItemId" value="producttype" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bazhonglvyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bazhonglvyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supplier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supplier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bazhonglvyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bazhonglvyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="supplier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bazhonglvyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bazhonglvyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scenery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scenery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bazhonglvyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bazhonglvyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scenery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bazhonglvyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bazhonglvyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -437,11 +351,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WWW\bazhonglvyou\app\console" />
       <recent name="D:\WWW\bazhonglvyou\app\console\scenery\view\scenery" />
       <recent name="D:\phpStudy\WWW\bazhonglvyou\app\console\supplier\view\supplier" />
       <recent name="D:\phpStudy\WWW\bazhonglvyou\static\js" />
       <recent name="D:\phpStudy\WWW\bazhonglvyou\app\console\ticket\view\ticket" />
-      <recent name="D:\WWW\bazhonglvyou\extend" />
     </key>
   </component>
   <component name="RunManager">
@@ -459,9 +373,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -469,6 +380,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -484,7 +398,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -524,9 +438,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15104167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -550,42 +464,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/console/scenery/view/scenery/addList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5738">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#11;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#0;n#div#11;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/console/supplier/controller/Supplier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="4123">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/console/ticket/controller/Ticket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/api/ticket/logic/Lists.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -734,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="0">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/console/user/view/lists/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.620603" vertical-offset="0" max-vertical-offset="0">
@@ -773,13 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.8592965" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/ticket/logic/Lists.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.785714" vertical-offset="0" max-vertical-offset="0">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -854,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/console/ticket/controller/Ticket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6588103" vertical-offset="2073" max-vertical-offset="2964">
-          <caret line="140" column="49" selection-start-line="140" selection-start-column="49" selection-end-line="140" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extend/upload/jquery.uploadify.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32534248" vertical-offset="0" max-vertical-offset="876">
@@ -890,10 +747,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/console/supplier/controller/Supplier.php">
+    <entry file="file://$PROJECT_DIR$/app/console/scenery/view/scenery/addList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5566779" vertical-offset="1539" max-vertical-offset="4750">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state vertical-scroll-proportion="1.4534231" vertical-offset="2182" max-vertical-offset="5795">
+          <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#11;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#11;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -905,43 +777,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/console/supplier/view/supplier/addTypeList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.714285" vertical-offset="0" max-vertical-offset="2793">
+          <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/console/ticket/controller/Ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.464286" vertical-offset="798" max-vertical-offset="2907">
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/console/scenery/view/scenery/lists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9567198" vertical-offset="281" max-vertical-offset="2983">
+          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/console/supplier/controller/Supplier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.499439" vertical-offset="342" max-vertical-offset="4712">
+          <caret line="231" column="21" selection-start-line="231" selection-start-column="21" selection-end-line="231" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/ticket/logic/Lists.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7654321" vertical-offset="1655" max-vertical-offset="2546">
+          <caret line="123" column="25" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/console/producttype/view/producttype/addList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.071429" vertical-offset="399" max-vertical-offset="2793">
+          <caret line="27" column="95" selection-start-line="27" selection-start-column="95" selection-end-line="27" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/console/producttype/view/producttype/lists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.035715" vertical-offset="1311" max-vertical-offset="2850">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/console/scenery/controller/Scenery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.571428" vertical-offset="1294" max-vertical-offset="3496">
-          <caret line="94" column="71" selection-start-line="94" selection-start-column="71" selection-end-line="94" selection-end-column="71" />
+        <state vertical-scroll-proportion="-23.678572" vertical-offset="287" max-vertical-offset="3534">
+          <caret line="50" column="93" selection-start-line="50" selection-start-column="93" selection-end-line="50" selection-end-column="93" />
           <folding>
             <element signature="e#49#84#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/console/scenery/view/scenery/addList.html">
+    <entry file="file://$PROJECT_DIR$/app/console/producttype/controller/Producttype.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.0" vertical-offset="2581" max-vertical-offset="5795">
-          <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+        <state vertical-scroll-proportion="1.5075494" vertical-offset="488" max-vertical-offset="2204">
+          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#6;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#7;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#8;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#9;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#11;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#0;n#div#11;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="e#53#88#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/console/scenery/view/scenery/lists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11275627" vertical-offset="1535" max-vertical-offset="2983">
-          <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
