@@ -24,9 +24,12 @@ class Lists extends Base
     public function index()
     {
         $condition['type'] = ['neq', 0];
+
         $user = new userList();
         $userList = $user->lists($condition);
-        $this->assign('userList', $userList);
+
+        $this->assign('userList', $userList['list']);
+        $this->assign('page', $userList['page']);
 
         return $this->fetch();
     }
@@ -55,7 +58,6 @@ class Lists extends Base
             $data['passalt'] = self::random(8);
             $data['password'] = $request->post('password', '', 'trim');
             $data['password_confirm'] = $request->post('password_confirm', '', 'trim');
-            $data['create_time'] = date('Y-m-d H:i:s');
 
             // 数据校验
             $user = new userValidate();
@@ -64,13 +66,12 @@ class Lists extends Base
                 return json($result);
             }
 
-            unset($data['password_confirm']);
             $data['password'] = md5($data['password'] . $data['passalt']);
 
             $user = new userList();
             $userId = $user->add($data);
             if ($userId) {
-                return ['code' => 0, 'msg' => '', 'data' => $userId];
+                return $userId == -1 ? ['code' => 500002, 'msg' => '会员名已经存在'] : ['code' => 0, 'msg' => '', 'data' => $userId];
             } else {
                 return ['code' => 500001, 'msg' => '添加失败'];
             }
@@ -120,16 +121,14 @@ class Lists extends Base
         if ($request->isGet()) {
             $id = $request->get('id', 0, 'trim');
             $userInfo = $user->find($id);
-            $this->assign('user', $userInfo['user']);
+            $this->assign('user', $userInfo);
             return $this->fetch();
         } else {
 
             $data['id'] = $request->post('id', '', 'trim');
             $data['type'] = $request->post('type', '', 'trim');
-            $data['user_name'] = $request->post('user_name', '', 'trim');
             $data['passalt'] = self::random(8);
             $data['password'] = $request->post('password', '', 'trim');
-            $data['update_time'] = date('Y-m-d H:i:s');
 
             if ($data['password']) {
                 //密码不为空

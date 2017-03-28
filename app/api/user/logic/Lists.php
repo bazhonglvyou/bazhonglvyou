@@ -2,6 +2,7 @@
 namespace app\api\user\logic;
 
 use think\Db;
+use app\api\user\model\User as userModel;
 
 /**
  * 后台-会员列表
@@ -21,8 +22,11 @@ class lists
      */
     public function lists($condition = [])
     {
-        $userList = Db::name('user')->where($condition)->select();
-        return ['list' => $userList];
+
+        $userModel = new userModel();
+        $list = $userModel->where($condition)->paginate();
+        $page = $list->render();
+        return ['list' => $list ? $list->toArray() : '', 'page' => $page];
     }
 
     /**
@@ -33,20 +37,24 @@ class lists
      */
     public function add($data)
     {
-        $userId = Db::name('user')->insertGetId($data);
-        return ['id' => $userId];
+        $exists = $this->exists($data['user_name']);
+        if (empty($exists)) {
+            $userModel = new userModel();
+            $userModel->allowField(true)->save($data);
+            return $userModel->id;
+        }
+        return -1;
     }
 
     /**
      * 删除会员
-     * @param $id
+     * @param $id 会员编号
      * author: yanghuan
      * date:2017/3/12 19:37
      */
     public function del($id)
     {
-        $userId = Db::name('user')->where('id', $id)->delete();
-        return ['id' => $userId];
+        return userModel::destroy($id);
     }
 
     /**
@@ -56,8 +64,7 @@ class lists
      */
     public function find($id)
     {
-        $user = Db::name('user')->where('id', $id)->find();
-        return ['user' => $user];
+        return userModel::get($id);
     }
 
     /**
@@ -68,10 +75,30 @@ class lists
      */
     public function edit($data)
     {
-        $id = $data['id'];
-        unset($data['id']);
-        $userId = Db::name('user')->where('id', $id)->update($data);
-        return ['id' => $userId];
+        $userModel = new userModel();
+        return $userModel->allowField(true)->update($data);
     }
 
+    /**
+     * 查询会员是否存在
+     * @author:yanghuna
+     * @datetime:2017/3/28 9:18
+     * @param $userName 会员名
+     */
+    public function exists($userName)
+    {
+        $userModel = new userModel();
+        return $userModel->where('user_name', $userName)->count();
+    }
+
+    /**
+     * 总记录数
+     * @author:yanghuna
+     * @datetime:2017/3/28  9:46
+     */
+    public function count($condition)
+    {
+        $userModel = new userModel();
+        return $userModel->where($condition)->count();
+    }
 }
