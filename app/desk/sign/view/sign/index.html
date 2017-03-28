@@ -77,7 +77,7 @@
                         </div>
                         <div class="col-md-12 from-group">
                             <select class="form-control" name="stu_xueli" id="stu_xueli">
-                                <option value="-1">您的学历</option>
+                                <option value="">您的学历</option>
                                 <option value="0">本科</option>
                                 <option value="1">大专</option>
                                 <option value="2">中专</option>
@@ -89,7 +89,7 @@
                         </div>
                         <div class="col-md-12 from-group">
                             <select class="form-control" name="stu_zhuanye" id="stu_zhuanye">
-                                <option value="-1">意向专业</option>
+                                <option value="">意向专业</option>
                                 <option value="0">普通话技能班</option>
                                 <option value="1">办公技能班</option>
                                 <option value="2">UI设计师就业班</option>
@@ -192,11 +192,11 @@
                 },
                 stu_xueli:{
                     required: true,
-                    min:1
+                    min:0
                 },
                 stu_zhuanye:{
                     required: true,
-                    min:1
+                    min:0
                 }
             },
             messages: {
@@ -222,7 +222,7 @@
                 // 禁用按钮
                 submitBtn.attr({
                     disabled: "disabled"
-                }).html("提交中...");
+                }).val("提交中...");
                 // 提交表单
                 $.ajax({
                     url: "{:Url('/sign/sign/save','',false, true)}",
@@ -231,14 +231,14 @@
                     data: signForm.serialize(),
                     success: function (data) {
                         if (data.code === 0) {
-
+                            location.href='/';
                         } else {
                             serverError.show().html(icon + data.msg);
                         }
                     },
                     complete: function () {
                         // 恢复按钮可用
-                        submitBtn.removeAttr("disabled").html("提交");
+                        submitBtn.removeAttr("disabled").val("提交");
                     },
                     error: function () {
                         serverError.show().html(icon + "网络错误，请检查网络后重试");

@@ -57,66 +57,41 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <!--  {empty name="userList['list']"}-->
                             {empty name="enrolls"}
                                 <tr>
                                     <th colspan="6" class="text-center">没有学员记录</th>
                                 </tr>
                             {else}
-                                <!-- {volist name="userList['list']" id="v"} -->
-									 {volist name="enrolls" id="v"}
-                                <tr>
-                                    <th>{$v.stu_id}</th>
-                                    <th>{$v.stu_name}</th>
-                                    <th>
-                                    	{switch name="$v.stu_sex"}
-                                        {case value="0"}男{/case}
-                                        {case value="1"}女{/case}
-                                        {default /}default
-                                        {/switch}
-                                    </th>
-                                    <th>{$v.stu_phone}</th>
-                                    <th>{$v.stu_qq}</th>
-                                    <th>
-                                    	{switch name="$v.stu_xueli"}
-                                        {case value="0"}本科{/case}
-                                        {case value="1"}大专{/case}
-                                        {case value="2"}中专{/case}
-                                        {case value="3"}高中{/case}
-                                        {case value="4"}初中{/case}
-                                        {case value="5"}初中以下{/case}
-                                        {case value="6"}社会人士{/case}
-                                        {default /}default
-                                        {/switch}
-                                    </th>
-                                    <th>
-                                    	{switch name="$v.stu_zhuanye"}
-                                        {case value="0"}普通话技能班{/case}
-                                        {case value="1"}办公技能班{/case}
-                                        {case value="2"}UI设计师就业班{/case}
-                                        {case value="3"}JAVA软件工程师就业班{/case}
-                                        {case value="4"}Web前端工程师就业班{/case}
-                                        {case value="5"}PHP软件工程师就业班{/case}
-                                        {case value="6"}Android软件工程师就业班{/case}
-                                        {case value="7"}大数据工程师就业班{/case}
-                                        {case value="8"}营销推广电商就业班{/case}
-                                        {default /}default
-                                        {/switch}
-                                    </th>
-                                    <th>
-                                        <a href="{:Url('user/lists/edit',['id'=>$v.stu_id],false,true)}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                        <a href="javascript:;" data-id="{$v.stu_id}" class="btn btn-warning btn-xs btn-circle delete" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </th>
-                                </tr>
+                                 {volist name="enrolls['data']" id="v"}
+                                    <tr>
+                                        <th>{$v.stu_id}</th>
+                                        <th>{$v.stu_name}</th>
+                                        <th>{$v.stu_sex}</th>
+                                        <th>{$v.stu_phone}</th>
+                                        <th>{$v.stu_qq}</th>
+                                        <th>{$v.stu_xueli}</th>
+                                        <th>{$v.stu_zhuanye}</th>
+                                        <th>
+                                            <a href="{:Url('user/lists/edit',['id'=>$v.stu_id],false,true)}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
+                                                <i class="fa fa-pencil"></i>
+                                            </a>
+                                            <a href="javascript:;" data-id="{$v.stu_id}" class="btn btn-warning btn-xs btn-circle delete" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </th>
+                                    </tr>
                                 {/volist}
                             {/empty}
-
                             </tbody>
                         </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-6">
+                            <div class="dataTables_paginate paging_simple_numbers pull-right">
+                                {$page}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

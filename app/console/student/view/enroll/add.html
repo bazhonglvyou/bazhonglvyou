@@ -15,35 +15,25 @@
 			<div class="col-sm-12">
 				<div class="ibox">
 					<div class="ibox-title">
-						<form class="form-horizontal m-t" onsubmit="return false;"
-							method="post" id="enrollForm">
+						<form class="form-horizontal m-t" onsubmit="return false;" method="post" id="signForm">
 							<div class="form-group">
 								<label class="col-sm-2 control-label">学员姓名：</label>
 								<div class="col-sm-2">
-									<input id="stu_name" name="stu_name" class="form-control"
-										type="text">
+									<input id="stu_name" name="stu_name" class="form-control" type="text">
 								</div>
 							</div>
 
 							<div class="form-group">
 								<label class="col-sm-2 control-label">学员性别：</label>
 								<div class="col-sm-2">
-									<label class="radio-inline"> <input type="radio"
-										name="stu_sex" id="inlineRadio1" value="0" checked="checked">
-										美女
-									</label> <label class="radio-inline"> <input type="radio"
-										name="stu_sex" id="inlineRadio2" value="1"> 帅哥
+									<label class="radio-inline i-checks">
+										<input type="radio" name="stu_sex" value="0" checked="checked">美女
+									</label>
+									<label class="radio-inline i-checks">
+										<input type="radio" name="stu_sex" value="1"> 帅哥
 									</label>
 								</div>
 							</div>
-
-							<!-- <div class="form-group">
-								<label class="col-sm-2 control-label">学员性别：</label>
-								<div class="col-sm-2">
-									<input id="stu_sex" name="stu_sex" class="form-control"
-										type="text">
-								</div>
-							</div> -->
 							<div class="form-group">
 								<label class="col-sm-2 control-label">学员年龄：</label>
 								<div class="col-sm-2">
@@ -106,8 +96,7 @@
 							<div class="form-group">
 								<div class="col-sm-4 col-sm-offset-2">
 									<button class="btn btn-primary" type="submit" id="submit">确认提交</button>
-									<button class="btn btn-white" type="button" id="cancel">取
-										消</button>
+									<button class="btn btn-white" type="button" id="cancel">取 消</button>
 								</div>
 							</div>
 						</form>
@@ -122,120 +111,135 @@
 	<script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
 	<!-- jQuery Validation plugin javascript-->
 	<script src="/static/js/plugins/validate/jquery.validate.min.js"></script>
+	<script src="/static/js/plugins/iCheck/icheck.min.js"></script>
 
 	<script>
-		var menuForm = $("#enrollForm"), submitBtn = $("#submit"), serverError = $("#server-error"), cancel = $("#cancel");
-		// 表单验证
-		$.validator.setDefaults({
-			highlight : function(element) {
-				$(element).closest('.form-group').removeClass('has-success')
-						.addClass('has-error');
-			},
-			success : function(element) {
-				element.closest('.form-group').removeClass('has-error')
-						.addClass('has-success');
-			},
-			errorElement : "span",
-			errorClass : "help-block m-b-none",
-			validClass : ""
-		});
-		$()
-				.ready(
-						function() {
-							var icon = "<i class='fa fa-times'></i> ";
-							menuForm
-									.validate({
-										debug : true,
-										rules : {
-											stu_name : {
-												required : true,
-												minlength : 2,
-												maxlength : 10
-											},
-											stu_phone : {
-												required : true,
-												minlength : 2,
-												maxlength : 10
-											},
-											stu_qq : {
-												required : true,
-												minlength : 2,
-												maxlength : 10
-											},
-										},
-										messages : {
-											stu_name : {
-												required : icon + "请输入会员帐号",
-												minlength : icon
-														+ "用户名必须2个字符以上",
-												maxlength : icon
-														+ "用户名必须10个字符以内"
-											},
-											stu_phone : {
-												required : icon + "请输入学员手机号",
-												minlength : icon
-														+ "用户名必须2个字符以上",
-												maxlength : icon
-														+ "用户名必须10个字符以内"
-											},
-											stu_qq : {
-												required : icon + "请输入学员QQ号",
-												minlength : icon
-														+ "用户名必须2个字符以上",
-												maxlength : icon
-														+ "用户名必须10个字符以内"
-											},
-										},
-										submitHandler : function() {
-											// 禁用按钮
-											submitBtn.attr({
-												disabled : "disabled"
-											}).html("提交中...");
-											// 提交表单
-											$
-													.ajax({
-														url : "{:Url('/student/enroll/save','',false, true)}",
-														type : "post",
-														dataType : "json",
-														data : menuForm
-																.serialize(),
-														success : function(data) {
-															if (data.code === 0) {
-																self.location = document.referrer;
-															} else {
-																console
-																		.log("错误码："
-																				+ data.code);
-																serverError
-																		.removeClass(
-																				'hide')
-																		.html(
-																				icon
-																						+ data.msg);
-															}
-														},
-														complete : function() {
-															// 恢复按钮可用
-															submitBtn
-																	.removeAttr(
-																			"disabled")
-																	.html("提交");
-														},
-														error : function() {
-															serverError
-																	.removeClass(
-																			'hide')
-																	.html(
-																			icon
-																					+ "网络错误，请检查网络后重试");
-														}
-													});
-										}
-									});
-							cancel.click(function() {
-								self.location = document.referrer;
-							});
+
+        //单选按钮样式
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+        });
+
+        var signForm = $("#signForm"),
+            submitBtn = $("#submit"),
+            serverError = $("#serverError");
+
+        $.validator.setDefaults({
+            highlight: function (element) {
+                $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+            },
+            success: function (element) {
+                element.closest('.form-group').removeClass('has-error').addClass('has-success');
+            },
+            errorPlacement: function(error, element) {
+                element.after(error);
+            },
+            errorElement: "span",
+            errorClass: "help-block m-b-none",
+            validClass: ""
+        });
+
+        var icon = "<i class='fa fa-times'></i>";
+
+        $.validator.addMethod("isMobile", function(value, element) {
+            var length = value.length;
+            var mobile = /^(13[0-9]{9})|(18[0-9]{9})|(14[0-9]{9})|(17[0-9]{9})|(15[0-9]{9})$/;
+            return this.optional(element) || (length == 11 && mobile.test(value));
+        }, "请正确填写您的手机号码");
+
+        $.validator.addMethod("isAge", function(value, element) {
+            var mobile = /^[0-9]{1,2}$/;
+            return this.optional(element) || (mobile.test(value));
+        }, "请正确填写您的年龄");
+
+        $.validator.addMethod("isQQ", function(value, element) {
+            var mobile = /^[0-9]{5,18}$/;
+            return this.optional(element) || (mobile.test(value));
+        }, "请正确填写您的QQ号码");
+
+        $().ready(
+			function() {
+				var icon = "<i class='fa fa-times'></i> ";
+                signForm.validate({
+					debug : true,
+					rules : {
+                        stu_name: {
+                            required: true,
+                            rangelength:[2,20]
+                        },
+                        stu_phone: {
+                            required: true,
+                            isMobile:true,
+                        },
+                        stu_age:{
+                            required: true,
+                            isAge:true
+                        },
+                        stu_qq:{
+                            required: true,
+                            isQQ:true
+                        },
+                        stu_xueli:{
+                            required: true,
+                            min:0
+                        },
+                        stu_zhuanye:{
+                            required: true,
+                            min:0
+                        }
+					},
+					messages : {
+                        stu_name: {
+                            required: icon + "请输入姓名",
+                            rangelength:icon + "姓名应在2-20个字之间",
+                        },
+                        stu_phone: {
+                            required: icon + "请输入手机号码",
+                        },stu_age: {
+                            required: icon + "请输入年龄",
+                        },stu_qq: {
+                            required: icon + "请输入QQ",
+                        },stu_xueli: {
+                            required: icon + "请选择学历",
+                            min:icon + "请选择学历",
+                        },stu_zhuanye: {
+                            required: icon + "请选择专业",
+                            min:icon + "请选择专业",
+                        }
+					},
+					submitHandler : function() {
+						// 禁用按钮
+						submitBtn.attr({
+							disabled : "disabled"
+						}).html("提交中...");
+						// 提交表单
+						$.ajax({
+								url : "{:Url('/student/enroll/save','',false, true)}",
+								type : "post",
+								dataType : "json",
+								data : signForm.serialize(),
+								success : function(data) {
+									if (data.code === 0) {
+										self.location = document.referrer;
+									} else {
+										serverError.show().html(icon+ data.msg);
+									}
+								},
+								complete : function() {
+									// 恢复按钮可用
+									submitBtn.removeAttr("disabled").html("提交");
+								},
+								error : function() {
+									serverError.show().html(icon+ "网络错误，请检查网络后重试");
+								}
 						});
+					}
+				});
+				cancel.click(function() {
+					self.location = document.referrer;
+				});
+			});
 	</script>
 </body>
 
