@@ -70,21 +70,21 @@ class Base extends Controller
     public function queryPrivilege()
     {
         //默认具有的权限
-        $auth = ['INDEX', 'INDEX_INDEX', 'INDEX_INDEX_MAIN'];
+        $auth = ['INDEX', 'INDEX_INDEX', 'INDEX_INDEX_MAIN', 'INDEX_INDEX_INDEX'];
 
         $userId = $this->userInfo['id'];
         $result = Db::name('user_role')
             ->alias('ur')
             ->field('pri_code')
             ->join('__USER_PRIVILEGE__ up', 'ur.role_code=up.role_code', 'LEFT')
+            ->where('ur.status', 0)
             ->where('user_id', $userId)
             ->select();
         if ($result) {
             foreach ($result as $item) {
                 $auth[] = $item['pri_code'];
             }
-            return $auth;
         }
-        return false;
+        return $auth;
     }
 }

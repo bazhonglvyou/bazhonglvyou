@@ -93,7 +93,7 @@
                 icon: 3,
                 shadeClose: false,
             }, function (index, layero) {
-                $.get("{:Url('/user/privilege/del', '', false, true)}?urid=" + urid, function (data, status) {
+                $.get("{:Url('/user/role/del', '', false, true)}?urid=" + urid, function (data, status) {
                     if (data.code) {
                         layer.msg(data.msg, {icon: 5});
                     } else {

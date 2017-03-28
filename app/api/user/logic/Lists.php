@@ -24,7 +24,7 @@ class lists
     {
 
         $userModel = new userModel();
-        $list = $userModel->where($condition)->paginate();
+        $list = $userModel->where($condition)->order('id','DESC')->paginate();
         $page = $list->render();
         return ['list' => $list ? $list->toArray() : '', 'page' => $page];
     }

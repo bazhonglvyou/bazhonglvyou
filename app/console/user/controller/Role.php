@@ -55,7 +55,7 @@ class Role extends Base
         $condition['type'] = ['neq', 0];
         $user = new userList();
         $userList = $user->lists($condition);
-        return ['data' => $userList['list']];
+        return ['data' => $userList['list']['data']];
     }
 
     /**

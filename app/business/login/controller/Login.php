@@ -67,6 +67,6 @@ class Login extends Controller
      */
     public function out(){
         Session::delete('businessUser');
-        $this->redirect('login/login/');
+        $this->redirect(Url('/login/login/', '', false, true));
     }
 }
