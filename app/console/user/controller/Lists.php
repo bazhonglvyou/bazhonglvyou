@@ -16,19 +16,20 @@ use think\Request;
 class Lists extends Base
 {
     /**
-     * 会员列表
+     * 普通/商家 会员列表，默认普通会员
      * @return mixed
      * author: yanghuan
      * date:
      */
     public function index()
     {
-        $condition['type'] = ['neq', 0];
+        $type = $this->request->get('type', 2);
+        $condition['type'] = ['eq', $type];
 
         $user = new userList();
         $userList = $user->lists($condition);
 
-        $this->assign('userList', $userList['list']);
+        $this->assign('userList', $userList['list']['data']);
         $this->assign('page', $userList['page']);
 
         return $this->fetch();
@@ -165,6 +166,22 @@ class Lists extends Base
                 return ['code' => 500001, 'msg' => '修改失败或没有变化'];
             }
         }
+    }
+
+    /**
+     * 微信会员
+     * author: yanghuan
+     * date:2017/3/29 19:06
+     */
+    public function weixin()
+    {
+        $condition = [];
+        $user = new userList();
+        $userList = $user->weixin($condition);
+        $this->assign('userList', $userList['list']);
+        $this->assign('page', $userList['page']);
+
+        return $this->fetch();
     }
 
 }

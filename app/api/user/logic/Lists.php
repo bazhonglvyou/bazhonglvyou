@@ -3,6 +3,7 @@ namespace app\api\user\logic;
 
 use think\Db;
 use app\api\user\model\User as userModel;
+use app\api\user\model\Weixin as weixinModel;
 
 /**
  * 后台-会员列表
@@ -22,11 +23,14 @@ class lists
      */
     public function lists($condition = [])
     {
-
         $userModel = new userModel();
-        $list = $userModel->where($condition)->order('id','DESC')->paginate();
-        $page = $list->render();
-        return ['list' => $list ? $list->toArray() : '', 'page' => $page];
+        $list = $userModel->where($condition)->order('id', 'DESC')->paginate();
+        if (!$list->isEmpty()) {
+            $page = $list->render();
+            return ['list' => $list ? $list->toArray() : '', 'page' => $page];
+        }
+        return false;
+
     }
 
     /**
@@ -100,5 +104,30 @@ class lists
     {
         $userModel = new userModel();
         return $userModel->where($condition)->count();
+    }
+
+    /**
+     * 微信会员列表
+     * author: yanghuan
+     * date:2017/3/29 19:10
+     * @param $condition 搜索条件
+     * @return Array
+     */
+    public function weixin($condition = [])
+    {
+
+        $lists = [];
+        $weixinModel = new weixinModel();
+        $list = $weixinModel->where($condition)->order('id', 'DESC')->paginate();
+        if (!$list->isEmpty()) {
+            $listArr = $list->toArray();
+            foreach ($listArr['data'] as $item) {
+                $item['headimgurl'] = substr($item['headimgurl'], 0, -1) . '46';
+                $lists[] = $item;
+            }
+            $page = $list->render();
+            return ['list' => $lists ? $lists : '', 'page' => $page];
+        }
+        return false;
     }
 }
