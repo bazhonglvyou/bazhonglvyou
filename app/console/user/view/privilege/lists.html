@@ -99,7 +99,7 @@
         $("#submit").bind('click', function () {
             var code = [],
                 cover = $("input[name='code[]']"),
-                error = $("#serverError"),
+                error = $("#server-error"),
                 submit = $(this),
                 rolecode = submit.data('rolecode'),
                 icon = '<i class="fa fa-times"></i>';
@@ -113,7 +113,7 @@
                     $.ajax({
                         method: 'POST',
                         url: '{:Url("user/privilege/save","",false,true)}',
-                        data: {code: code, rolecode: rolecode},
+                        data: {code: code, role_code: rolecode},
                         dataType: 'json',
                         beforeSend: function () {
                             submit.attr('disabled', "disabled").html('保存中...');
@@ -137,6 +137,8 @@
                         }
 
                     })
+                } else {
+                    error.show().html(icon + '请选择权限');
                 }
             } else {
                 error.show().html(icon + '请选择权限');
