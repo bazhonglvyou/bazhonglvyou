@@ -18,5 +18,6 @@ class Common extends Controller
     protected function _initialize()
     {
         $this->request = Request::instance();
+        $this->assign('module', $this->request->module());
     }
 }

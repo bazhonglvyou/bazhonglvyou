@@ -37,25 +37,25 @@
                             <tr>
                                 <th>ID</th>
                                 <th>帐号</th>
-                                <th>微信昵称</th>
-                                <th>微信头像</th>
                                 <th>电话</th>
+                                <th>邮箱</th>
+                                <th>添加时间</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
-                            {empty name="userList['list']"}
+                            {empty name="userList"}
                                 <tr>
-                                    <th colspan="6" class="text-center">没有会员记录</th>
+                                    <th colspan="6" class="text-center">没有普通会员记录</th>
                                 </tr>
                             {else}
-                                {volist name="userList['list']" id="v"}
+                                {volist name="userList" id="v"}
                                 <tr>
                                     <th>{$v.id}</th>
                                     <th>{$v.user_name}</th>
-                                    <th>{$v.nick_name}</th>
-                                    <th>{$v.head_img}</th>
-                                    <th>{$v.tel}</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>{$v.create_time}</th>
                                     <th>
                                         <a href="{:Url('user/lists/edit',['id'=>$v.id],false,true)}" class="btn btn-primary btn-xs btn-circle" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
                                             <i class="fa fa-pencil"></i>
@@ -67,9 +67,16 @@
                                 </tr>
                                 {/volist}
                             {/empty}
-
                             </tbody>
                         </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-6">
+                            <div class="dataTables_paginate paging_simple_numbers pull-right">
+                                {$page}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

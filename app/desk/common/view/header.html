@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head >
+    <meta charset="UTF-8">
+    <!--IE8开启标准渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--配置视窗-->
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <meta name="keywords" content="巴中华资科技有限公司,华资科技,软件开发,APP开发,网站开发,UI设计,计算机系统集成,行业管理软件,电子商务,大数据等，O2O，移动互联，行业应用,行业管理软件,华资学院，华资培训" />
+    <meta name="description" content="巴中华资科技有限公司,华资科技,软件开发,APP开发,网站开发,UI设计,计算机系统集成,行业管理软件,电子商务,大数据等，O2O，移动互联，行业应用,行业管理软件，华资学院，华资培训" />
+    <title>华资学院咨询报名中心</title>
+    <link rel="stylesheet" href="/static/css/huaziedu/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/huaziedu/bootstrap-bixin.css">
+    <link href="/static/css/huaziedu/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/static/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/huaziedu/animate.css"/>
+    <link rel="stylesheet" href="/static/css/huaziedu/index.css">
+    <style>
+        /*解决样式冲突*/
+        .lvjing{margin-top:0px}
+        .i-checks{margin-bottom:20px}
+    </style>
+</head>
+<body>
+
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a href="index.html" class="navbar-brand">必新培训</a>-->
+            <a href="index.html"><img src="/static/img/huaziedu/huazilogo.png" style="width: 260px;height: 85px;"></a>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse" aria-expanded="true">
+            <ul class="nav navbar-nav navbar-right">
+                <li {eq name="module" value="index"}class="cur"{/eq} ><a href="/">首页</a></li>
+                <li {eq name="module" value="php"}class="cur"{/eq} ><a href="{:Url('/php/','',false,true)}">PHP开发</a></li>
+                <li {eq name="module" value="ui"}class="cur"{/eq} ><a href="{:Url('/ui/','',false,true)}">UI设计</a></li>
+                <li {eq name="module" value="java"}class="cur"{/eq} ><a href="{:Url('/java/','',false,true)}">JAVAEE开发</a></li>
+                <li {eq name="module" value="html"}class="cur"{/eq} ><a href="{:Url('/html/','',false,true)}">前端与移动开发</a></li>
+                <li {eq name="module" value="hadoop"}class="cur"{/eq} ><a href="{:Url('/hadoop/','',false,true)}">云计算之大数据</a></li>
+                <!--<li ><a href="#contact">IOS开发</a></li>-->
+                <li {eq name="module" value="android"}class="cur"{/eq} ><a href="{:Url('/android/','',false,true)}">Android开发</a></li>
+            </ul>
+        </div>
+        <!--导航-->
+
+    </div>
+</nav>
+<!--导航-->

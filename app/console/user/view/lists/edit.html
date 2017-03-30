@@ -24,7 +24,7 @@
                         <input id="" name="id" class="form-control" type="hidden" value="{$user.id}">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">会员帐号：</label>
-                            <div class="col-sm-2"><input id="user_name" name="user_name" class="form-control" type="text" value="{$user.user_name}"></div>
+                            <div class="col-sm-2"><input id="user_name" readonly name="user_name" class="form-control" type="text" value="{$user.user_name}"></div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">会员密码：</label>
@@ -95,21 +95,11 @@
         menuForm.validate({
             debug: true,
             rules: {
-                user_name: {
-                    required: true,
-                    minlength: 2,
-                    maxlength: 10
-                },
                 password_confirm: {
                     equalTo: "#password"
                 },
             },
             messages: {
-                user_name: {
-                    required: icon + "请输入会员帐号",
-                    minlength: icon + "用户名必须2个字符以上",
-                    maxlength: icon + "用户名必须10个字符以内"
-                },
                 password_confirm: {
                     equalTo: icon + "两次输入密码不一致",
                 },
