@@ -29,7 +29,7 @@ class Enroll extends Model
 
     public function getStuZhuanyeAttr($value, $data)
     {
-        $status = [0 => '普通话技能班', 1 => '办公技能班', 2 => 'UI设计师就业班', 3 => 'JAVA软件工程师就业班', 4 => 'Web前端工程师就业班', 5 => 'PHP软件工程师就业班', 6 => 'Android软件工程师就业班', 7 => '大数据工程师就业班', 8 => '营销推广电商就业班'];
+        $status = [0 => '普通话技能班', 1 => '办公技能班', 2 => 'UI设计师就业班', 3 => 'JAVA软件工程师就业班', 4 => 'Web前端工程师就业班', 5 => 'PHP软件工程师就业班', 6 => 'Android软件工程师就业班', 7 => '大数据工程师就业班', 8 => '营销推广电商就业班',9=>'教师资格证'];
         return $status[$data['stu_zhuanye']];
     }
 }
