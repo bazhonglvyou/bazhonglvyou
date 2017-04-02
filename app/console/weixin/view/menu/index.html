@@ -24,17 +24,19 @@
                         <div class="col-sm-12 m-b-xs form-inline">
                             <div class="input-group">
                                 <div class="btn-group">
-                                    <a href="{:Url('user/lists/add','',false,true)}" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;创建新菜单</a>
+                                    <a role="button" class="btn btn-primary create-menu"><i class="fa fa-plus"></i>&nbsp;创建新菜单</a>
                                 </div>
                             </div>
                             <div class="input-group">
-                                <span class="help-block m-b-none"><i class="fa fa-info-circle"></i> 最多3个一级菜单，每个一级菜单最多5个子菜单</span>
+                                <span class="help-block m-b-none error-parent-menu">
+                                    <i class="fa fa-info-circle"></i> 最多3个一级菜单，每个一级菜单最多5个子菜单
+                                </span>
                             </div>
                         </div>
                         <div class="col-sm-6">
                         </div>
                     </div>
-                    <div class="table-responsive">
+                    <div class="table-responsive form-horizontal">
                         <table class="table table-striped table-bordered table-hover">
                             <thead>
                             <tr>
@@ -47,133 +49,12 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td width="50"><input type="text" class="form-control"></td>
-                                    <td>
-                                        <div class="form-inline">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">view</option>
-                                            <option value="">click</option>
-                                        </select>
-                                    </td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><input type="text" class="form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td width="50"><input type="text" class="form-control"></td>
-                                    <td>
-                                        <div class="form-inline">
-                                            <div class="input-group">-----------</div>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">view</option>
-                                            <option value="">click</option>
-                                        </select>
-                                    </td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><input type="text" class="form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td width="50"><input type="text" class="form-control"></td>
-                                    <td>
-                                        <div class="form-inline">
-                                            <div class="input-group">-----------</div>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">view</option>
-                                            <option value="">click</option>
-                                        </select>
-                                    </td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><input type="text" class="form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td width="50"><input type="text" class="form-control"></td>
-                                    <td>
-                                        <div class="form-inline">
-                                            <div class="input-group">-----------</div>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">view</option>
-                                            <option value="">click</option>
-                                        </select>
-                                    </td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><input type="text" class="form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td width="50"><input type="text" class="form-control"></td>
-                                    <td>
-                                        <div class="form-inline">
-                                            <div class="input-group">-----------</div>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">view</option>
-                                            <option value="">click</option>
-                                        </select>
-                                    </td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><input type="text" class="form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td width="50"><input type="text" class="form-control"></td>
-                                    <td>
-                                        <div class="form-inline">
-                                            <div class="input-group">-----------</div>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">view</option>
-                                            <option value="">click</option>
-                                        </select>
-                                    </td>
-                                    <td><input type="text" class="form-control"></td>
-                                    <td><input type="text" class="form-control"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="5" class="text-center">
-                                        <button class="btn btn-primary" type="submit" id="submit">保存菜单</button>
+                                    <td colspan="5" class="text-center menu-save" data-change="0">
+                                        没有菜单
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6"></div>
-                        <div class="col-sm-6">
-                            <div class="dataTables_paginate paging_simple_numbers pull-right">
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -193,6 +74,140 @@
         selector: "[data-toggle=tooltip]",
         container: "body"
     });
+
+    //一级菜单初始html
+    var tbody_start = '<tbody class="menu">';
+    var tbody_end = '</tbody>';
+    var first_menu_html = '';
+        first_menu_html +=  '<tr>';
+        first_menu_html +=      '<td width="50"><input type="text" class="form-control"></td>';
+        first_menu_html +=      '<td>';
+        first_menu_html +=          '<div class="form-inline">';
+        first_menu_html +=              '<div class="input-group">';
+        first_menu_html +=                  '<input type="text" class="form-control">';
+        first_menu_html +=                  '<div class="input-group-btn">';
+        first_menu_html +=                      '<button type="button" class="remove-menu btn btn-danger parent-menu" data-toggle="tooltip" title="删除一级菜单"><i class="fa fa-minus"></i></button>';
+        first_menu_html +=                  '</div>';
+        first_menu_html +=              '</div>';
+        first_menu_html +=              '<div class="input-group">';
+        first_menu_html +=                  '<div class="form-control-static has-error error-menu"></div>';
+        first_menu_html +=              '</div>';
+        first_menu_html +=          '</div>'
+        first_menu_html +=      '</td>';
+        first_menu_html +=      '<td>';
+        first_menu_html +=          '<select name="" id="" class="form-control"><option value="">view</option><option value="">click</option></select>';
+        first_menu_html +=      '</td>';
+        first_menu_html +=      '<td><input type="text" class="form-control"></td>';
+        first_menu_html +=      '<td><input type="text" class="form-control"></td>';
+        first_menu_html +=  '</tr>';
+    //二级菜单初始html
+    var sencond_menu_html = '';
+        sencond_menu_html += '<tr>';
+        sencond_menu_html +=    '<td width="50"><input type="text" class="form-control"></td>';
+        sencond_menu_html +=    '<td>';
+        sencond_menu_html +=        '<div class="form-inline">';
+        sencond_menu_html +=            '<div class="input-group">-----------</div>';
+        sencond_menu_html +=            '<div class="input-group">';
+        sencond_menu_html +=                '<input type="text" class="form-control">';
+        sencond_menu_html +=                '<div class="input-group-btn">';
+        sencond_menu_html +=                    '<button type="button" class="add-menu btn btn-primary" data-toggle="tooltip" title="添加二级菜单"><i class="fa fa-plus"></i></button>';
+        sencond_menu_html +=                    '<button type="button" class="remove-menu btn btn-danger" data-toggle="tooltip" title="删除二级菜单"><i class="fa fa-minus"></i></button>';
+        sencond_menu_html +=                '</div>';
+        sencond_menu_html +=            '</div>';
+        sencond_menu_html +=        '</div>';
+        sencond_menu_html +=    '</td>';
+        sencond_menu_html +=    '<td>';
+        sencond_menu_html +=        '<select name="" id="" class="form-control"><option value="">view</option><option value="">click</option></select>';
+        sencond_menu_html +=    '</td>';
+        sencond_menu_html +=    '<td>';
+        sencond_menu_html +=        '<input type="text" class="form-control">';
+        sencond_menu_html +=    '</td>';
+        sencond_menu_html +=    '<td>';
+        sencond_menu_html +=        '<input type="text" class="form-control">';
+        sencond_menu_html +=    '</td>';
+        sencond_menu_html += '</tr>';
+    //保存菜单按钮
+    var save_btn = '<button class="btn btn-primary" type="submit" id="submit">保存菜单</button>';
+
+    //创建新菜单（一级菜单）
+    $(".create-menu").on('click', function () {
+        var obj_parent_menu = $(".table").children('.menu'),
+                parent_menu_length = obj_parent_menu.length,
+                parent_menu = $(".table").children('thead'),
+                parent_menu_html = tbody_start + first_menu_html + sencond_menu_html + tbody_end,
+                error_parent_menu = $(".error-parent-menu"),
+                _this = $(this),
+                menu_save = $(".menu-save"),
+                disable = _this.attr('disabled');
+        if (parent_menu_length <= 2) {
+            parent_menu.after(parent_menu_html);
+            if (menu_save.data('change') == 0) {
+                menu_save.html(save_btn).data('change', 1);
+            }
+        } else {
+            if (disable != 'disabled') {
+                error_parent_menu.parent().addClass('has-error');
+                error_parent_menu.append('<i class="fa fa-times">最多添加3个一级菜单</i>')
+                _this.attr({disabled: "disabled"});
+
+                //1秒后，错误提示消失
+                setTimeout(function () {
+                    error_parent_menu.parent().removeClass('has-error');
+                    error_parent_menu.find('.fa-times').remove();
+                    _this.removeAttr("disabled").on('click');
+                }, 3000);
+            }
+        }
+    })
+
+    //添加/删除微信二级菜单
+    $(document).on('click', '.add-menu,.remove-menu', function () {
+        var cla = $(this).attr('class'),
+                obj_menu = $(this).closest('.menu'),
+                child_menu = obj_menu.children('tr').eq(1).html(),
+                child_menu_length = obj_menu.children('tr').length,
+                tips = obj_menu.find('.error-menu'),
+                menu_save = $(".menu-save"),
+                no_content = '没有内容';
+
+        if (cla.indexOf('add-menu') >= 0) {
+            if (child_menu_length <= 5) {
+                obj_menu.append('<tr>' + child_menu + '</tr>');
+            } else {
+                tips.html('<span class="help-block"><i class="fa fa-times">子菜单数量最多5个</i></span>');
+                //1秒后，错误提示消失
+                setTimeout(function () {
+                    tips.html('');
+                }, 1000);
+            }
+            $(this).tooltip('hide');
+        } else {
+            if (cla.indexOf('parent-menu') >= 0) {
+                var index = layer.confirm('此操作会删除一级菜单及下面的二级菜单，确认删除吗', {
+                    skin: 'layui-layer-molv',
+                    icon: 3,
+                    shadeClose: false,
+                }, function (index, layero) {
+
+                    obj_menu.remove();
+                    $(this).tooltip('hide');
+
+                    //保存菜单按钮显示/隐藏
+                    var obj_menu_length = $(".table").children('.menu').length;
+                    console.log(obj_menu_length);
+                    if (obj_menu_length <= 0) {
+                        menu_save.html(no_content).data('change', 0);
+                    }
+
+                    layer.close(index);
+
+                });
+            } else {
+                $(this).tooltip('hide').closest('tr').remove();
+            }
+        }
+
+    })
 </script>
 </body>
 

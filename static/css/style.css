@@ -7889,3 +7889,6 @@ body.skin-3 {
         font-size: 12px
     }
 }
+
+/*yanghuan 自定义样式*/
+.table-responsive .table > tbody + tbody{border:none}
