@@ -98,4 +98,35 @@ class Enroll extends Base
             return ;
         }
     }
+    
+    /**
+    *@desc 根据学员ID号删除单个学员
+    *@datetime:2017年4月3日下午11:22:12
+    *@author:fupingdu
+    *@variable
+    *@return
+    */
+    public function del(){
+        $request = Request::instance();
+        if ($request->isGet()) {
+            $data['stu_id'] = $request->get('stu_id');
+            
+            $enroll = new enrollValidate();
+            if (!$enroll->scene('del')->check($data)) {
+                $result = ['code' => 500002, 'msg' => $enroll->getError(), 'data' => $data];
+                return json($result);
+            }
+            
+            $enroll = new enrollAPI();
+            $stu_id = $enroll->del($data['stu_id']);
+            dump($stu_id);
+            exit;
+            if ($stu_id) {
+                return ['code'=>0,'msg'=>'删除成功','data'=>$stu_id];
+            }else{
+                return ['code'=>500003,'msg'=>'删除失败'];
+            }
+            
+        }
+    }
 }

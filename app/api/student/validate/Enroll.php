@@ -42,5 +42,6 @@ class Enroll extends Validate
     protected $scene = [
         'save' => ['stu_name', 'stu_sex', 'stu_age', 'stu_phone', 'stu_qq', 'stu_xueli', 'stu_zhuanye'], // 创建
         //'update' => ['id', 'parent', 'name', 'module', 'controller', 'action', 'status'], // 修改
+        'del' => ['stu_id'],
     ];
 }

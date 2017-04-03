@@ -51,4 +51,15 @@ class Enroll
     public function find($id){
         return enrollModel::get($id);
     }
+    
+    /**
+    *@desc 根据学员ID删除单个学员
+    *@datetime:2017年4月3日下午10:44:35
+    *@author:fupingdu
+    *@variable
+    *@return
+    */
+    public function del($id){
+        return enrollModel::destroy($id);
+    }
 }

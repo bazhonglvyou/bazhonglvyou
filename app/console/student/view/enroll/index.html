@@ -105,12 +105,12 @@
     // 删除
     $('.delete').on('click', function() {
         var id = $(this).attr("data-id");
-        layer.confirm('确定删除该会员？', {
+        layer.confirm('确定删除该学员？', {
             skin: 'layui-layer-molv',
             icon: 3,
             shadeClose: false,
         }, function(index, layero) {
-            $.get("{:Url('/user/lists/del', '', false, true)}?id=" + id, function(data,status){
+            $.get("{:Url('/student/enroll/del', '', false, true)}?id=" + id, function(data,status){
                 if (data.code) {
                     layer.msg(data.msg, {icon: 5});
                 } else {
