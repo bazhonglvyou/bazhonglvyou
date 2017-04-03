@@ -40,4 +40,15 @@ class Enroll
         $enrollModel->allowField(true)->save($data);
         return $enrollModel->stu_id;
     }
+    
+    /**
+    *@desc 查询单条学员信息
+    *@datetime:2017年4月3日下午8:04:11
+    *@author:fupingdu
+    *@variable
+    *@return
+    */
+    public function find($id){
+        return enrollModel::get($id);
+    }
 }

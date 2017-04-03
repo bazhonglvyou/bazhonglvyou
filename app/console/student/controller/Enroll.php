@@ -76,4 +76,26 @@ class Enroll extends Base
             }
         }
     }
+    
+    /**
+    *@desc 编辑报名信息
+    *@datetime:2017年4月3日下午7:41:59
+    *@author:fupingdu
+    *@variable
+    *@return
+    */
+    public function edit(){
+        
+        $request = Request::instance();
+        $enroll = new enrollAPI();
+        
+        if ($request -> isGet()) {
+            $id = $request->get('id',0,'trim');
+            $enrollInfo = $enroll->find($id);
+            $this->assign('enroll',$enrollInfo);
+            return $this->fetch();
+        }else{
+            return ;
+        }
+    }
 }
