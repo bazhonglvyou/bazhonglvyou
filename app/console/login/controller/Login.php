@@ -1,10 +1,10 @@
 <?php
+
 namespace app\console\login\controller;
 
 use app\api\login\validate\Login as loginValidate;
 use app\api\user\logic\User;
-use think\Db;
-use think\Request;
+use think\Url;
 use think\Session;
 use think\Controller;
 
@@ -29,10 +29,9 @@ class Login extends Controller
      */
     public function login()
     {
-        $request = Request::instance();
-        if ($request->isPost()) {
-            $data['username'] = $request->post('username');
-            $data['password'] = $request->post('password');
+        if ($this->request->isPost()) {
+            $data['username'] = $this->request->post('username');
+            $data['password'] = $this->request->post('password');
 
             $loginValidate = new loginValidate();
             if (!$loginValidate->scene('login')->check($data)) {
@@ -44,7 +43,7 @@ class Login extends Controller
             if ($userInfo) {
 
                 //目前只有超级管理员才能登录这里
-                if (!in_array($userInfo['type'],[0])) {
+                if (!in_array($userInfo['type'], [0])) {
                     return ['code' => 50003, 'msg' => '当前用户不能登录这里'];
                 }
 
@@ -53,7 +52,7 @@ class Login extends Controller
                 $result = $user->userInfoByPassword($userName, $password);
                 if ($result) {
                     Session::set('adminUser', $userInfo);
-                    return ['code' => 0, 'url' => Url(DS, '', false, true)];
+                    return ['code' => 0, 'url' => Url::build(DS, '', false, true)];
                 }
                 return ['code' => 50002, 'msg' => '用户名或密码不正确'];
             }
@@ -66,7 +65,8 @@ class Login extends Controller
      * author: yanghuan
      * date:2017/3/22 20:09
      */
-    public function out(){
+    public function out()
+    {
         Session::delete('adminUser');
         $this->redirect(Url('/login/login/', '', false, true));
     }

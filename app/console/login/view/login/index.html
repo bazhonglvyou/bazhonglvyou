@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>飞猫旅行网 - 后台登录</title>
-    <meta name="keywords" content="飞猫旅行网">
-    <meta name="description" content="飞猫旅行网">
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/css/font-awesome.css?v=4.4.0" rel="stylesheet">
-    <link href="/static/css/animate.css" rel="stylesheet">
-    <link href="/static/css/style.css" rel="stylesheet">
-    <link href="/static/css/login.css" rel="stylesheet">
-</head>
-
+{extend name="../../common/view/base" /}
+{block name="body"}
 <body class="signin">
 <div class="signinpanel">
     <div class="row">
@@ -57,32 +44,36 @@
         </div>
     </div>
 </div>
-<script src="/static/js/jquery.min.js?v=2.1.4"></script>
-<script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
+{/block}
+{block name="style"}
+<link href="/static/css/login.css" rel="stylesheet">
+{/block}
+{block name="js"}
 <script src="/static/js/plugins/validate/jquery.validate.min.js"></script>
 <script>
-    $(function(){
-        var loginForm = $("#loginForm"),
-                submitBtn = $("#submit"),
-                serverError = $(".server-error");
-        // 表单验证
-        $.validator.setDefaults({
-            highlight: function (element) {
-                $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
-            },
-            success: function (element) {
-                element.closest('.form-group').removeClass('has-error').addClass('has-success');
-            },
-            errorPlacement: function(error, element) {
-                element.before(error);
-            },
-            errorElement: "span",
-            errorClass: "help-block m-b-none",
-            validClass: ""
-        });
-        $().ready(function () {
-            var icon = "<i class='fa fa-times'></i> ";
-            loginForm.validate({
+    var login = {
+        form: '',
+        submitBtn: '',
+        serverError: '',
+        icon: '',
+        validateDefault: function () {
+            $.validator.setDefaults({
+                highlight: function (element) {
+                    $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+                },
+                success: function (element) {
+                    element.closest('.form-group').removeClass('has-error').addClass('has-success');
+                },
+                errorPlacement: function (error, element) {
+                    element.before(error);
+                },
+                errorElement: "span",
+                errorClass: "help-block m-b-none",
+                validClass: ""
+            });
+        },
+        validate: function () {
+            login.form.validate({
                 debug: true,
                 rules: {
                     username: {
@@ -94,15 +85,15 @@
                 },
                 messages: {
                     username: {
-                        required: icon + "请输入用户名",
+                        required: login.icon + "请输入用户名",
                     },
                     password: {
-                        required: icon + "请输入密码",
+                        required: login.icon + "请输入密码",
                     }
                 },
                 submitHandler: function () {
                     // 禁用按钮
-                    submitBtn.attr({
+                    login.submitBtn.attr({
                         disabled: "disabled"
                     }).html("登录中...");
                     // 提交表单
@@ -110,26 +101,36 @@
                         url: "{:Url('/login/login/login','',false,true)}",
                         type: "post",
                         dataType: "json",
-                        data: loginForm.serialize(),
+                        data: login.form.serialize(),
                         success: function (data) {
                             if (data.code === 0) {
                                 self.location = data.url;
                             } else {
-                                serverError.show().html(icon + data.msg);
+                                login.serverError.show().html(login.icon + data.msg);
                             }
                         },
                         complete: function () {
                             // 恢复按钮可用
-                            submitBtn.removeAttr("disabled").html("登录");
+                            login.submitBtn.removeAttr("disabled").html("登录");
                         },
                         error: function () {
-                            serverError.show().html(icon + "帐号或密码不正确");
+                            login.serverError.show().html(login.icon + "帐号或密码不正确");
                         }
                     });
                 }
             })
-        });
+        },
+        init: function () {
+            login.validateDefault();
+            login.validate();
+        }
+    }
+    $(function () {
+        login.form = $("#loginForm");
+        login.submitBtn = $("#submit");
+        login.serverError = $(".server-error");
+        login.icon = "<i class='fa fa-times'></i> ";
+        login.init();
     })
 </script>
-</body>
-</html>
+{/block}
